@@ -1,0 +1,3 @@
+Paso 1: Abrir programa Mysql Shell
+Paso 2: escribir comando \sql
+Paso 3: escribir comando \connect root@localhost:3306

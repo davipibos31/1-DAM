@@ -1,0 +1,12 @@
+C:\Users\david\source\repos\Prueba_clase_string\bin\Debug\netcoreapp2.1\Prueba_clase_string.deps.json
+C:\Users\david\source\repos\Prueba_clase_string\bin\Debug\netcoreapp2.1\Prueba_clase_string.runtimeconfig.json
+C:\Users\david\source\repos\Prueba_clase_string\bin\Debug\netcoreapp2.1\Prueba_clase_string.runtimeconfig.dev.json
+C:\Users\david\source\repos\Prueba_clase_string\bin\Debug\netcoreapp2.1\Prueba_clase_string.dll
+C:\Users\david\source\repos\Prueba_clase_string\bin\Debug\netcoreapp2.1\Prueba_clase_string.pdb
+C:\Users\david\source\repos\Prueba_clase_string\obj\Debug\netcoreapp2.1\Prueba_clase_string.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Prueba_clase_string\obj\Debug\netcoreapp2.1\Prueba_clase_string.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Prueba_clase_string\obj\Debug\netcoreapp2.1\Prueba_clase_string.AssemblyInfo.cs
+C:\Users\david\source\repos\Prueba_clase_string\obj\Debug\netcoreapp2.1\Prueba_clase_string.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Prueba_clase_string\obj\Debug\netcoreapp2.1\Prueba_clase_string.dll
+C:\Users\david\source\repos\Prueba_clase_string\obj\Debug\netcoreapp2.1\Prueba_clase_string.pdb
+C:\Users\david\source\repos\Prueba_clase_string\obj\Debug\netcoreapp2.1\Prueba_clase_string.genruntimeconfig.cache

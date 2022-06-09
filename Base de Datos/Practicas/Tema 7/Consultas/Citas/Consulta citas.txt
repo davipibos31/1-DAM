@@ -1,0 +1,26 @@
+1. Contabiliza cuántos usuarios han dado cada una de las diferentes valoraciones de
+una cita (mal, regular, bien, muy bien). Ordena los resultados de forma que la
+valoración menos repetida se muestre primero.
+
+select valoracion, count(nom_usuario) from encuesta group by valoracion order by count(nom_usuario) asc;
+
+2. Muestra aquellos nombres de usuario que han dado “Me gusta” a más de 2
+personas.
+
+select nom_usuario_1, count(nom_usuario_2) from gusta group by nom_usuario_1 having count(nom_usuario_2) > 2;
+
+3. Muestra el número de usuarios que practica una afición todas las semanas.
+
+select count(nom_usuario) from practica where frecuencia = "todas las semanas" group by frecuencia;
+
+4. Muestra el número de mujeres que hay de cada religión.
+
+select count(nom_usuario) from perfil where sexo = "F" group by religion;
+
+5. Obtén el número de personas que no tienen trabajo.
+
+select count(nom_usuario) from perfil where trabajo is null group by trabajo;
+
+6. Obtén el nombre de aquellos trabajos con más de un trabajador. 
+
+select trabajo,count(nom_usuario) from perfil where trabajo is not null group by trabajo having count(nom_usuario) > 1;

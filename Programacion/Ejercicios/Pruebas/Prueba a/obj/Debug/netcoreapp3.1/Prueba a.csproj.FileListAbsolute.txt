@@ -1,0 +1,20 @@
+C:\Users\david\source\repos\Prueba a\bin\Debug\netcoreapp3.1\Prueba a.exe
+C:\Users\david\source\repos\Prueba a\bin\Debug\netcoreapp3.1\Prueba a.deps.json
+C:\Users\david\source\repos\Prueba a\bin\Debug\netcoreapp3.1\Prueba a.runtimeconfig.json
+C:\Users\david\source\repos\Prueba a\bin\Debug\netcoreapp3.1\Prueba a.runtimeconfig.dev.json
+C:\Users\david\source\repos\Prueba a\bin\Debug\netcoreapp3.1\Prueba a.dll
+C:\Users\david\source\repos\Prueba a\bin\Debug\netcoreapp3.1\Prueba a.pdb
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a_MarkupCompile.cache
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a_MarkupCompile.lref
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a.g.resources
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a.AssemblyInfo.cs
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a.dll
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a.pdb
+C:\Users\david\source\repos\Prueba a\obj\Debug\netcoreapp3.1\Prueba a.genruntimeconfig.cache

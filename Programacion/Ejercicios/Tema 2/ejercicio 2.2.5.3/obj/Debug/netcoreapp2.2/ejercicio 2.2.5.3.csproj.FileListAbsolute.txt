@@ -1,0 +1,12 @@
+C:\Users\david\source\repos\ejercicio 2.2.5.3\bin\Debug\netcoreapp2.2\ejercicio 2.2.5.3.deps.json
+C:\Users\david\source\repos\ejercicio 2.2.5.3\bin\Debug\netcoreapp2.2\ejercicio 2.2.5.3.runtimeconfig.json
+C:\Users\david\source\repos\ejercicio 2.2.5.3\bin\Debug\netcoreapp2.2\ejercicio 2.2.5.3.runtimeconfig.dev.json
+C:\Users\david\source\repos\ejercicio 2.2.5.3\bin\Debug\netcoreapp2.2\ejercicio 2.2.5.3.dll
+C:\Users\david\source\repos\ejercicio 2.2.5.3\bin\Debug\netcoreapp2.2\ejercicio 2.2.5.3.pdb
+C:\Users\david\source\repos\ejercicio 2.2.5.3\obj\Debug\netcoreapp2.2\ejercicio 2.2.5.3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ejercicio 2.2.5.3\obj\Debug\netcoreapp2.2\ejercicio 2.2.5.3.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ejercicio 2.2.5.3\obj\Debug\netcoreapp2.2\ejercicio 2.2.5.3.AssemblyInfo.cs
+C:\Users\david\source\repos\ejercicio 2.2.5.3\obj\Debug\netcoreapp2.2\ejercicio 2.2.5.3.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ejercicio 2.2.5.3\obj\Debug\netcoreapp2.2\ejercicio 2.2.5.3.dll
+C:\Users\david\source\repos\ejercicio 2.2.5.3\obj\Debug\netcoreapp2.2\ejercicio 2.2.5.3.pdb
+C:\Users\david\source\repos\ejercicio 2.2.5.3\obj\Debug\netcoreapp2.2\ejercicio 2.2.5.3.genruntimeconfig.cache

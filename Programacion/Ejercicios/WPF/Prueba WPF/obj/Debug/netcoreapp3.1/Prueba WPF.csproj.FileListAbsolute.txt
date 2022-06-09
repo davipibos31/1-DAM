@@ -1,0 +1,40 @@
+C:\Users\david\source\repos\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.exe
+C:\Users\david\source\repos\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.deps.json
+C:\Users\david\source\repos\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.runtimeconfig.json
+C:\Users\david\source\repos\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.runtimeconfig.dev.json
+C:\Users\david\source\repos\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.dll
+C:\Users\david\source\repos\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.pdb
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF_MarkupCompile.cache
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF_MarkupCompile.lref
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.g.resources
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.AssemblyInfo.cs
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.dll
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.pdb
+C:\Users\david\source\repos\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.genruntimeconfig.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.exe
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.deps.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.runtimeconfig.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.runtimeconfig.dev.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\bin\Debug\netcoreapp3.1\Prueba WPF.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.csproj.AssemblyReference.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\App.g.cs
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF_MarkupCompile.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF_MarkupCompile.lref
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\MainWindow.baml
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.g.resources
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.GeneratedMSBuildEditorConfig.editorconfig
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.AssemblyInfoInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.AssemblyInfo.cs
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.csproj.CoreCompileInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\WPF\Prueba WPF\obj\Debug\netcoreapp3.1\Prueba WPF.genruntimeconfig.cache

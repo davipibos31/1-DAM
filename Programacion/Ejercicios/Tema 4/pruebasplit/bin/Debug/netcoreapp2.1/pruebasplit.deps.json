@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "pruebasplit/1.0.0": {
+        "runtime": {
+          "pruebasplit.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pruebasplit/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

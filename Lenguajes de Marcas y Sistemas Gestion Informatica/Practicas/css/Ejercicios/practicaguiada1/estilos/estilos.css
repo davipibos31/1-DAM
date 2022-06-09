@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+   
+    margin:auto;
+    background-image:url(../imagenes/fondo.jpg) ;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-color: rgb(251,248,169);
+}
+
+#banner{
+    padding-bottom: 20px;
+    border-bottom: 3px green solid;
+}
+
+.c1{
+
+    background-color: white;
+    margin:auto;
+    height: 300px;
+    width: 760px;
+    padding:10px;
+}
+.c3{
+    padding-top: 20px;
+    color:green;
+    margin-left: 70px;
+    padding-bottom:20px ;
+}
+
+.c4{
+    color:red;
+    margin-left:70px;
+    text-align: justify;
+    padding-bottom:20px;
+}
+
+.c5{
+    margin-left:70px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.aviso{
+    text-align: justify;
+    background-color: yellow;
+    padding:10px;
+    border-style: dashed;
+    margin-left:70px;
+    margin-bottom: 20px;
+}
+
+hr{
+    color:green;
+    border:2px solid;
+}
+
+.c6{
+    color:aqua;
+    margin-left:70px;
+    text-align: justify;
+   padding-bottom:20px;
+}
+
+.c7{
+    color:blueviolet;
+    margin-left:70px;
+    text-align: justify;
+    padding-bottom:20px;
+}
+
+.c8{
+    color:blue;
+    margin-left:70px;
+    text-align: justify;
+    padding-bottom:20px;
+}
+
+#color{
+    color:red;
+}

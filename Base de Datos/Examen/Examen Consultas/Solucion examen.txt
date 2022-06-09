@@ -1,0 +1,143 @@
+-- 1 ok. Muestra el nombre de usuario, fecha de nacimiento y email de los usuarios que le gustan a
+-- emgonzalez.
+SELECT gusta.nom_usuario_1 AS usuario_gusta_a, gusta.nom_usuario_2 AS nombre_usuario, perfil.fechanac AS fecha_nacim,
+perfil.email AS email
+FROM perfil
+	INNER JOIN usuario
+		ON perfil.nom_usuario = usuario.nom_usuario
+	INNER JOIN gusta
+		ON  gusta.nom_usuario_1 = usuario.nom_usuario
+WHERE gusta.nom_usuario_1 = 'emgonzalez'
+GROUP BY gusta.nom_usuario_2; -- aqui hay que agrupar por el usuario que le gusta a emgonzales, es decir los los segundos de la tanbal gusta.
+
+
+
+-- 2 ok. Muestra el código de aquellas citas en las que ambos participantes comparten la misma
+
+SELECT cita.id AS cita_id, gusta.nom_usuario_1 AS usaurio1, encuesta.valoracion AS valoracion_usr1,
+ gusta.nom_usuario_2 AS usuario2,  encuesta.valoracion AS valoracion_usr2
+FROM encuesta
+	INNER JOIN cita	
+		ON encuesta.cita = cita.id
+	INNER JOIN usuario
+		ON encuesta.nom_usuario = usuario.nom_usuario
+	INNER JOIN gusta 
+		ON gusta.nom_usuario_1 = usuario.nom_usuario
+GROUP BY gusta.nom_usuario_1, gusta.nom_usuario_2;
+
+
+-- 3 ok. Muestra para todas las citas los nombres de usuario que han asistido, el número de cita y la 
+-- valoración. Ordena los resultados por nombre de usuario alfabéticamente. ** no se como meter el nombre de usuario 1 y 2. 
+SELECT usuario.nom_usuario AS nombre_usuario, cita.id AS numero_cita, encuesta.valoracion AS valoracion
+FROM encuesta 
+	INNER JOIN usuario
+		ON encuesta.nom_usuario = usuario.nom_usuario
+	INNER JOIN cita
+		ON encuesta.cita = cita.id
+        -- no hae falta el grpup by pq te dice para todas
+ORDER BY usuario.nombre ASC;
+
+
+-- 4. Muestra el nombre de usuario de aquellos usuarios que practiquen alguna afición todos los 
+-- meses y **que gusten al usuario djrodrigo. 
+-- ** quiere decir que a dj le gusta esos usuarios que tenemos qeu mostrar. Por tanto, esos usuarios que tenemos que mostra son los nom_usuario_2 
+SELECT gusta.nom_usuario_1 AS usuario_gusta_a,  gusta.nom_usuario_2 AS usuario, 
+practica.frecuencia AS frecuencia, aficion.descripcion AS aficion
+FROM practica 
+	INNER JOIN usuario
+		ON practica.nom_usuario = usuario.nom_usuario
+	INNER JOIN aficion
+		ON practica.aficion = aficion.codigo
+	INNER JOIN gusta
+		ON gusta.nom_usuario_2 = usuario.nom_usuario
+WHERE gusta.nom_usuario_1 = 'djrodrigo' and practica.frecuencia = 'todos los meses'
+GROUP BY gusta.nom_usuario_2;
+
+
+-- 5. Obtén el título de las películas junto con su recaudación total.
+SELECT pelicula.titulo AS titulo, SUM(entrada.precio_final) AS precio_final
+FROM entrada 
+	INNER JOIN sesion
+		ON entrada.sesion = sesion.id
+	INNER JOIN pelicula
+		ON sesion.pelicula = pelicula.id
+GROUP BY pelicula.id;
+
+
+-- 6. Obtén el DNI de aquellos socios que aún no han comprado ninguna entrada. * COMO DICE QUE NO, ENTONCES ES ALGO DE LEFT RIGHT
+-- que me aparezcan todos los socios a pesar de que hayan nulos en entrada(a pesar de que no han comprado entrada)
+
+SELECT socio.dni AS dni_socio, socio.nombre
+FROM compra
+	RIGHT JOIN socio 
+		ON compra.socio = socio.dni
+WHERE compra.entrada IS NULL -- primero te cargas las columnas que tienen entrada y dejas las qeu no
+GROUP BY socio.dni; -- luego agrupas. 
+
+
+
+-- 7. ok Obtén el nombre de los cines y la recaudación de cada uno de ellos considerando
+-- únicamente las películas de Acción.
+SELECT cine.nombre AS nombre_cine, SUM(entrada.precio_final) AS recaudación 
+FROM entrada 
+	INNER JOIN sesion
+		ON entrada.sesion = sesion.id
+	INNER JOIN pelicula
+		ON sesion.pelicula = pelicula.id
+	INNER JOIN sala
+		ON sesion.sala = sala.id
+	INNER JOIN cine
+		ON sala.cine = cine.id
+WHERE pelicula.genero = 'Acción'
+GROUP BY cine.id;
+
+
+-- 8. ok Obtén el título de las películas que se han proyectado en salas con Sonido Dolby Atmos.
+SELECT pelicula.titulo AS titulo, sala.id AS sala, equipamiento.descripcion AS equipo
+FROM sesion
+	INNER JOIN pelicula
+		ON sesion.pelicula = pelicula.id
+	INNER JOIN sala
+		ON sesion.sala = sala.id
+	INNER JOIN equipa
+		ON equipa.sala = sala.id
+	INNER JOIN equipamiento
+		ON equipa.equipamiento = equipamiento.id
+WHERE equipamiento.descripcion = 'Sonido Dolby Atmos' -- como cuadno legamos hasta aqui vemos que se repiten als peliculas en la tabal pues hacmeo group by
+GROUP BY pelicula.id;
+-- otra forma con DISTINCT
+SELECT DISTINCT pelicula.titulo FROM pelicula
+INNER JOIN sesion ON sesion.pelicula = pelicula.id
+INNER JOIN sala ON sesion.sala = sala.id
+INNER JOIN equipa ON equipa.sala = sala.id
+INNER JOIN equipamiento ON equipa.equipamiento = equipamiento.id
+WHERE equipamiento.descripcion = "Sonido Dolby Atmos";
+-- 9. Obtén el número total de entradas vendidas, el número de entradas vendidas a socios y el
+-- número de entradas vendidas a no socios. --  DUDA***
+SELECT COUNT(*) AS total_entradas, 
+COUNT(compra.socio) AS entradas_socios, 
+COUNT(*) - COUNT(compra.socio) AS entradas_no_socios FROM entrada
+LEFT JOIN compra ON compra.entrada = entrada.id;
+
+-- 
+SELECT COUNT(entrada.id) AS nTotal_entradas, COUNT(compra.entrada) AS  nEntradas_socios,
+COUNT(entrada.id) - COUNT(compra.entrada) AS nEntradas_noSocios
+FROM compra 
+	INNER JOIN socio
+		ON compra.socio = socio.dni
+	RIGHT JOIN entrada -- te van a aparecer todas las entradas hayan sido o no compradas por sicios
+		ON compra.entrada = entrada.id;
+        
+
+-- 10. Obtén el descuento total en euros que han recibido los diferentes socios. Es decir, la
+-- cantidad total en euros que les han descontado sobre el precio base de todas las entradas
+-- que han adquirido.
+SELECT socio.nombre AS nombre_socio,  SUM(sesion.precio_base - entrada.precio_final)
+FROM compra 
+	INNER JOIN socio
+		ON compra.socio = socio.dni
+	INNER JOIN entrada
+		ON compra.entrada = entrada.id
+	INNER JOIN sesion
+		ON entrada.sesion = sesion.id
+GROUP BY socio.dni;

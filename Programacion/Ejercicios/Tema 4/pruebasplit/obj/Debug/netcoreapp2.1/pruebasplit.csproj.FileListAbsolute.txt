@@ -1,0 +1,13 @@
+C:\Users\david\source\repos\pruebasplit\bin\Debug\netcoreapp2.1\pruebasplit.deps.json
+C:\Users\david\source\repos\pruebasplit\bin\Debug\netcoreapp2.1\pruebasplit.runtimeconfig.json
+C:\Users\david\source\repos\pruebasplit\bin\Debug\netcoreapp2.1\pruebasplit.runtimeconfig.dev.json
+C:\Users\david\source\repos\pruebasplit\bin\Debug\netcoreapp2.1\pruebasplit.dll
+C:\Users\david\source\repos\pruebasplit\bin\Debug\netcoreapp2.1\pruebasplit.pdb
+C:\Users\david\source\repos\pruebasplit\obj\Debug\netcoreapp2.1\pruebasplit.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\pruebasplit\obj\Debug\netcoreapp2.1\pruebasplit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\pruebasplit\obj\Debug\netcoreapp2.1\pruebasplit.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\pruebasplit\obj\Debug\netcoreapp2.1\pruebasplit.AssemblyInfo.cs
+C:\Users\david\source\repos\pruebasplit\obj\Debug\netcoreapp2.1\pruebasplit.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\pruebasplit\obj\Debug\netcoreapp2.1\pruebasplit.dll
+C:\Users\david\source\repos\pruebasplit\obj\Debug\netcoreapp2.1\pruebasplit.pdb
+C:\Users\david\source\repos\pruebasplit\obj\Debug\netcoreapp2.1\pruebasplit.genruntimeconfig.cache

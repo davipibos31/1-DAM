@@ -1,0 +1,20 @@
+C:\Users\david\source\repos\Formulario y Calculadora WPF\bin\Debug\netcoreapp3.1\Formulario y Calculadora WPF.exe
+C:\Users\david\source\repos\Formulario y Calculadora WPF\bin\Debug\netcoreapp3.1\Formulario y Calculadora WPF.deps.json
+C:\Users\david\source\repos\Formulario y Calculadora WPF\bin\Debug\netcoreapp3.1\Formulario y Calculadora WPF.runtimeconfig.json
+C:\Users\david\source\repos\Formulario y Calculadora WPF\bin\Debug\netcoreapp3.1\Formulario y Calculadora WPF.runtimeconfig.dev.json
+C:\Users\david\source\repos\Formulario y Calculadora WPF\bin\Debug\netcoreapp3.1\Formulario y Calculadora WPF.dll
+C:\Users\david\source\repos\Formulario y Calculadora WPF\bin\Debug\netcoreapp3.1\Formulario y Calculadora WPF.pdb
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF_MarkupCompile.cache
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF_MarkupCompile.lref
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF.g.resources
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF.AssemblyInfo.cs
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF.dll
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF.pdb
+C:\Users\david\source\repos\Formulario y Calculadora WPF\obj\Debug\netcoreapp3.1\Formulario y Calculadora WPF.genruntimeconfig.cache

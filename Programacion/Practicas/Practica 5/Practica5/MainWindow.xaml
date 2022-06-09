@@ -1,0 +1,151 @@
+﻿<Window x:Class="Practica5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="518" Width="800">
+    <Grid x:Name="principal">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF1B321D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu x:Name="Menu_principal" Margin="0,0,0,447">
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFA1AC33" Offset="1"/>
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem Header="Inicio" Height="22" Click="MenuItem_Click_1" Foreground="White"/>
+            <MenuItem Header="Formulario" Click="MenuItem_Click_2" Height="26" Foreground="White"/>
+            <MenuItem Header="Datos" Click="MenuItem_Click_3" Foreground="White"/>
+            <MenuItem Header="Salir" Click="MenuItem_Click" Height="33" Foreground="White"/>
+        </Menu>
+        <TabControl x:Name="tb_fomulario" Margin="60,82,77,158" Visibility="Hidden" Background="#FFA1AC33">
+            <TabItem x:Name="tb_formulario_formulario" Header="Formulario">
+                <Grid Background="#FFA1AC33">
+                    <Label x:Name="lbl_nombre" Content="Nombre: *" HorizontalAlignment="Left" Margin="38,28,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_primer_apellido" Content="Primer Apellido: *" HorizontalAlignment="Left" Margin="38,72,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_provincia" Content="Provincia: *" HorizontalAlignment="Left" Margin="38,112,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txt_primer_apellido" HorizontalAlignment="Left" Margin="166,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24"/>
+                    <ComboBox x:Name="cbx_provincia" HorizontalAlignment="Left" Margin="166,117,0,0" VerticalAlignment="Top" Width="120" Height="25">
+                        <ComboBoxItem Content="Alicante"/>
+                        <ComboBoxItem Content="Valencia"/>
+                        <ComboBoxItem Content="Castellon"/>
+                    </ComboBox>
+                    <Button x:Name="btn_enviar" Content="Enviar" HorizontalAlignment="Left" Margin="202,163,0,0" VerticalAlignment="Top" Width="84" Click="btn_enviar_Click" Height="30"/>
+                    <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Margin="166,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+                    <Button x:Name="btn_cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="119,163,0,0" VerticalAlignment="Top" Height="30" Width="78" Click="btn_cancelar_Click"/>
+                    <Button x:Name="btn_salir_formulario" Content="Salir" HorizontalAlignment="Left" Margin="31,163,0,0" VerticalAlignment="Top" Height="30" Width="78" Click="MenuItem_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tb_formulario_añadir" Header="Añadir">
+                <Grid Background="#FFA1AC33">
+                    <Label x:Name="lbl_nombre_añadir" Content="Nombre: *" HorizontalAlignment="Left" Margin="38,28,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_primer_apellido_añadir" Content="Primer Apellido: *" HorizontalAlignment="Left" Margin="38,72,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_provincia_añadir" Content="Provincia: *" HorizontalAlignment="Left" Margin="38,112,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txt_primer_apellido_añadir" HorizontalAlignment="Left" Margin="166,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24"/>
+                    <ComboBox x:Name="cbx_provincia_añadir" HorizontalAlignment="Left" Margin="166,117,0,0" VerticalAlignment="Top" Width="120" Height="25">
+                        <ComboBoxItem Content="Alicante"/>
+                        <ComboBoxItem Content="Valencia"/>
+                        <ComboBoxItem Content="Castellon"/>
+                    </ComboBox>
+                    <Button x:Name="btn_añadir" Content="Añadir" HorizontalAlignment="Left" Margin="202,163,0,0" VerticalAlignment="Top" Width="84" Height="30" Click="btn_añadir_Click"/>
+                    <TextBox x:Name="txt_nombre_añadir" HorizontalAlignment="Left" Margin="166,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+                    <Button x:Name="btn_cancelar_añadir" Content="Cancelar" HorizontalAlignment="Left" Margin="119,163,0,0" VerticalAlignment="Top" Height="30" Width="78" Click="btn_cancelar_Click"/>
+                    <Label x:Name="lbl_ficheros_añadir" Content="Fichero: *" HorizontalAlignment="Left" Margin="363,72,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cbx_ficheros_añadir" HorizontalAlignment="Left" Margin="482,77,0,0" VerticalAlignment="Top" Width="120" Height="25">
+                        <ComboBoxItem Content="Cliente.txt"/>
+                        <ComboBoxItem Content="Alicante.txt"/>
+                        <ComboBoxItem Content="Valencia.txt"/>
+                        <ComboBoxItem Content="Castellon.txt"/>
+                    </ComboBox>
+                    <Button x:Name="btn_salir_añadir" Content="Salir" HorizontalAlignment="Left" Margin="31,163,0,0" VerticalAlignment="Top" Height="30" Width="78" Click="MenuItem_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tb_formulario_modificar" Header="Modificar">
+                <Grid Background="#FFA1AC33">
+                    <Label x:Name="lbl_nombre_modificar" Content="Nombre: *" HorizontalAlignment="Left" Margin="38,28,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_nombre_modificar_2" Content="Nombre a modificar: *" HorizontalAlignment="Left" Margin="38,72,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txt_nombre_modificar_2" HorizontalAlignment="Left" Margin="166,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="24"/>
+                    <Button x:Name="btn_modificar" Content="Modificar" HorizontalAlignment="Left" Margin="202,163,0,0" VerticalAlignment="Top" Width="84" Height="30" Click="btn_modificar_Click"/>
+                    <TextBox x:Name="txt_nombre_modificar" HorizontalAlignment="Left" Margin="166,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+                    <Button x:Name="btn_cancelar_modificar" Content="Cancelar" HorizontalAlignment="Left" Margin="119,163,0,0" VerticalAlignment="Top" Height="30" Width="78" Click="btn_cancelar_Click"/>
+                    <Label x:Name="lbl_ficheros_modificar" Content="Fichero: *" HorizontalAlignment="Left" Margin="40,112,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cbx_ficheros_modificar" HorizontalAlignment="Left" Margin="166,117,0,0" VerticalAlignment="Top" Width="120" Height="25">
+                        <ComboBoxItem Content="Cliente.txt"/>
+                        <ComboBoxItem Content="Alicante.txt"/>
+                        <ComboBoxItem Content="Valencia.txt"/>
+                        <ComboBoxItem Content="Castellon.txt"/>
+                    </ComboBox>
+                    <Button x:Name="btn_salir_modificar" Content="Salir" HorizontalAlignment="Left" Margin="31,163,0,0" VerticalAlignment="Top" Height="30" Width="78" Click="MenuItem_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tb_formulario_eliminar" Header="Eliminar">
+                <Grid Background="#FFA1AC33">
+                    <Label x:Name="lbl_nombre_eliminar" Content="Nombre: *" HorizontalAlignment="Left" Margin="38,28,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btn_eliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="202,163,0,0" VerticalAlignment="Top" Width="84" Height="30" Click="btn_eliminar_Click"/>
+                    <TextBox x:Name="txt_nombre_eliminar" HorizontalAlignment="Left" Margin="166,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22"/>
+                    <Button x:Name="btn_cancelar_eliminar" Content="Cancelar" HorizontalAlignment="Left" Margin="119,163,0,0" VerticalAlignment="Top" Height="30" Width="78" Click="btn_cancelar_Click"/>
+                    <Label x:Name="lbl_ficheros_eliminar" Content="Fichero: *" HorizontalAlignment="Left" Margin="41,73,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cbx_ficheros_eliminar" HorizontalAlignment="Left" Margin="166,78,0,0" VerticalAlignment="Top" Width="120" Height="25">
+                        <ComboBoxItem Content="Cliente.txt"/>
+                        <ComboBoxItem Content="Alicante.txt"/>
+                        <ComboBoxItem Content="Valencia.txt"/>
+                        <ComboBoxItem Content="Castellon.txt"/>
+                    </ComboBox>
+                    <Button x:Name="btn_salir_eliminar" Content="Salir" HorizontalAlignment="Left" Margin="31,163,0,0" VerticalAlignment="Top" Height="30" Width="78" Click="MenuItem_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <TabControl x:Name="tb_datos" Margin="49,82,48,36" Visibility="Visible" Background="#FFA1AC33">
+            <TabItem x:Name="tb_clientes" Header="Clientes">
+                <Grid Background="#FFA1AC33">
+                    <ListBox x:Name="list_cliente" Margin="39,52,418,36" SelectionChanged="list_cliente_SelectionChanged"/>
+                    <Label x:Name="lbl_cliente_listbox" Content="Clientes: " HorizontalAlignment="Left" Margin="117,10,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_cliente_mostrar" Content="" HorizontalAlignment="Left" Margin="308,52,0,0" VerticalAlignment="Top" Height="75" Width="351"/>
+                    <Button x:Name="btn_generar" Content="Generar Ficheros" HorizontalAlignment="Left" Margin="553,292,0,0" VerticalAlignment="Top" Height="28" Width="106" Click="btn_generar_Click"/>
+                    <Button x:Name="btn_guardar" Content="Guardar Ficheros" HorizontalAlignment="Left" Margin="553,259,0,0" VerticalAlignment="Top" Height="28" Width="106" Click="btn_guardar_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tb_alicante" Header="Alicante">
+                <Grid Background="#FFA1AC33">
+                    <ListBox x:Name="list_alicante" Margin="39,52,418,36" SelectionChanged="list_alicante_SelectionChanged"/>
+                    <Label x:Name="lbl_alicante_listbox" Content="Alicante: " HorizontalAlignment="Left" Margin="117,10,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_alicante_mostrar" Content="" HorizontalAlignment="Left" Margin="308,52,0,0" VerticalAlignment="Top" Height="75" Width="351"/>
+                    <Button x:Name="btn_generar_alicante" Content="Generar Ficheros" HorizontalAlignment="Left" Margin="553,292,0,0" VerticalAlignment="Top" Height="28" Width="106" Click="btn_generar_Click"/>
+                    <Button x:Name="btn_Borrar_fichero_alicante" Content="Borrar Ficheros Alicante" HorizontalAlignment="Left" Margin="539,242,0,0" VerticalAlignment="Top" Height="28" Width="134" Click="btn_Borrar_fichero_alicante_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tb_valencia" Header="Valencia">
+                <Grid Background="#FFA1AC33">
+                    <ListBox x:Name="list_valencia" Margin="39,52,418,36" SelectionChanged="list_valencia_SelectionChanged"/>
+                    <Label x:Name="lbl_valencia_listbox" Content="Valencia: " HorizontalAlignment="Left" Margin="117,10,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_valencia_mostrar" Content="" HorizontalAlignment="Left" Margin="308,52,0,0" VerticalAlignment="Top" Height="75" Width="351"/>
+                    <Button x:Name="btn_generar_valencia" Content="Generar Ficheros" HorizontalAlignment="Left" Margin="553,292,0,0" VerticalAlignment="Top" Height="28" Width="106" Click="btn_generar_Click"/>
+                    <Button x:Name="btn_Borrar_fichero_valencia" Content="Borrar Ficheros Valencia" HorizontalAlignment="Left" Margin="539,242,0,0" VerticalAlignment="Top" Height="28" Width="134" Click="btn_Borrar_fichero_valencia_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tb_castellon" Header="Castellon">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFA1AC33">
+                    <ListBox x:Name="list_castellon" Margin="39,52,418,36" SelectionChanged="list_castellon_SelectionChanged"/>
+                    <Label x:Name="lbl_castellon_listbox" Content="Castellon: " HorizontalAlignment="Left" Margin="117,10,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_castellon_mostrar" Content="" HorizontalAlignment="Left" Margin="308,52,0,0" VerticalAlignment="Top" Height="75" Width="351"/>
+                    <Button x:Name="btn_generar_castellon" Content="Generar Ficheros" HorizontalAlignment="Left" Margin="553,292,0,0" VerticalAlignment="Top" Height="28" Width="106" Click="btn_generar_Click"/>
+                    <Button x:Name="btn_Borrar_fichero_Castellon" Content="Borrar Ficheros Castellon" HorizontalAlignment="Left" Margin="539,242,0,0" VerticalAlignment="Top" Height="28" Width="134" Click="btn_Borrar_fichero_Castellon_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,45 @@
+1. Obtener la nota más baja y más alta en la asignatura con código 13.
+
+select asignatura,min(nota),max(nota) from matricula group by asignatura having asignatura = 13;
+
+2. Calcular la nota media de cada asignatura.
+
+select asignatura, avg(nota) from matricula group by asignatura;
+
+3. Obtén el mayor código de asignatura correspondiente al 1º curso.
+
+select max(codigo) from asignatura where curso = 1 group by curso;
+
+4. Obtén el año medio de incorporación de todos los profesores excepto los que
+comenzaron en 2013.
+
+select avg(anyoIng) from profesor where anyoIng != 2013;
+
+5. Obtén la cantidad de alumnos matriculados en la asignatura con código 3.
+
+select count(alumno) from matricula where asignatura = 3;
+
+6. Obtén la cantidad de profesores que se incorporaron en el año 2014.
+
+ select count(dni) from profesor where anyoIng = 2014;
+
+7. Obtén la cantidad de notas diferentes obtenidas por los alumnos de la asignatura con código 1.
+
+select nota,count(nota) from matricula where asignatura = 1 group by nota;
+
+8. Obtén el DNI de cada alumno y la nota que ha obtenido en la asignatura con
+código 1
+
+select alumno,nota from matricula where asignatura = 1;
+
+9. Obtén la cantidad de alumnos matriculados por asignatura.
+
+select asignatura,count(alumno) from matricula group by asignatura;
+
+10. Muestra la nota más alta de cada asignatura.
+
+select asignatura,max(nota) from matricula group by asignatura;
+
+11. Obtener la nota media de aquellas asignaturas que tengan matriculados más de 10 alumnos. 
+
+select asignatura,count(alumno),avg(nota) from matricula group by asignatura having count(alumno) > 10;

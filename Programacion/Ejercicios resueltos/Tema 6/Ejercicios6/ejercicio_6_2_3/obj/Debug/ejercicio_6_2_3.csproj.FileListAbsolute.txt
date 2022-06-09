@@ -1,0 +1,15 @@
+e:\programacion\ejercicio_6_2_3\bin\Debug\ejercicio_6_2_3.exe.config
+e:\programacion\ejercicio_6_2_3\bin\Debug\ejercicio_6_2_3.exe
+e:\programacion\ejercicio_6_2_3\bin\Debug\ejercicio_6_2_3.pdb
+e:\programacion\ejercicio_6_2_3\obj\Debug\ejercicio_6_2_3.csprojAssemblyReference.cache
+e:\programacion\ejercicio_6_2_3\obj\Debug\MainWindow.g.cs
+e:\programacion\ejercicio_6_2_3\obj\Debug\App.g.cs
+e:\programacion\ejercicio_6_2_3\obj\Debug\ejercicio_6_2_3_MarkupCompile.cache
+e:\programacion\ejercicio_6_2_3\obj\Debug\ejercicio_6_2_3_MarkupCompile.lref
+e:\programacion\ejercicio_6_2_3\obj\Debug\MainWindow.baml
+e:\programacion\ejercicio_6_2_3\obj\Debug\ejercicio_6_2_3.g.resources
+e:\programacion\ejercicio_6_2_3\obj\Debug\ejercicio_6_2_3.Properties.Resources.resources
+e:\programacion\ejercicio_6_2_3\obj\Debug\ejercicio_6_2_3.csproj.GenerateResource.cache
+e:\programacion\ejercicio_6_2_3\obj\Debug\ejercicio_6_2_3.csproj.CoreCompileInputs.cache
+e:\programacion\ejercicio_6_2_3\obj\Debug\ejercicio_6_2_3.exe
+e:\programacion\ejercicio_6_2_3\obj\Debug\ejercicio_6_2_3.pdb

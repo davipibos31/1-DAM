@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sukudo", "Sukudo.csproj", "{6E2A1B83-F47D-47C6-A5C6-DB2358E70276}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E2A1B83-F47D-47C6-A5C6-DB2358E70276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2A1B83-F47D-47C6-A5C6-DB2358E70276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2A1B83-F47D-47C6-A5C6-DB2358E70276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2A1B83-F47D-47C6-A5C6-DB2358E70276}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B8B7282-0CA9-4B4A-B4DD-25309F7C2E20}
+	EndGlobalSection
+EndGlobal

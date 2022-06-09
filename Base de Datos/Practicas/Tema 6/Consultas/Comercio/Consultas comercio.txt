@@ -1,0 +1,135 @@
+1.	Mostrar toda la información almacenada en la tabla cliente. 
+
+select * from cliente;
+
+2. 	Mostrar el código y nombre de todos los registros almacenados en la tabla vendedor.
+
+select codigo, nombre from vendedor;
+
+3. 	Mostrar los distintos tipos de IVA aplicados en los tickets.
+
+ select distinct iva from ticket;
+
+4. 	Mostrar el código de articulo y el doble del precio de cada artículo. Utiliza un alias en la
+consulta.
+
+select codigo, precio * 2 AS doble_precio from articulo;
+
+5. 	Mostrar el código y nombre de aquellos clientes cuyo código es menor que 5.
+
+select codigo, nombre from cliente where codigo <= 5;
+
+6. 	Mostrar los distintos IVA aplicados en los tickets de aquellos vendedores cuyo código es
+mayor o igual a 5.
+
+select distinct iva from ticket where codigo >= 5;
+
+7. 	Mostrar el código y descripción de aquellos artículos cuyo stock iguala o supera las 10
+unidades
+
+select codigo, descripcion from articulo where stock >= 10;
+
+8. 	Mostrar el código y fecha de los tickets del vendedor con código 1 a los que se le ha
+aplicado un 10% de IVA.
+
+select codigo, fecha from ticket where iva = 10 and vendedor = 1;
+
+9. 	Mostrar el código y fecha de los tickets del vendedor con código 1 a las que se le ha aplicado
+un 10% de IVA o con descuento del 10%.
+
+select codigo, fecha from ticket where (iva = 10 and vendedor = 1) OR (dto = 10 and vendedor = 1);
+
+10. 	Mostrar el número de línea, el ticket al que pertenece y el importe total (sin aplicar
+descuentos) de aquellas líneas de ticket cuyo importe total supere los 15 euros. Ten en
+cuenta que el precio indicado en la tabla linea_ticket es el precio unitario del artículo y que
+para calcular el importe total de la línea habrá que considerar la cantidad de artículos.
+
+select nlinea, ticket, precio * cant AS precio_cant from linea_ticket where precio * cant > 15;
+
+11. 	Consultar el código y nombre de aquellos vendedores cuyos códigos se encuentran
+comprendidos entre 3 y 7. Utiliza el operador BETWEEN.
+
+select codigo, nombre from vendedor where codigo between 3 and 7;
+
+12. 	Obtener toda la información correspondiente a los artículos cuyo stock no se encuentre en
+el rango (stock mínimo, stock mínimo +10). Utiliza el operador BETWEEN.
+
+select * from articulo where stock_min not between 0 and 10;
+
+13. 	Escribir una expresión que devuelva el código y nombre de los municipios pertenecientes a
+las provincias con códigos ‘VA’ y ‘AL’. Utiliza el operador IN.
+
+select codigo, nombre from provincia where codigo in ( 'va', 'al');
+
+14. 	Mostrar el nombre de todos los municipios cuyo nombre comience por la letra “V”.
+
+select nombre from municipio where nombre like 'V%';
+
+15. 	Escribir una sentencia que muestre los datos de aquellos tickets sin código de cliente o sin código de vendedor.
+
+select * from ticket where cliente is null or vendedor is null;
+
+16. 	Escribir una sentencia que muestre la información correspondiente a aquellos vendedores
+que no tienen jefe.
+
+select * from vendedor where jefe is null;
+
+17. 	Mostrar los datos de todas las provincias ordenadas por su nombre de forma ascendente.
+
+ select * from provincia order by nombre asc;
+
+18. 	Mostrar los datos de todos los municipios ordenados de forma ascendente por su código de provincia y descendente por su nombre de municipio.
+
+select * from municipio order by provincia and nombre desc;
+
+19. 	Mostrar el código de artículo y la cantidad de artículos de las líneas del ticket con código 12.
+
+select articulo,cant from linea_ticket where ticket = 12;
+
+20. 	Mostrar el código de ticket, número de línea e importe de cada línea aplicando el descuento.
+
+select ticket, nlinea, cant * precio * ((dto/100) + (cant*precio)) as importe_con_dto from linea_ticket;
+
+21. 	Mostrar el código de artículo y el precio de aquellos artículos cuyo precio supera los 2,05
+euros y cuyo stock supera las 10 unidades.
+
+select codigo, precio from articulo where precio > 2.05 and stock > 10;
+
+
+22. 	Mostrar el código de artículo y la cantidad de aquellas líneas cuyo descuento es igual a 10 o
+cuyo precio supera los 100 euros.
+
+select articulo, cant from linea_ticket where dto = 10 or precio > 100;
+
+
+23. 	Obtén los diferentes tipos de descuentos aplicados en los tickets del cliente 19.
+
+select dto from ticket where cliente = 19;
+
+24.	Mostrar el código de artículo, la cantidad, el precio unitario y el importe total aplicando el
+descuento de cada una de las líneas de ticket 12.
+
+
+select articulo, cant, precio, cant * precio * ((dto/100) + (cant*precio)) as importe_total_con_dto from linea_ticket where ticket=12;
+
+25. 	Mostrar el código y nombre de aquellos vendedores cuyo jefe tiene el código 1.
+
+select codigo, nombre from vendedor where jefe = 1;
+
+
+26. 	Mostrar el código y descripción de aquellos artículos cuyo stock total supera los 500 euros. 
+
+select codigo, descripcion from articulo where stock*precio > 500;
+
+27. Mostrar el código, sin que salgan repetidos, de los artículos vendidos en los tickets con
+código inferior a 35.
+
+select distinct articulo from linea_ticket where ticket < 35;
+
+28. Código, fecha y descuento de los tickets cuyos códigos se encuentren entre 15 y 26 inclusive.
+
+select codigo, fecha, dto from ticket where codigo between 15 and 26;
+
+29. Mostrar el código, descripción y precio de los artículos cuyo código comienza por ‘SEG’. 
+
+select codigo, descripcion, precio from articulo where codigo like 'SEG%';

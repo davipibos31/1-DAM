@@ -1,0 +1,2222 @@
+(2.1.1.1) Crea un programa que pida al usuario un número entero y diga si es par (pista: habrá que comprobar si el resto que se obtiene al dividir entre dos es cero: if (x % 2 == 0) …). 
+
+using System;
+
+namespace ejercicio_2_1_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+
+            if (numero1 % 2 == 0)
+            {
+                Console.WriteLine("Es par.");
+            }
+			
+			if (numero1 % 2 != 0)
+            {
+                Console.WriteLine("Es impar.");
+            }
+        }
+    }
+}
+
+(2.1.1.2) Crea un programa que pida al usuario dos números enteros y diga cuál es el mayor de ellos. 
+
+using System;
+
+namespace ejercicio_2_1_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+
+            if (numero1 > numero2)
+            {
+                Console.WriteLine("El número {0} es mayor que el número {1}.", numero1, mumero2);
+            } 
+			
+			if (numero1 > numero2)
+			{
+				Console.WriteLine("El número {0} es mayor que el número {1}.", numero2, mumero1);
+			}
+
+			if (numero1 == numero2)
+			{
+				Console.WriteLine("Los números son iguales");
+			}
+        }
+    }
+}
+
+
+(2.1.1.3) Crea un programa que pida al usuario dos números enteros y diga si el primero es múltiplo del segundo (pista: igual que antes, habrá que ver si el resto de la división es cero: a % b == 0).
+ 
+ using System;
+
+namespace ejercicio_2_1_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+
+            if (numero1 % numero2 == 0)
+            {
+                Console.WriteLine("El número {0} es múltiplo que el número {1}.", numero1, mumero2);
+            } 
+
+			if (numero1 % numero2 != 0)
+            {
+                Console.WriteLine("El número {0} no es múltiplo que el número {1}.", numero1, mumero2);
+            } 
+        }
+    }
+}
+
+(2.1.2.1) Crea un programa que pida al usuario un número entero. Si es múltiplo de 10, informará al usuario y pedirá un segundo número,
+ para decir a continuación si este segundo número también es múltiplo de 10.
+ 
+using System;
+
+namespace ejercicio_2_1_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+            if (numero1 % 10 == 0)
+            {
+                Console.WriteLine("El número {0} es múltiplo de 10.", numero1);
+			
+                Console.Write("Introduce otro número: ");
+                int numero2 = Convert.ToInt32(Console.ReadLine());
+
+                if (numero2 % 10 == 0)
+                {
+					Console.WriteLine("El número {0} es múltiplo de 10.", numero2);
+                } 
+				
+				if (numero2 % 10 != 0)
+                {
+                    Console.WriteLine("El número {0} no es múltiplo de 10.", numero2);
+                }
+            } 
+			
+			if (numero1 % 10 != 0)
+            {
+                Console.WriteLine("El número {0} no es múltiplo de 10.", numero1);
+            }
+        }
+    }
+}
+
+(2.1.3.1) Crea un programa que multiplique dos números enteros de la siguiente forma: pedirá al usuario un primer número entero.  Si el número que se que teclee es 0, escribirá en pantalla "El producto de 0 por cualquier número es 0".  Si se ha tecleado un número distinto de cero, se pedirá al usuario un segundo número y se mostrará el producto de ambos. 
+ 
+using System;
+
+namespace ejercicio_2_1_3_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+
+            if (numero1 == 0)
+            {
+                Console.WriteLine("El producto de 0 por cualquier número es 0.");
+            } 
+
+			if (numero1 != 0)
+            {
+                Console.Write("Introduce otro número: ");
+                int numero2 = Convert.ToInt32(Console.ReadLine());
+				
+                Console.WriteLine("{0} * {1} = {2}", numero1, numero2, numero1 * numero2);
+            }
+        }
+    }
+}
+ 
+ 
+(2.1.3.2) Crea un programa que pida al usuario dos números enteros. 
+Si el segundo no es cero, mostrará el resultado de dividir entre el primero y el segundo. 
+Por el contrario, si el segundo número es cero, escribirá "Error: No se puede dividir entre cero".
+ 
+using System;
+
+namespace ejercicio_2_1_3_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Introduce otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+			
+			if (numero2 == 0)
+            {
+                Console.WriteLine("Error: No se puede dividir entre cero.");
+            } 
+
+			if (numero2 != 0)
+            {
+                Console.WriteLine("{0} / {1} = {2}", numero1, numero2, numero1 / numero2);
+            }
+        }
+    }
+}
+ 
+(2.1.4.1) Mejora la solución al ejercicio 2.1.3.1, usando "else". 
+
+using System;
+
+namespace ejercicio_2_1_4_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+
+            if (numero1 == 0)
+            {
+                Console.WriteLine("El producto de 0 por cualquier número es 0.");
+            } 
+			else
+            {
+                Console.Write("Introduce otro número: ");
+                int numero2 = Convert.ToInt32(Console.ReadLine());
+				
+                Console.WriteLine("{0} * {1} = {2}", numero1, numero2, numero1 * numero2);
+            }
+        }
+    }
+}
+
+(2.1.4.2) Mejora la solución al ejercicio 2.1.3.2, usando "else".
+ 
+using System;
+
+namespace ejercicio_2_1_4_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Introduce otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+			
+			if (numero2 == 0)
+            {
+                Console.WriteLine("Error: No se puede dividir entre cero.");
+            } 
+			else
+            {
+                Console.WriteLine("{0} / {1} = {2}", numero1, numero2, numero1 / numero2);
+            }
+        }
+    }
+}
+ 
+(2.1.5.1) Crea un programa que pida al usuario un número entero y responda si es múltiplo de 2 o de 3. 
+
+using System;
+
+namespace ejercicio_2_1_5_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+			if ((numero1 % 2 == 0) || (numero1 % 3 == 0))
+            {
+                Console.WriteLine("{0} es múltiplo de 2 o 3.", numero1);
+            } 
+        }
+    }
+}
+
+(2.1.5.2) Crea un programa que pida al usuario un número entero y responda si es múltiplo de 2 y de 3 simultáneamente. 
+
+using System;
+
+namespace ejercicio_2_1_5_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+			if ((numero1 % 2 == 0) && (numero1 % 3 == 0))
+            {
+                Console.WriteLine("{0} es múltiplo de 2 y 3.", numero1);
+            } 
+        }
+    }
+}
+
+(2.1.5.3) Crea un programa que pida al usuario un número entero y responda si es múltiplo de 2 pero no de 3. 
+
+using System;
+
+namespace ejercicio_2_1_5_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+			if ((numero1 % 2 == 0) && (numero1 % 3 != 0))
+            {
+                Console.WriteLine("{0} es múltiplo de 2 pero no de 3.", numero1);
+            } 
+        }
+    }
+}
+
+(2.1.5.4) Crea un programa que pida al usuario un número entero y responda si no es múltiplo de 2 ni de 3. 
+
+using System;
+
+namespace ejercicio_2_1_5_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+			if ((numero1 % 2 != 0) && (numero1 % 3 != 0))
+            {
+                Console.WriteLine("{0} no es múltiplo de 2 y 3.", numero1);
+            } 
+        }
+    }
+}
+
+(2.1.5.5) Crea un programa que pida al usuario dos números enteros y diga si ambos son pares. 
+
+using System;
+
+namespace ejercicio_2_1_5_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			            
+			Console.Write("Introduce otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+			
+			if ((numero1 % 2 == 0) && (numero2 % 2 == 0))
+            {
+                Console.WriteLine("{0} y {1} son pares.", numero1, numero2);
+            } 
+        }
+    }
+}
+
+(2.1.5.6) Crea un programa que pida al usuario dos números enteros y diga si (al menos) uno es par.
+
+using System;
+
+namespace ejercicio_2_1_5_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			            
+			Console.Write("Introduce otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+			
+			if ((numero1 % 2 == 0) || (numero2 % 2 == 0))
+            {
+                Console.WriteLine("{0} o {1} es par.", numero1, numero2);
+            } 
+        }
+    }
+}
+
+(2.1.5.7) Crea un programa que pida al usuario dos números enteros y diga si uno y sólo uno es par.
+
+using System;
+
+namespace ejercicio_2_1_5_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			            
+			Console.Write("Introduce otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+			
+			if (((numero1 % 2 == 0) && (numero2 % 2 != 0)) || ((numero1 % 2 != 0) && (numero2 % 2 == 0)))
+            {
+                Console.WriteLine("Sólo uno de ellos es par.");
+            } 
+        }
+    }
+}
+
+(2.1.5.8) Crea un programa que pida al usuario dos números enteros y diga "Uno de los números es positivo", "Los dos números son positivos" o bien "Ninguno de los números es positivo", según corresponda. 
+
+using System;
+
+namespace ejercicio_2_1_5_8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			            
+			Console.Write("Introduce otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+			
+			if ((numero1 >= 0) && (numero2 >= 0))
+            {
+                Console.WriteLine("Ambos números son positivos.");
+            } 
+			else
+				if (numero1 >= 0)
+				{
+					Console.WriteLine("El número {0} es positivo.", numero1);
+				} 
+				else
+					if (numero2 >= 0)
+					{
+						Console.WriteLine("El número {0} es positivo.", numero2);
+					} 
+					else
+					{
+						Console.WriteLine("Ninguno es positivo.");
+					} 
+        }
+    }
+}
+
+(2.1.5.9) Crea un programa que pida al usuario tres números y muestre cuál es el mayor de los tres. 
+
+
+using System;
+
+namespace ejercicio_2_1_5_9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+            
+			Console.Write("Escribe otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            
+			Console.Write("Escribe otro número: ");
+            int numero3 = Convert.ToInt32(Console.ReadLine());
+
+            if ((numero1 > numero2) && (numero1 > numero3))
+            {
+                Console.WriteLine("El número {0} es el mayor.", numero 1);
+            } 
+			else 
+				if ((numero2 > numero1) && (numero2 > numero3))
+				{
+					Console.WriteLine("El número {0} es el mayor.", numero 2);
+				} 
+				else 
+					if ((numero3 > numero1) && (numero3 > numero2))
+					{
+						Console.WriteLine("El número {0} es el mayor.", numero 3);
+					}
+
+        }
+    }
+}
+
+(2.1.5.10) Crea un programa que pida al usuario dos números enteros y diga si son iguales o, en caso contrario, cuál es el mayor de ellos. 
+
+using System;
+
+namespace ejercicio_2_1_5_10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Escribe otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+
+            if (numero1 == numero2)
+            {
+                Console.WriteLine("Los números son iguales.");
+            } 
+			else 
+				if (numero1 > numero2)
+				{
+					Console.WriteLine("El número {0} es mayor que le número {1}.", numero1, mumero2);
+				} 
+				else
+				{
+					Console.WriteLine("El número {0} es mayor que le número {1}.", numero2, mumero1);
+				}
+        }
+    }
+}
+
+
+(2.1.6.1) Crea una variante del ejemplo 02_01_06a, en la que la comparación de igualdad sea correcta y en la que las variables aparezcan en el lado derecho de la comparación y los números en el lado izquierdo.
+ 
+using System;
+
+namespace ejercicio_2_1_5_10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero; 
+			
+			Console.Write("Introduce un número: "); 
+			numero = Convert.ToInt32(Console.ReadLine()); 
+		
+			if (0 == numero)
+				Console.WriteLine("El número es cero."); 
+			else 
+				if (0 > numero) 
+					Console.WriteLine("El número es negativo."); 
+				else 
+					Console.WriteLine("El número es positivo."); 
+		} 
+	}
+}
+
+(2.1.8.1) Crea un programa que use el operador condicional para mostrar un el valor absoluto de un número de la siguiente forma: si el número es positivo, se mostrará tal cual; si es negativo, se mostrará cambiado de signo. 
+
+using System;
+
+namespace ejercicio_2_1_8_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero; 
+			
+			Console.Write("Introduce un número: "); 
+			numero = Convert.ToInt32(Console.ReadLine()); 
+					
+			Console.WriteLine("El valor absoluto de {0} es {1}.", numero, (numero > 0 ? numero : -numero)); 
+		} 
+	}
+}
+
+(2.1.8.2) Usa el operador condicional para calcular el menor de dos números.
+
+using System;
+
+namespace ejercicio_2_1_8_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1;
+			int numero2;
+			
+			Console.Write("Introduce un número: "); 
+			numero1 = Convert.ToInt32(Console.ReadLine()); 
+
+			Console.Write("Introduce otro número: "); 
+			numero2 = Convert.ToInt32(Console.ReadLine()); 
+			
+			Console.WriteLine("El menor de {0} y {1} es {2}.", numero1, numero2, (numero1 < numero2 ? numero1 : numero1)); 
+		} 
+	}
+}
+
+(2.1.9.1) Crea un programa que pida un número del 1 al 5 al usuario, y escriba el nombre de ese número, usando "switch" (por ejemplo, si introduce "1", el programa escribirá "uno").
+
+using System;
+
+namespace ejercicio_2_1_9_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("El resultado es: ");
+            switch (numero)
+			{
+                case 1: 
+					Console.Write("uno"); 
+					break;
+                case 2: 
+					Console.Write("dos"); 
+					break;
+                case 3: 
+					Console.Write("tres"); 
+					break;
+                case 4: 
+					Console.Write("cuatro"); 
+					break;
+                case 5: 
+					Console.Write("cinco"); 
+					break;
+                default: 
+					Console.Write("No es un número entre el 1 y el 5"); 
+					break;
+            }
+        }
+    }
+}
+
+(2.1.9.2) Crea un programa que lea una letra tecleada por el usuario y diga si se trata de un signo de puntuación (. , ; :), una cifra numérica (del 0 al 9) o algún otro carácter, usando "switch" (pista: habrá que usar un dato de tipo "char").
+
+using System;
+
+namespace ejercicio_2_1_9_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un carácter: ");
+            char caracter = Convert.ToChar(Console.ReadLine());
+			
+            Console.Write("El resultado es: ");
+            switch (caracter)
+			{
+                case '.': 
+                case ',': 
+                case ';': 
+                case ':': 
+					Console.Write("un signo de puntuación (. , ; :)."); 
+					break;
+                case '0': 
+                case '1': 
+                case '2': 
+                case '3': 
+                case '4': 
+                case '5': 
+                case '6': 
+                case '7': 
+                case '8': 
+                case '9': 
+					Console.Write("un dígito del 0 al 9"); 
+					break;
+                default: 
+					Console.Write("un carácter distinto de (. , ; :) y del 0 al 9."); 
+					break;
+            }
+        }
+    }
+}
+
+(2.1.9.3) Crea un programa que lea una letra tecleada por el usuario y diga si se trata de una vocal, una cifra numérica o una consonante, usando "switch".
+
+using System;
+
+namespace ejercicio_2_1_9_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un carácter: ");
+            char caracter = Console.ToChar(Console.ReadLine().ToLower()); // Hay que tener en cuenta las minúsculas y las mayúsculas.
+			
+            Console.Write("El resultado es: ");
+            switch (caracter)
+			{
+                case 'a': 
+                case 'e': 
+                case 'i': 
+                case 'o': 
+                case 'u': 
+					Console.Write("una vocal."); 
+					break;
+                case '0': 
+                case '1': 
+                case '2': 
+                case '3': 
+                case '4': 
+                case '5': 
+                case '6': 
+                case '7': 
+                case '8': 
+                case '9': 
+					Console.Write("un dígito del 0 al 9."); 
+					break;
+                case 'a': 
+                case 'b': 
+                case 'c': 
+                case 'd': 
+                case 'e': 
+                case 'f': 
+                case 'g': 
+                case 'h': 
+                case 'i': 
+                case 'j': 
+                case 'k': 
+                case 'm': 
+                case 'n': 
+                case 'ñ': 
+                case 'o': 
+                case 'p': 
+                case 'q': 
+                case 'r': 
+                case 's': 
+                case 't': 
+                case 'u': 
+                case 'v': 
+                case 'w': 
+                case 'x': 
+                case 'y': 
+                case 'z': 
+					Console.Write("una letra."); 
+					break;
+				default: 
+					Console.Write("un carácter distinto."); 
+					break;
+            }
+        }
+    }
+}
+
+(2.1.9.4) Repite el ejercicio 2.1.9.1, empleando "if" en lugar de "switch".
+
+
+using System;
+
+namespace ejercicio_2_1_9_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("El resultado es: ");
+            
+			if (numero == 1)
+            {
+                Console.Write("uno");
+            } 
+            else if (numero == 2)
+            {
+                Console.Write("dos");
+            }
+            else if (numero == 3)
+            {
+                Console.Write("tres");
+            }
+            else if (numero == 4)
+            {
+                Console.Write("cuatro");
+            }
+            else if (numero == 5)
+            {
+                Console.Write("cinco");
+            }
+            else if (numero == 6)
+            {
+                Console.Write("seis");
+            }
+            else if (numero == 7)
+            {
+                Console.Write("siete");
+            }
+            else if (numero == 8)
+            {
+                Console.Write("ocho");
+            }
+            else if (numero == 9)
+            {
+                Console.Write("nueve");
+            }
+        }
+    }
+}
+
+(2.1.9.5) Repite el ejercicio 2.1.9.2, empleando "if" en lugar de "switch" (pista: como las cfras numéricas del 0 al 9 están ordenadas, no hace falta comprobar los 10 valores, sino que se puede hacer con "if ((simbolo >= '0') && (simbolo <='9'))").
+
+using System;
+
+namespace ejercicio_2_1_9_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe algún carácter: ");
+            char caracter = Convert.ToChar(Console.ReadLine());
+			
+            Console.Write("El resultado es: ");
+            
+			if (caracter == '.' || caracter == ';' || caracter == ',' || caracter == ':')
+			{
+				Console.Write("un signo de puntuación (. , ; :).");
+			}	
+			else			
+				if ((caracter >= '0') && (caracter <= '9'))
+				{
+					Console.Write("un dígito del 0 al 9.");
+				} 
+				else
+				{	
+					Console.Write("un carácter distinto.");
+				}
+        }
+    }
+}
+
+(2.1.9.6) Repite el ejercicio 2.1.9.3, empleando "if" en lugar de "switch".
+
+using System;
+
+namespace ejercicio_2_1_9_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe algún carácter: ");
+            char caracter = Convert.ToChar(Console.ReadLine().ToLower());
+			
+            Console.Write("El resultado es: ");
+            
+			if ((caracter >= '0') && (caracter <= '9'))
+            {
+                Console.Write("un dígito del 0 al 9.");
+            }
+            else 
+				if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u')
+				{
+					Console.Write("una vocal.");
+				}
+				else 
+					if ((caracter >= 'a') && (caracter <= 'z'))
+					{
+						Console.Write("una letra.");
+					}
+        }
+    }
+}
+
+(2.2.1.1.1) Crea un programa que pida al usuario su contraseña (numérica). Deberá terminar cuando introduzca como contraseña el número 1111, pero volvérsela a pedir tantas veces como sea necesario. 
+
+using System;
+
+namespace ejercicio_2_2_1_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe la contaseña: ");
+            string contrasenya = Console.ReadLine();
+			
+            while (contrasenya != "1111")
+            {
+                Console.Write("Escribe la contaseña: ");
+                contrasenya = Console.ReadLine();
+            }
+			
+            Console.WriteLine("Contraseña correcta.");
+        }
+    }
+}
+
+
+(2.2.1.1.2) Crea un "calculador de cuadrados": pedirá al usuario un número y mostrará su cuadrado. Se repetirá mientras el número introducido no sea cero (usa "while" para conseguirlo). 
+
+using System;
+
+namespace ejercicio_2_2_1_1_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un numero (cero para finalizar): ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+			
+            while (numero != 0)
+            {
+				Console.WriteLine("El cuadrado de {0} es {1}.", numero, numero * numero);
+			
+				Console.Write("Escribe un numero (cero para finalizar): ");
+				inumero = Convert.ToInt32(Console.ReadLine());
+            }
+        }
+    }
+}
+
+(2.2.1.1.3) Crea un programa que pida de forma repetitiva pares de números al usuario. Tras introducir cada par de números, responderá si el primero es múltiplo del segundo. 
+
+using System;
+
+namespace ejercicio_2_2_1_1_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            
+			while (numero1 % numero2 != 0)
+            {
+                Console.Write("Escribe un número: ");
+                numero1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Escribe otro número: ");
+                numero2 = Convert.ToInt32(Console.ReadLine());
+            }
+			
+            Console.WriteLine("El primer número es múltiplo del segundo.");
+        }
+    }
+}
+
+
+(2.2.1.1.4) Crea una versión mejorada del programa anterior, que, tras introducir cada par de números, 
+responderá si el primero es múltiplo del segundo, o el segundo es múltiplo del primero, o ninguno de ellos es múltiplo del otro.
+
+
+using System;
+
+namespace ejercicio_2_2_1_1_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            
+			while (numero1 != 0 || numero2 != 0)
+            {
+                if (numero1 % numero2 == 0)
+                {
+                    Console.WriteLine("El primer número es múltiplo del segundo.");
+                }
+                else 
+					if (numero2 % numero1 == 0)
+					{
+						Console.WriteLine("El segundo número es múltiplo del primero".);
+					} 
+					else
+					{
+						Console.WriteLine("Ninguno es múltiplo de ninguno");
+					}
+				
+				Console.Write("Escribe un número: ");
+				int numero1 = Convert.ToInt32(Console.ReadLine());
+				
+				Console.Write("Escribe otro número: ");
+				int numero2 = Convert.ToInt32(Console.ReadLine());
+            }
+        }
+    }
+}
+
+(2.2.1.2.1) Crea un programa que escriba en pantalla los números del 1 al 10, usando "while". 
+
+using System;
+
+namespace ejercicio_2_2_1_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 1;
+            while(i <= 10)
+            {
+                Console.WriteLine(i);
+				
+				i++;
+            }
+        }
+    }
+}
+
+
+(2.2.1.2.2) Crea un programa que escriba en pantalla los números pares del 26 al 10 (descendiendo), usando "while". 
+
+using System;
+
+namespace ejercicio_2_2_1_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 26;
+            while(i >= 10)
+            {
+                Console.WriteLine(i);
+				
+				i--;
+            }
+        }
+    }
+}
+
+(2.2.1.2.3) Crea un programa calcule cuantas cifras tiene un número entero positivo (pista: se puede hacer dividiendo varias veces entre 10). 
+
+using System;
+
+namespace ejercicio_2_2_1_2_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			int cifras = 0;
+
+            Console.Write("Escribe un número: ");
+            int numumero = Convert.ToInt32(Console.ReadLine());
+            
+			while (numero > 0)
+            {
+                numero = numero / 10;
+
+                cifras++;
+            }
+			
+            Console.WriteLine("El numero {0} tiene {1} cifras", numero, cifras);
+        }
+    }
+}
+
+(2.2.1.2.4) Crea el diagrama de flujo y la versión en C# de un programa que dé al usuario tres oportunidades para adivinar un número del 1 al 10.
+
+No hay que hacerlo.
+
+(2.2.2.1) Crear un programa que pida números positivos al usuario, y vaya calculando y mostrando la suma de todos ellos (terminará cuando se teclea un número negativo o cero). 
+
+using System;
+
+namespace ejercicio_2_2_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero = 0;
+            int suma = 0;
+			
+            do
+            {
+                Console.Write("Introduce un número (menor o igual a cero para finalizar): ");
+                numero = Convert.ToInt32(Console.ReadLine());
+				
+                suma += numero;
+                
+				Console.WriteLine("La suma es {0}", suma);
+            } while (numero > 0);
+        }
+    }
+}
+
+(2.2.2.2) Crea un programa que escriba en pantalla los números del 1 al 10, usando "do..while". 
+
+using System;
+
+namespace ejercicio_2_2_2_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero = 1;
+			
+            do
+            {
+                Console.WriteLine(numero);
+                
+				numero++;
+			} while (numero <= 10);
+        }
+    }
+}
+
+(2.2.2.3) Crea un programa que escriba en pantalla los números pares del 26 al 10 (descendiendo), usando "do..while". 
+
+using System;
+
+namespace ejercicio_2_2_2_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero = 26;
+			
+            do
+            {
+				if (numero % 2 == 0)
+					Console.WriteLine(numero);
+                
+				numero--;
+			} while (numero >= 10);
+        }
+    }
+}
+(2.2.2.4) Crea un programa que pida al usuario su identificador y su contraseña (ambos numéricos), y no le permita seguir hasta que introduzca como identificador "1234" y como contraseña "1111". 
+
+using System;
+
+namespace ejercicio_2_2_2_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int identificador = 0;
+            int contrasenya = 0;
+			
+            do
+            {
+                Console.Write("Introduce tu identificador: ");
+                identificador = Convert.ToInt32(Console.ReadLine());
+                
+				Console.Write("Introduce tu contraseña: ");
+                contrasenya = Convert.ToInt32(Console.ReadLine());
+            } while (identificador != 1234 || contrasenya != 1111);
+            
+			Console.WriteLine("Correcto.");
+        }
+    }
+}
+
+(2.2.2.5) Crea un programa que pida al usuario su identificador y su contraseña, y no le permita seguir hasta que introduzca como nombre "Pedro" y como contraseña "Peter".
+
+using System;
+
+namespace ejercicio_2_2_2_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string identificador = 0;
+            string contrasenya = 0;
+
+            do
+            {
+                Console.WriteLine("Introduce tu nombre: ");
+                identificador = Convert.ToString(Console.ReadLine());
+				
+                Console.WriteLine("Introduce tu contraseña: ");
+                contrasenya = Convert.ToString(Console.ReadLine());
+            } while (identificador != "Pedro" || contrasenya != "Peter");
+            
+			Console.WriteLine("Correcto.");
+        }
+    }
+}
+
+(2.2.3.1) Crea un programa que muestre los números del 10 al 20, ambos incluidos. 
+
+using System;
+
+namespace ejercicio_2_2_3_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for(int i = 10; i <= 20; i++)
+                Console.WriteLine(i);
+        }
+    }
+}
+
+(2.2.3.2) Crea un programa que escriba en pantalla los números del 1 al 50 que sean múltiplos de 3 (pista: habrá que recorrer todos esos números y ver si el resto de la división entre 3 resulta 0). 
+
+using System;
+
+namespace ejercicio_2_2_3_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 50; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
+
+(2.2.3.3) Crea un programa que muestre los números del 100 al 200 (ambos incluidos) que sean divisibles entre 7 y a la vez entre 3. 
+
+using System;
+
+namespace ejercicio_2_2_3_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 100; i <= 200; i++)
+            {
+                if (i % 3 == 0 && i % 7 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
+
+
+(2.2.3.4) Crea un programa que muestre la tabla de multiplicar del 9. 
+
+using System;
+
+namespace ejercicio_2_2_3_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.Write("9 x {0} = {1} ", i, i * 9);
+            }  
+        }
+    }
+}
+
+(2.2.3.5) Crea un programa que muestre los primeros ocho números pares: 2 4 6 8 10 12 14 16 (pista: en cada pasada habrá que aumentar de 2 en 2, o bien mostrar el doble del valor que hace de contador). 
+
+using System;
+
+namespace ejercicio_2_2_3_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+ 			for(int i = 2; i <= 16; i++, i++)
+            {
+                Console.WriteLine(i);
+            }
+
+			for(int i = 1; i <= 8; i++)
+            {
+                Console.WriteLine(i * 2);
+            }
+        }
+    }
+}
+
+(2.2.3.6) Crea un programa que muestre los números del 15 al 5, descendiendo (pista: en cada pasada habrá que descontar 1, por ejemplo haciendo i=i-1, que se puede abreviar i--).
+
+using System;
+
+namespace ejercicio_2_2_3_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for(int i = 15; i >= 5; i--)
+			{
+                Console.WriteLine(i);
+			}
+        }
+    }
+}
+
+(2.2.4.1) Crea un programa que contenga un bucle sin fin que escriba "Hola " en pantalla, sin avanzar de línea. 
+
+using System;
+
+namespace ejercicio_2_2_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for(;;)
+			{
+                Console.Write("Hola ");
+			}
+        }
+    }
+}
+
+(2.2.4.2) Crea un programa que contenga un bucle sin fin que muestre los números enteros positivos a partir del uno.
+
+using System;
+
+namespace ejercicio_2_2_4_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for(int i = 1; i > 0; i++)
+			{
+                Console.Write("{0} ", i);
+			}
+        }
+    }
+}
+
+(2.2.5.1) Crea un programa escriba 4 veces los números del 1 al 5, en una misma línea, usando "for": 12345123451234512345. 
+
+using System;
+
+namespace ejercicio_2_2_5_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 4; i++)
+			{
+                for (int j = 1; j <= 5; j++)
+				{
+                    Console.Write(j);
+				}
+			}
+        }
+    }
+}
+
+(2.2.5.2) Crea un programa escriba 4 veces los números del 1 al 5, en una misma línea, usando "while": 12345123451234512345. 
+
+using System;
+
+namespace ejercicio_2_2_5_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			int i = 1;
+            while (i <= 4)
+			{
+				int j = 1;
+                while (j <= 5)
+				{
+                    Console.Write(j);
+					
+					j++;
+				}
+				
+				i++;
+			}
+        }
+    }
+}
+(2.2.5.3) Crea un programa que, para los números entre el 10 y el 20 (ambos incluidos) diga si son divisibles entre 5, si son divisibles entre 6 y si son divisibles entre 7.
+
+
+using System;
+
+namespace ejercicio_2_2_5_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 10; i <= 20; i++)
+            {
+                for (int j = 5; j <= 7; j++)
+				{
+                    if (i % j == 0)
+                        Console.WriteLine("{0} es divisible entre {1}", i, j);
+				}
+            }
+        }
+    }
+}
+
+(2.2.6.1) Crea un programa que escriba 4 líneas de texto, cada una de las cuales estará formada por los números del 1 al 5. 
+
+using System;
+
+namespace ejercicio_2_2_6_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 4; i++)
+            {
+                for (int j = 1; j <= 5; j++)
+                {
+                    Console.Write(j);
+                }
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+
+(2.2.6.2) Crea un programa que pida al usuario el ancho (por ejemplo, 4) y el alto (por ejemplo, 3) y escriba un rectángulo formado por esa cantidad de asteriscos: **** **** ****
+
+using System;
+
+namespace ejercicio_2_2_6_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Escribe el ancho: ");
+            int ancho = Convert.ToInt32(Console.ReadLine());
+			
+            Console.WriteLine("Escribe el alto: ");
+            int alto = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= alto; i++)
+            {
+                for (int j = 1; j <= ancho; j++)
+				{
+                    Console.Write("*");
+				}
+				
+				Console.WriteLine();
+            }
+        }
+    }
+}
+
+(2.2.7.1) Crea un programa que muestre las letras de la Z (mayúscula) a la A (mayúscula, descendiendo). 
+
+using System;
+
+namespace ejercicio_2_2_7_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (char i = 'Z'; i >= 'A'; i--)
+			{
+				Console.WriteLine(i);
+			}
+        }
+    }
+}
+
+(2.2.7.2) Crea un programa que muestre 5 veces las letras de la L (mayúscula) a la N (mayúscula), en la misma línea.
+
+using System;
+
+namespace ejercicio_2_2_7_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			for (int i = 1; i <= 5; i++)
+			{
+				for (char j = 'L'; j <= 'N'; j++)
+				{
+                    Console.Write(j);
+				}
+			}
+        }
+    }
+}
+
+(2.2.8.1) Crea un programa que escriba 6 líneas de texto, cada una de las cuales estará formada por los números del 1 al 7. Debes usar dos variables llamadas "linea" y "numero", y ambas deben estar declaradas en el "for". 
+
+using System;
+
+namespace ejercicio_2_2_8_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int numero = 1; numero <= 6; numero++)
+            {
+                for (int linea = 1; linea <= 7; linea++)
+                {
+                    Console.Write(linea);
+                }
+				
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(2.2.8.2) Crea un programa que pida al usuario el ancho (por ejemplo, 4) y el alto (por ejemplo, 3) y escriba un rectángulo formado por esa cantidad de asteriscos, como en el ejercicio 2.2.6.2. Deberás usar las variables "ancho" y "alto" para los datos que pidas al usuario, y las variables "filaActual" y "columnaActual" (declaradas en el "for") para el bloque repetitivo.
+
+using System;
+
+namespace ejercicio_2_2_8_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe el ancho: ");
+            int ancho = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe el alto: ");
+            int alto = Convert.ToInt32(Console.ReadLine());
+
+			for (int filaActual = 1; filaActual <= alto; filaActual++)
+            {
+                for (int columnaActual = 1; columnaActual <= ancho; columnaActual++)
+                {
+                    Console.Write("*");
+                }
+				
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(2.2.9.1) Crea un programa que pida un número al usuario y escriba los múltiplos de 9 que haya entre 1 ese número. Debes usar llaves en todas las estructuras de control, aunque sólo incluyan una sentencia. 
+
+using System;
+
+namespace ejercicio_2_2_9_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= numero; i++)
+            {
+				if (i % 9 == 0)
+					Console.WriteLine(i);
+            }
+        }
+    }
+}
+
+(2.2.9.2) Crea un programa que pida al usuario dos números y escriba sus divisores comunes. Debes usar llaves en todas las estructuras de control, aunque sólo incluyan una sentencia.
+
+using System;
+
+namespace ejercicio_2_2_9_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            
+			int menor = (numero1 < numero2 ? numero1 : numero2);
+
+            for (int i = 1; i <= menor; i++)
+            {
+                if (numero1 % i == 0 && numero2 % i == 0)
+                {
+                    Console.WriteLine("Divisor común: {0}", i);
+                }
+            }
+        }
+    }
+}
+
+(2.2.10.1) Crea un programa que pida al usuario dos números y escriba su máximo común divisor (pista: una solución lenta pero sencilla es probar con un "for" todos los números descendiendo a partir del menor de ambos, hasta llegar a 1; cuando encuentres un número que sea divisor de ambos, interrumpes la búsqueda). 
+
+using System;
+
+namespace ejercicio_2_2_10_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            
+			int menor = (numero1 < numero2 ? numero1 : numero2);
+
+            for (int i = menor; i > 0; i--)
+            {
+                if (numero1 % i == 0 && numero2 % i == 0)
+                {
+                    Console.WriteLine("Máximo común divisor: {0}", i);
+					
+                    break;
+                }
+            }
+        }
+    }
+}
+
+(2.2.10.2) Crea un programa que pida al usuario dos números y escriba su mínimo común múltiplo (pista: una solución lenta pero sencilla es probar con un "for" todos los números a partir del mayor de ambos, de forma creciente; cuando encuentres un número que sea múltiplo de ambos, interrumpes la búsqueda).
+
+using System;
+
+namespace ejercicio_2_2_10_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe otro número: ");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+            
+			int mayor = (numero1 < numero2 ? numero2 : numero1);
+
+            for (int i = 2; i < mayor; i++)
+            {
+                if (numero1 % i == 0 && numero2 % i == 0)
+                {
+                    Console.WriteLine("mínimo común divisor: {0}", i);
+                    
+					break;
+                }
+            }
+        }
+    }
+}
+
+(2.2.11.1) Crea un programa que escriba los números del 20 al 10, descendiendo, excepto el 13, usando "continue". 
+
+using System;
+
+namespace ejercicio_2_2_11_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for(int i = 20; i >= 10; i--)
+            {
+                if (i == 13)
+				{
+                    continue;
+				}
+				
+                Console.WriteLine(i);
+            }
+        }
+    }
+}
+
+
+(2.2.11.2) Crea un programa que escriba los números pares del 2 al 106, excepto los que sean múltiplos de 10, usando "continue".
+
+using System;
+
+namespace ejercicio_2_2_11_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 2; i <= 106; i++)
+            {
+                if (i % 2 == 0)
+				{
+					if (i % 10 == 0)
+					{
+						continue;
+					}
+                    
+					Console.WriteLine(i);
+				}
+            }
+        }
+    }
+}
+
+(2.2.12.1) Crea un programa que escriba los números del 100 al 200, separados por un espacio, sin avanzar de línea, usando "for". En la siguiente línea, vuelve a escribirlos usando "while".
+
+using System;
+
+namespace ejercicio_2_2_12_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 100; i <= 200; i++)
+            {
+                Console.Write("{0} ", i);
+            }
+			
+            Console.WriteLine();
+            
+			int i = 100;
+            while (i <= 200)
+			{
+                Console.Write("{0} ", i);
+				
+                i++;
+            }
+        }
+    }
+}
+
+(2.2.12.2) Crea un programa que escriba los números pares del 20 al 10, descendiendo, excepto el 14, primero con "for" y luego con "while".
+
+using System;
+
+namespace ejercicio_2_2_12_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 20; i >= 10; i--)
+            {
+                if (i % 2 == 0 && i != 14)
+				{
+                    Console.WriteLine(i);
+				}
+            }
+			
+            int i = 20;
+            while (i >= 10)
+            {
+                if (i % 2 == 0 && i != 14)
+				{
+                    Console.WriteLine(i);
+				}
+                
+				i--;
+            }
+        }
+    }
+}
+
+(2.3.1) Crea un programa que escriba los números del 1 al 10, separados por un espacio, sin avanzar de línea. No puedes usar "for", ni "while", ni "do..while", sólo "if" y "goto".
+
+Prohibido por Ley utilizar goto. No se hace.
+
+(2.5.1) Crea un programa que cuente cuantas veces aparece la letra 'a' en una frase que teclee el usuario, utilizando "foreach".
+
+using System;
+
+namespace ejercicio_2_5_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe una frase: ");
+            string frase = Console.ReadLine();
+			
+            int contador = 0;
+			
+            foreach (char letra in frase)
+            {
+                if (letra == 'a')
+				{
+                    contador++;
+				}
+            }
+			
+            Console.WriteLine("La frase {0} tiene {1} aes.", frase, contador);
+        }
+    }
+}
+
+
+(2.6.1) Crear un programa que dé al usuario la oportunidad de adivinar un número del 1 al 100 (prefijado en el programa) en un máximo de 6 intentos. En cada pasada deberá avisar de si se ha pasado o se ha quedado corto. 
+
+using System;
+
+namespace ejercicio_2_6_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero;
+            int intentos = 0;
+
+            do
+            {
+                Console.Write("Adivina un el número entre el 1 y el 100: ");
+                numero = Convert.ToInt32(Console.ReadLine());
+
+                if (numero < 50)
+                {
+                    Console.WriteLine("Te has quedado corto");
+                }
+                else
+                {
+                    if (numero > 50)
+                    {
+                        Console.WriteLine("Te has pasado");
+                    }
+                }
+
+                intentos++;
+                
+				Console.WriteLine();
+				
+            } while (numero != 50 && intentos != 6);
+
+            if (intentos == 6)
+                Console.WriteLine("Lo sentimos mucho no has acertado el número 50.");
+            else
+                Console.WriteLine("Enhorabuena has acertado.");
+        }
+    }
+}
+
+(2.6.2) Crear un programa que descomponga un número (que teclee el usuario) como producto de su factores primos. Por ejemplo, 60 = 2 · 2 · 3 · 5
+
+using System;
+
+namespace ejercicio_2_6_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Introduce un número: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 2; i <= numero; i++)
+            {
+                if (numero % i == 0)
+                {
+                    Console.WriteLine(i);
+                    
+					numero /= i; // numero = numero / i;
+                    
+					i = 1;
+                }
+            }
+        }
+    }
+}
+
+Otra forma
+
+
+using System;
+
+namespace ejercicio_2_6_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int divisor = 2;
+			
+            Console.Write("Introduce un número: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+
+            while (numero != 1)
+            {
+                if (numero % divisor == 0)
+                {
+                    numero /= divisor; // numero = numero / divisor;
+					
+                    Console.WriteLine(divisor);
+                }
+                else
+                {
+                    divisor++;
+                }
+            }
+        }
+    }
+}
+
+(2.6.3) Crea un programa que calcule un número elevado a otro, usando multiplicaciones sucesivas.
+
+using System;
+
+namespace ejercicio_2_6_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe la número: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe el exponente: ");
+            int exponente = Convert.ToInt32(Console.ReadLine());
+			
+            int resultado = 1;
+
+            for(int i = 0; i < num2; i++)
+                resultado = resultado * numero;
+				
+            Console.WriteLine(resultado);
+        }
+    }
+}
+
+(2.6.4) Crea un programa que "dibuje" un rectángulo formado por asteriscos, con el ancho y el alto que indique el usuario, usando dos "for" anidados. Por ejemplo, si desea anchura 4 y altura 3, el rectángulo sería así: 
+**** 
+**** 
+****
+
+using System;
+
+namespace ejercicio_2_6_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe el ancho: ");
+            int ancho = Convert.ToInt32(Console.ReadLine());
+			
+            Console.Write("Escribe el alto: ");
+            int alto = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= alto; i++)
+            {
+                for (int j = 1; j <= ancho; j++)
+                {
+                    Console.Write("*");
+                }
+				
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(2.6.5) Crea un programa que "dibuje" un triángulo decreciente, con la altura que indique el usuario. Por ejemplo, si el usuario dice que desea 4 caracteres de alto, el triángulo sería así: 
+**** 
+*** 
+** 
+*
+
+using System;
+
+namespace ejercicio_2_6_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe el alto: ");
+            int alto = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= alto; i++)
+            {
+                for (int j = i - 1; j < alto; j++)
+                {
+                    Console.Write("*");
+                }
+				
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(2.6.6) Crea un programa que "dibuje" un rectángulo hueco, cuyo borde sea una fila (o columna) de asteriscos y cuyo interior esté formado por espacios en blanco, con el ancho y el alto que indique el usuario. Por ejemplo, si desea anchura 4 y altura 3, el rectángulo sería así: 
+**** 
+*  * 
+****
+
+using System;
+
+namespace ejercicio_2_6_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe el ancho: ");
+            int ancho = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Escribe el alto: ");
+            int alto = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= alto; i++)
+            {
+                Console.Write("*");
+                for (int j = 2; j <= ancho - 1; j++)
+                {
+                    if (i == 1 || i == alto)
+                        Console.Write("*");
+                    else
+                        Console.Write(" ");
+                }
+
+                Console.WriteLine("*");
+            }
+        }
+    }
+}
+
+(2.6.7) Crea un programa que "dibuje" un triángulo creciente, alineado a la derecha, con la altura que indique el usuario. Por ejemplo, si el usuario dice que desea 4 caracteres de alto, el triángulo sería así: 
+   * 
+  ** 
+ *** 
+****
+
+
+using System;
+
+namespace ejercicio_2_6_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe el alto: ");
+            int alto = Convert.ToInt32(Console.ReadLine());
+
+            int blancos = alto - 1;
+
+            for (int i = 1; i <= alto; i++)
+            {
+                for (int j = i + 1; j <= alto; j++)
+                    Console.Write(" ");
+
+                for (int j = 1; j <= alto - blancos; j++)
+                    Console.Write("*");
+
+                blancos--;
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+
+(2.6.8) Crea un programa que devuelva el cambio de una compra, utilizando monedas (o billetes) del mayor valor posible. Supondremos que tenemos una cantidad ilimitada de monedas (o billetes) de 100, 50, 20, 10, 5, 2 y 1, y que no hay decimales. La ejecución podría ser algo como: 
+Precio? 44 
+Pagado? 100 
+
+Su cambio es de 56: 50 5 1 
+
+Precio? 1 
+Pagado? 100 
+Su cambio es de 99: 50 20 20 5 2 2
+
+using System;
+
+namespace ejercicio_2_6_8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] billetes = new int[] { 100, 50, 20, 10, 5, 2, 1 };
+            int billete = 0;
+            int precio;
+            int pagado;
+            int cambio;
+
+            Console.Write("Precio? ");
+            precio = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Pagado? ");
+            pagado = Convert.ToInt32(Console.ReadLine());
+
+            cambio = pagado - precio;
+
+            Console.Write("Su cambio es de {0}: ", cambio);
+
+            while (cambio > 0)
+            {
+                if (cambio - billetes[billete] >= 0)
+                {
+                    cambio -= billetes[billete]; // numero = numero / divisor;
+
+                    Console.Write("{0} ", billetes[billete]);
+                }
+                else
+                {
+                    billete++;
+                }
+            }
+        }
+    }
+}
+
+(2.6.9) Crea un programa que "dibuje" un cuadrado formado por cifras sucesivas, con el tamaño que indique el usuario, hasta un máximo de 9. Por ejemplo, si desea tamaño 5, el cuadrado sería así: 
+11111
+22222 
+33333 
+44444 
+55555
+
+using System;
+
+namespace ejercicio_2_6_9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int ancho;
+
+            do
+            {
+                Console.Write("Escribe el ancho (máximo 9): ");
+                ancho = Convert.ToInt32(Console.ReadLine());
+            }
+            while (ancho > 9);
+
+            for (int filaActual = 0; filaActual < ancho; filaActual++)
+            { 
+                for (int columnaActual = 0; columnaActual < ancho; columnaActual++)
+                {
+                    Console.Write(filaActual + 1);
+                }
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(2.7.1) Crea un programa que pregunte al usuario su edad y su año de nacimiento. Si la edad que introduce no es un número válido, mostrará un mensaje de aviso. Lo mismo ocurrirá si el año de nacimiento no es un número válido.
+
+using System;
+
+namespace ejercicio_2_7_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int edad;
+            int fecha;
+
+            try
+            {
+                Console.Write("Escribe tu edad: ");
+                edad = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Escribe tu año de nacimiento: ");
+                fecha = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("La edad o fecha de nacimiento es incorrecta.");
+            }
+        }
+    }
+}
+
+(2.7.2) Crea un programa que pregunte al usuario su edad y su año de nacimiento. Si la edad que introduce no es un número válido, mostrará un mensaje de aviso, pero aun así le preguntará su año de nacimiento.
+
+using System;
+
+namespace ejercicio_2_7_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int edad;
+            int fecha;
+
+            try
+            {
+                Console.Write("Escribe tu edad: ");
+                edad = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("La edad es incorrecta.");
+            }
+
+            try
+            { 
+                Console.Write("Escribe tu año de nacimiento: ");
+                fecha = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("La fecha de nacimiento es incorrecta.");
+            }
+        }
+    }
+}
+

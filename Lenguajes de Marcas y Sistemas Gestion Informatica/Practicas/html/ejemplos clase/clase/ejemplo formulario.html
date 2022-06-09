@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo_Clase</title>
+    <script>
+        function hola(){
+            alert('Hola a tod@s')
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulario1</legend>
+        <form action="enviar.php" method="post" enctype="multipart/form-data" name="formulario1">
+            <table>
+                <tr>
+                    <td><label for="nomber">Nombre</label></td>
+                    <td><input type="text" name="nombre" id="" tabindex="2" accesskey="z"></td>
+                </tr>
+                <tr>
+                    <td><label for="apellido">Apellido</label></td>
+                    <td><input type="text" name="apellido" id="" tabindex="3" accesskey="c"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Enviar" tabindex="1"></td>
+                </tr>
+            </table>
+            <input type="text" size="10" value="si se envia" readonly>
+            <input type="text" size="20" placeholder="Nombre" required>
+            <label for="nombre">Nombre:</label>
+            <input type="text" size="10" name="nombre" value="no se envia" disabled tabindex="4">
+            <input type="text" size="10">
+            <input type="submit" value="Enviar">
+            <label for="observaciones">Observaciones</label>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+            <select name="ciudad" id="" required>
+                <option option value="">elige una opción</option>
+                <option option value="Alicante">Alicante</option>
+                <option option value="Elche">Elche</option>
+                <option option value="Elda">Elda</option>
+            </select>
+
+            <!---->
+
+            <label for="futbol">futbol</label>
+            <input type="checkbox" name="futbol" id="" value="futbol">
+            <label for="tenis">Tenis</label>
+            <input type="checkbox" name="tenis" id="" value="tenis">
+            <label for="baloncesto">baloncesto</label>
+            <input type="checkbox" name="baloncesto" id="" value="baloncesto">
+            <label for="karate">karate</label>
+            <input type="checkbox" name="karate" id="" value="karate">
+
+            <!---->
+
+            <label for="hombre">hombre</label>
+            <input type="radio" name="sexo" id="" value="hombre">
+            <label for="mujer">mujer</label>
+            <input type="radio" name="sexo" id="" value="mujer">
+            <label for="cuantico">cuantico</label>
+            <input type="radio" name="cuantico" id="" value="cuantico">
+
+            <!---->
+
+            <input type="hidden" name="variable" value="$variable">
+        </form>
+    </fieldset>
+    <form action="" method="post" enctype="multipart/form-data" name="formulario2">
+        <fieldset>
+            <legend>Formulario2</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="usario" id="">
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="password" id="">
+            <input type="file" name="foto" id="" accept=".jpg, .gif .png">
+            <input type="color" name="color" id="" value="#00ff00">
+            <input type="date" name="fecha" id="" max="2021-12-30" min=" 2021-11-01">
+            <input type="datetime-local" name="fecha2" id="">
+            <input type="month" name="mes" id="">
+            <input type="text" name="" id="" value="Noviembre 2021" readonly>
+            <input type="week" name="semana" id="">
+            <input type="email" name="correo" id="" required>
+            <input type="tel" name="telefono" id="">
+            <input type="number" name="" id="" max="20" min="5" step="2">
+            <input type="range" name="rango" id="" min="5" step="5" max="20">
+            <input type="url" name="" id="" required>
+            <input type="button" value="hola" onclick="hola()">
+            <input type="image" src="./imagenes/papelera.jpg" alt="" width="30px" height="30px">
+            <input type="image" src="./imagenes/lapiz.jpg" alt="" width="30px" height="30px">
+            
+            <select name="ciudad" id="" required multiple>
+                <optgroup label="Alicante">
+                    <option option value="Alicante">Alicante</option>
+                    <option option value="Elche">Elche</option>
+                    <option option value="Elda">Elda</option>
+                </optgroup>
+                <optgroup label="Valencia">
+                    <option option value="Valencia">Valencia</option>
+                    <option option value="Oliva">Oliva</option>
+                    <option option value="Benicassim">Benicassim</option>
+                </optgroup>
+            </select>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+</body>
+</html>

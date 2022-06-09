@@ -1,0 +1,23 @@
+
+
+Escoja una opción:
+1.- Añadir datos de un nuevo fichero
+2.- Mostrar los nombres de todos los ficheros
+3.- Mostrar ficheros por encima de un cierto tamaño
+4.- Ver datos de un fichero
+5.- Salir
+1
+Introduce el nombre del fichero: 
+as
+Introduce el tamaño en KB: 
+32
+
+
+Escoja una opción:
+1.- Añadir datos de un nuevo fichero
+2.- Mostrar los nombres de todos los ficheros
+3.- Mostrar ficheros por encima de un cierto tamaño
+4.- Ver datos de un fichero
+5.- Salir
+5
+Fin del programa

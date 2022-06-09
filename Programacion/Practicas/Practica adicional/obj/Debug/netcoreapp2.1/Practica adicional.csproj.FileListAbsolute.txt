@@ -1,0 +1,13 @@
+C:\Users\david\source\repos\Practica adicional\bin\Debug\netcoreapp2.1\Practica adicional.deps.json
+C:\Users\david\source\repos\Practica adicional\bin\Debug\netcoreapp2.1\Practica adicional.runtimeconfig.json
+C:\Users\david\source\repos\Practica adicional\bin\Debug\netcoreapp2.1\Practica adicional.runtimeconfig.dev.json
+C:\Users\david\source\repos\Practica adicional\bin\Debug\netcoreapp2.1\Practica adicional.dll
+C:\Users\david\source\repos\Practica adicional\bin\Debug\netcoreapp2.1\Practica adicional.pdb
+C:\Users\david\source\repos\Practica adicional\obj\Debug\netcoreapp2.1\Practica adicional.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\Practica adicional\obj\Debug\netcoreapp2.1\Practica adicional.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Practica adicional\obj\Debug\netcoreapp2.1\Practica adicional.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Practica adicional\obj\Debug\netcoreapp2.1\Practica adicional.AssemblyInfo.cs
+C:\Users\david\source\repos\Practica adicional\obj\Debug\netcoreapp2.1\Practica adicional.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Practica adicional\obj\Debug\netcoreapp2.1\Practica adicional.dll
+C:\Users\david\source\repos\Practica adicional\obj\Debug\netcoreapp2.1\Practica adicional.pdb
+C:\Users\david\source\repos\Practica adicional\obj\Debug\netcoreapp2.1\Practica adicional.genruntimeconfig.cache

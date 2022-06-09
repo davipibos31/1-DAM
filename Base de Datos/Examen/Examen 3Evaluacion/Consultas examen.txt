@@ -1,0 +1,20 @@
+1. Obtén el nombre completo de cada alumno y la cantidad de asignaturas en que está matriculado cada uno de ellos siempre y cuando esté matriculado en menos de 5 asignaturas
+
+select alumno.nombre, alumno.apellido1, alumno.apellido2, count(matricula.asignatura) from alumno, asignatura, matricula where alumno.dni = matricula.alumno and asignatura.codigo = matricula.asignatura group by matricula.alumno having count(matricula.asignatura) < 5;
+
+2.Para cada asignatura, obtén el nombre, el curso y la nota media obtenida por los alumnos que la cursan.
+
+select asignatura.nombre, matricula.asignatura, avg(matricula.nota) from matricula, alumno, asignatura where matricula.asignatura = asignatura.codigo group by matricula.asignatura;
+
+3.Obtén el nombre de cada asignatura, así como el curso, edificio y aula donde se imparte.
+
+select asignatura.nombre, asignatura.curso, imparte.edificioaula, imparte.claseaula from imparte, asignatura where asignatura.codigo = imparte.asignatura;
+
+4.Mostrar el nombre y dirección de los clientes junto con el nombre de su municipio sin perder aquellos municipios que no tienen clientes.
+
+select  cliente.nombre, cliente.direccion, cliente.municipio from cliente left join municipio on municipio.codigo = cliente.municipio;
+
+5.Mostrar el código de ticket, fecha y nombre del cliente sin que se pierda ningún
+ticket, aunque su cliente sea NULL.
+
+select cliente.nombre, ticket.codigo, ticket.fecha from cliente right join ticket on ticket.cliente = cliente.codigo;

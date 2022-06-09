@@ -1,0 +1,48 @@
+body{
+    background-color: thistle;
+}
+
+main{
+    width: 960px;
+    margin: 0 auto;
+    border: 3px black solid;
+}
+
+header{
+    background-color: aquamarine;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+aside{
+    width: 200px;
+    height: 300px;
+    background-color: blueviolet;
+    float: left;
+}
+
+section{
+    width: 760px;
+    background-color: cornflowerblue;
+    height: 300px;
+    float: left;
+}
+
+footer{
+    background-color: darkgoldenrod;
+    height: 80px;
+    clear: both;
+}
+
+aside ul li{
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+aside ul{
+    margin: 0 0 15px;
+}

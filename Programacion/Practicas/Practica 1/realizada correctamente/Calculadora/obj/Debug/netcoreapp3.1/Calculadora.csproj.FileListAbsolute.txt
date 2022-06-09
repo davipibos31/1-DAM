@@ -1,0 +1,27 @@
+C:\Users\david\source\repos\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.exe
+C:\Users\david\source\repos\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.deps.json
+C:\Users\david\source\repos\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.runtimeconfig.json
+C:\Users\david\source\repos\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.runtimeconfig.dev.json
+C:\Users\david\source\repos\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.dll
+C:\Users\david\source\repos\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.pdb
+C:\Users\david\source\repos\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.csprojAssemblyReference.cache
+C:\Users\david\source\repos\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.AssemblyInfo.cs
+C:\Users\david\source\repos\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.dll
+C:\Users\david\source\repos\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.pdb
+C:\Users\david\source\repos\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.genruntimeconfig.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.exe
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.deps.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.runtimeconfig.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.runtimeconfig.dev.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\bin\Debug\netcoreapp3.1\Calculadora.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.csproj.AssemblyReference.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.AssemblyInfoInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.AssemblyInfo.cs
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.csproj.CoreCompileInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\realizada correctamente\Calculadora\obj\Debug\netcoreapp3.1\Calculadora.genruntimeconfig.cache

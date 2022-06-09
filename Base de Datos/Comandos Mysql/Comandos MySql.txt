@@ -1,0 +1,175 @@
+Paso 1: Entrar al servicio sql
+
+\sql
+
+Paso 2: Conectarte con usuario root
+
+\connect root@localhost:3306
+
+Paso 3: Salir del servicio
+
+\quit   o  \q
+
+Paso 4: Ver el estado de la base de datos
+
+\status o   \s
+
+Paso 5: Muestra las bases de datos
+
+show databases;
+
+Paso 6: Crea una base de datos
+
+CREATE database nombre;
+
+Paso 7: Entrar a una base de datos
+
+use nombre;
+
+Paso 8: Crear una tabla de base de datos
+
+CREATE TABLE nombre(id_nombre smallint(5), titulo varchar(50), genero varchar(50));
+
+Paso 9: Mostrar las tablas
+
+show tables;
+
+Paso 10: Describe como esta hecha la tabla
+
+describe nombre;
+
+Paso 11: Seleccionar tabla
+
+SELECT * from nombre;
+
+Paso 12: insertar un dato en un campo
+
+insert into juego(id_juego,titulo,genero) VALUE(1,'Diablo','Rol');
+
+Paso 13: Seleccionar un campo
+
+select * from juego WHERE id_juego=1;
+
+Paso 14: Actualizar o cambiar un dato en un campo
+
+update juego set id_juego=5 where titulo='FIFA22';
+
+Paso 15: Eliminar un dato o campo
+
+delete from juego WHERE genero='Arcade';
+
+Paso 16: crear una nueva tabla
+
+CREATE TABLE Articulo( id int(5), nombre VARCHAR(50), precio decimal default 20.95);
+
+Paso 17: crear una base de datos
+
+create database parte1;
+
+Paso 18: Entrar dentro de la nueva base de datos
+
+use parte1;
+
+Paso 19: Crear una nueva tabla
+
+create table aconhistorico (id int(4), fecha date, descripcion VARCHAR(120));
+
+Paso 20: Crear una nueva tabla
+
+create table Cliente ( dni char(9), nombre VARCHAR(40), Apellidos VARCHAR(120));
+
+Paso 21: Crear una nueva tabla
+
+create table Alumno ( dni char(9), nombre VARCHAR(40), Apellidos VARCHAR(120), telefono int (9));
+
+Paso 22: Creamos la ultima tabla
+
+create table libro ( isbn VARCHAR(13), titulo VARCHAR(50), genero VARCHAR(20) default 'narrativa', anyodepublicacion VARCHAR(4) default 2020, numerodegas int(4));
+
+Paso 23: Mostrar los pasos de la creacion de tablas
+
+show create table nombre;
+
+Paso 24: Para cambiar nombre a una base de datos
+
+alter table nombre rename nombre_nuevo;
+
+Paso 25: Para cambiar tipo caracteres a una tabla
+
+alter table nombre CHARACTER set utf8;
+
+Paso 26: Modificar en una tabla para eliminar una columna
+
+alter table articulo DROP COLUMN precio;
+
+Paso 27: Crear tabla con clave primaria
+
+create table Asignatura(codigo INT(3) PRIMARY KEY, nombre VARCHAR(50)); 
+
+Paso 28: Crear una restricción para un campo en una tabla con CHECK
+
+create table Estudiante (dni VARCHAR(9) PRIMARY KEY, nombre VARCHAR(50), edad INT(3) CHECK (edad >= 18), ciudad VARCHAR(30) DEFAULT "Alicante");
+
+Paso 29: Crear una tabla con claves foraneas
+
+create table matricula(Asignatura int, Estudiante VARCHAR(9), nota int(2) check (nota >=0 and nota <=10), PRIMARY KEY(Asignatura,Estudiante), FOREIGN KEY (Asignatura) REFERENCES Asignatura(codigo), FOREIGN KEY (Estudiante) REFERENCES Estudiante(dni));
+
+Paso 30: Poner clave primaria en una tabla ya hecha
+
+alter table cliente ADD PRIMARY KEY(dni);
+
+Paso 31: Eliminar clave primaria en una tabla ya hecha
+
+alter table cliente DROP PRIMARY KEY;
+
+Paso 32: Añadir una nueva columana/campo a la tabla ha una ya hecha
+
+alter table cliente ADD telefono int(9);
+
+Paso 33: Añadir un campo nuevo con not null
+
+alter table cliente ADD telefono int(9);
+
+Paso 34: Añadir una columna nueva encima o debajo de una de otra columna
+
+alter table cliente add Direccion VARCHAR(50) AFTER Apellidos;
+
+Paso 35: Añadir una columna nueva en la primera posicion
+
+alter table cliente ADD id_cliente int(3) FIRST;
+
+Paso 36: Cambiar el nombre a una columna
+
+alter table cliente rename column apellidos TO apellido;
+
+Paso 37: Cambiar el tipo de datos de una columna
+
+ alter table cliente CHANGE COLUMN Direccion Direccion VARCHAR(60);
+
+Paso 38: añadir una nueva columna con alter
+
+alter table matricula add 3_eva smallint(3);
+
+Paso 39: Quitar restriccion de una columna
+
+ alter table matricula DROP CONSTRAINT matricula_chk_1;
+
+Paso 40: Cambiar el nombre a una columna
+
+alter table matricula RENAME COLUMN nota TO 1_eva;
+
+Paso 41: Cambiar una columna
+
+alter table matricula CHANGE COLUMN nota TO 1_eva smallint(3);
+
+Paso 42: Poner restriccion a una columna
+
+alter table matricula ADD CONSTRAINT CHECK(1_eva >=0 AND 1_eva <=10);
+
+Paso 43: Crear tabla con clave primaria y claves foraneas y on delete cascade on upadte cascade
+
+create table expone (galeria int NOT NULL, obra int PRIMARY KEY, FOREIGN KEY (galeria) REFERENCES galeria(codigo) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (obra) REFERENCES obra(codigo) ON DELETE CASCADE ON UPDATE CASCADE);
+
+Paso 44: Crear una tabla con primary key, auto incremento y dos foreign keys con ODC OUR ODC OUN
+
+create table empleado (id int AUTO_INCREMENT, nombre VARCHAR(45), despacho CHAR(4) UNIQUE, departamento int NOT NULL, salario DECIMAL(10,2) DEFAULT 1200, PRIMARY KEY (id), CONSTRAINT empleado_despacho_fk FOREIGN KEY (despacho) REFERENCES despacho(codigo) ON DELETE CASCADE ON UPDATE SET NULL, CONSTRAINT empleado_departamento_fk FOREIGN kEY (departamento) REFERENCES departamento(id) ON UPDATE CASCADE ON DELETE RESTRICT);

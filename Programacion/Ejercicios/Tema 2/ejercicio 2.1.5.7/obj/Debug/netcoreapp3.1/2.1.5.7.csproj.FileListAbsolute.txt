@@ -1,0 +1,13 @@
+C:\Users\david\source\repos\2.1.5.7\obj\Debug\netcoreapp3.1\2.1.5.7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\2.1.5.7\obj\Debug\netcoreapp3.1\2.1.5.7.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\2.1.5.7\obj\Debug\netcoreapp3.1\2.1.5.7.AssemblyInfo.cs
+C:\Users\david\source\repos\2.1.5.7\obj\Debug\netcoreapp3.1\2.1.5.7.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\2.1.5.7\bin\Debug\netcoreapp3.1\2.1.5.7.exe
+C:\Users\david\source\repos\2.1.5.7\bin\Debug\netcoreapp3.1\2.1.5.7.deps.json
+C:\Users\david\source\repos\2.1.5.7\bin\Debug\netcoreapp3.1\2.1.5.7.runtimeconfig.json
+C:\Users\david\source\repos\2.1.5.7\bin\Debug\netcoreapp3.1\2.1.5.7.runtimeconfig.dev.json
+C:\Users\david\source\repos\2.1.5.7\bin\Debug\netcoreapp3.1\2.1.5.7.dll
+C:\Users\david\source\repos\2.1.5.7\bin\Debug\netcoreapp3.1\2.1.5.7.pdb
+C:\Users\david\source\repos\2.1.5.7\obj\Debug\netcoreapp3.1\2.1.5.7.dll
+C:\Users\david\source\repos\2.1.5.7\obj\Debug\netcoreapp3.1\2.1.5.7.pdb
+C:\Users\david\source\repos\2.1.5.7\obj\Debug\netcoreapp3.1\2.1.5.7.genruntimeconfig.cache

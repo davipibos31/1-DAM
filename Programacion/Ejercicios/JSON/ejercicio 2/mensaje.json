@@ -1,0 +1,6 @@
+{
+    "remitente" : {"nombre" : "Javier Miras", "email" : "ajmiras@gmail.com"},
+    "destinatario" : { "nombre" : "José García", "email" : "jgarcia@gmail.edu"},
+    "asunto" : "Práctrica evaluable nº 1",
+    "texto" : [ { "parrafo" : "Buenos días" }, { "Segundo parrafo" : "Que tal?"} ]
+}

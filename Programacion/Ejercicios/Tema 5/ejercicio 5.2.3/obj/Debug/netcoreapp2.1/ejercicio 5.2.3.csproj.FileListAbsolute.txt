@@ -1,0 +1,25 @@
+C:\Users\david\source\repos\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.deps.json
+C:\Users\david\source\repos\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.runtimeconfig.json
+C:\Users\david\source\repos\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.runtimeconfig.dev.json
+C:\Users\david\source\repos\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.dll
+C:\Users\david\source\repos\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.pdb
+C:\Users\david\source\repos\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.AssemblyInfo.cs
+C:\Users\david\source\repos\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.dll
+C:\Users\david\source\repos\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.pdb
+C:\Users\david\source\repos\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.genruntimeconfig.cache
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.deps.json
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.runtimeconfig.json
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.runtimeconfig.dev.json
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.dll
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\bin\Debug\netcoreapp2.1\ejercicio 5.2.3.pdb
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.csprojAssemblyReference.cache
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.AssemblyInfoInputs.cache
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.AssemblyInfo.cs
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.csproj.CoreCompileInputs.cache
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.dll
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.pdb
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 5\ejercicio 5.2.3\obj\Debug\netcoreapp2.1\ejercicio 5.2.3.genruntimeconfig.cache

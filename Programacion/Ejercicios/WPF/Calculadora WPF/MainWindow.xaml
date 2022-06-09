@@ -1,0 +1,31 @@
+﻿<Window x:Class="Calculadora_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculadora_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btn_1" Content="1" HorizontalAlignment="Left" Margin="134,277,0,0" VerticalAlignment="Top" Height="44" Width="55" Click="MostrarNumeros"/>
+        <Button x:Name="btn_2" Content="2" HorizontalAlignment="Left" Margin="189,277,0,0" VerticalAlignment="Top" Height="46" Width="56" Click="MostrarNumeros"/>
+        <Button x:Name="btn_3" Content="3" HorizontalAlignment="Left" Margin="245,277,0,0" VerticalAlignment="Top" Height="46" Width="55" Click="MostrarNumeros"/>
+        <Button x:Name="btn_4" Content="4" HorizontalAlignment="Left" Margin="134,226,0,0" VerticalAlignment="Top" Height="51" Width="55" Click="MostrarNumeros"/>
+        <Button x:Name="btn_5" Content="5" HorizontalAlignment="Left" Margin="189,226,0,0" VerticalAlignment="Top" Height="51" Width="56" Click="MostrarNumeros"/>
+        <Button x:Name="btn_6" Content="6" HorizontalAlignment="Left" Margin="245,226,0,0" VerticalAlignment="Top" Height="51" Width="55" Click="MostrarNumeros"/>
+        <Button x:Name="btn_7" Content="7" HorizontalAlignment="Left" Margin="134,177,0,0" VerticalAlignment="Top" Height="49" Width="55" Click="MostrarNumeros"/>
+        <Button x:Name="btn_8" Content="8" HorizontalAlignment="Left" Margin="189,177,0,0" VerticalAlignment="Top" Height="49" Width="56" Click="MostrarNumeros"/>
+        <Button x:Name="btn_9" Content="9" HorizontalAlignment="Left" Margin="245,177,0,0" VerticalAlignment="Top" Height="49" Width="55" Click="MostrarNumeros"/>
+        <Button x:Name="btn_Salir" Content="S" HorizontalAlignment="Left" Margin="134,321,0,0" VerticalAlignment="Top" Height="50" Width="55" Click="btn_Salir_Click"/>
+        <Button x:Name="btn_0" Content="0" HorizontalAlignment="Left" Margin="189,321,0,0" VerticalAlignment="Top" Height="50" Width="56" Click="MostrarNumeros"/>
+        <Button x:Name="btn_Igual" Content="=" HorizontalAlignment="Left" Margin="245,321,0,0" VerticalAlignment="Top" Height="50" Width="55" Click="clickIgual"/>
+        <Button x:Name="btn_Multiplicacion" Content="*" HorizontalAlignment="Left" Margin="300,277,0,0" VerticalAlignment="Top" Height="44" Width="56" Click="ClickOperacion" Tag="*"/>
+        <Button x:Name="btn_Resta" Content="-" HorizontalAlignment="Left" Margin="300,226,0,0" VerticalAlignment="Top" Height="51" Width="56" Click="ClickOperacion" Tag="-"/>
+        <Button x:Name="btn_Suma" Content="+" HorizontalAlignment="Left" Margin="300,177,0,0" VerticalAlignment="Top" Height="49" Width="56" Click="ClickOperacion" Tag="+"/>
+        <Button x:Name="btn_Division" Content="/" HorizontalAlignment="Left" Margin="300,321,0,0" VerticalAlignment="Top" Height="50" Width="56" Click="ClickOperacion" Tag="/"/>
+        <TextBox x:Name="txt_Resultado" HorizontalAlignment="Left" Margin="134,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Height="41" IsEnabled="False" TextAlignment="Right" Text="0" BorderThickness="1,0,1,1"/>
+        <Label x:Name="lbl_calculadora" Content="CALCULADORA WPF" HorizontalAlignment="Left" Margin="132,87,0,0" VerticalAlignment="Top" Width="281" HorizontalContentAlignment="Center" Height="42" BorderThickness="1,1,1,1"/>
+        <Button x:Name="btn_borrar" Content="B" HorizontalAlignment="Left" Margin="356,177,0,0" VerticalAlignment="Top" Height="194" Width="57" Click="Borrar"/>
+
+    </Grid>
+</Window>

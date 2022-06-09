@@ -1,0 +1,110 @@
+/* Based on andreas01 - an open source xhtml/css website layout by Andreas Viklund (http://andreasviklund.com) */
+
+body {
+ margin: 0 auto;
+ padding: 0;
+ font: 76% Verdana,Tahoma,Arial,sans-serif;
+ background: #f4f4f4 url(bg.png) top center repeat-y;
+}
+#wrap {background: #fff; color: #303030; margin: 10px auto; width: 795px;}
+#header {clear: both; margin: 20px 0 0 0; padding: 0; height: 45px;}
+#header h1 {width: 250px; margin: 0 0 10px 0; float: left;}
+#header p {
+ width: 500px;
+ float: right;
+ text-align: center;
+ color: #a0a0a0;
+ margin: 0 0 10px 0;
+ font-size: 0.8em;
+ line-height: 1.2em;
+}
+#avmenu {
+ clear: left;
+ float: left;
+ width: 160px;
+ margin: 20px 0 10px 0;
+ padding: 0;
+ font-size: 0.9em;
+}
+#avmenu ul {list-style: none; width: 160px; margin: 0 0 20px 0; padding: 0; font-size: 1.1em;}
+#avmenu li {margin-bottom: 4px;}
+#avmenu li a {
+ font-weight: bold;
+ height: 20px;
+ text-decoration: none;
+ color: #505050;
+ display: block;
+ padding: 6px 0 0 10px;
+ background: #f4f4f4;
+ border-left: 4px solid #ccc;
+}
+#avmenu li a:hover {background: #eaeaea; color: #286ea0; border-left: 4px solid #286ea0;}
+#content {
+ margin: 20px 0px 20px 170px;
+ border-left: 1px solid #f0f0f0;
+ padding: 0 10px 0 10px;
+ line-height: 1.6em;
+ text-align: left;
+}
+#content h1 {font-size: 1.8em;}
+#content h2 {font-size: 1.2em; margin: 1.8em 0 0.5em 0;}
+#content img {padding: 1px; display:inline;}
+#content tr {line-height: 1.2em;}
+h3 {font-size: 1.3em; margin: 0 0 10px 0;}
+a {text-decoration: none; color: #286ea0;}
+a:hover {text-decoration: underline; color: #286ea0;}
+a img {border: 0;}
+#footer {
+ clear: both;
+ margin: 0 auto;
+ padding: 10px 0 20px 0;
+ width: 795px;
+ text-align: center;
+ color: #808080;
+ font-size: 0.9em;
+}
+#footer a {color: #808080; text-decoration: none;}
+#footer a:hover {text-decoration: underline;}
+.left {margin: 10px 10px 5px 0; float: left;}
+.right {margin: 10px 0 5px 10px; float: right;}
+.textright {text-align: right;}
+.center {text-align: center;}
+.small {font-size: 0.8em;}
+.bold {font-weight: bold;}
+.hide {display: none;}
+.author {clear: both; color: #808080; font-size: 0.9em; font-style: italic; padding: 10px 0 10px;}
+.author a {color: #808080; text-decoration: none;}
+.author a:hover {text-decoration: underline;}
+.inset {
+ border-top: solid 1px #808080;
+ border-bottom: solid 1px #808080;
+ font-style: italic;
+ font-size: 0.9em;
+ padding: 0.4em 1em;
+}
+.note {font-style: italic;}
+code {font-family: "Courier New", Courier, Consolas, Monospace; color: #000; background-color: #e8e8e8;}
+.code {
+ font-family: "Courier New", Courier, Consolas, Monospace;
+ color: #000;
+ background-color: #f0f0f0;
+ margin: 0;
+ width: 100%;
+ overflow-x: auto;
+}
+.comments {color: #00aa00;}
+.string {color: #ff0000;}
+.keyword {color: #0000ff;}
+.type {color: #2b91af;}
+
+.highlight {border-radius: 5px; border-width: 0; background-color: #f0f000;}
+/*.highlight {border-radius: 6px; background-color: #f0f000; border-style: solid; border-width: 0 2px 0 2px; border-color: #f0f000}*/
+
+.highlight .comments {color: #00aa00;}
+.highlight .string {color: #ff7f00;}
+.highlight .keyword {color: #000000;}
+.highlight .type {color: #2b9100;}
+
+.popular {border-radius: 6px; background-color: #f0f000; border-style: solid; border-width: 0 6px 0 6px; border-color: #f0f000}
+
+.todo {border-radius: 10px; background-color: #ffff80; color: #ff0000; font-style: italic; border: solid 1px #909080; margin: 0 0 5px 0; padding: 0 5px;}

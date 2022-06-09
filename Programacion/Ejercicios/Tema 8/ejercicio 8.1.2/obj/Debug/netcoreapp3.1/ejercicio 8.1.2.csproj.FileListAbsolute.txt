@@ -1,0 +1,13 @@
+C:\Users\david\source\repos\ejercicio 8.1.2\bin\Debug\netcoreapp3.1\ejercicio 8.1.2.exe
+C:\Users\david\source\repos\ejercicio 8.1.2\bin\Debug\netcoreapp3.1\ejercicio 8.1.2.deps.json
+C:\Users\david\source\repos\ejercicio 8.1.2\bin\Debug\netcoreapp3.1\ejercicio 8.1.2.runtimeconfig.json
+C:\Users\david\source\repos\ejercicio 8.1.2\bin\Debug\netcoreapp3.1\ejercicio 8.1.2.runtimeconfig.dev.json
+C:\Users\david\source\repos\ejercicio 8.1.2\bin\Debug\netcoreapp3.1\ejercicio 8.1.2.dll
+C:\Users\david\source\repos\ejercicio 8.1.2\bin\Debug\netcoreapp3.1\ejercicio 8.1.2.pdb
+C:\Users\david\source\repos\ejercicio 8.1.2\obj\Debug\netcoreapp3.1\ejercicio 8.1.2.csprojAssemblyReference.cache
+C:\Users\david\source\repos\ejercicio 8.1.2\obj\Debug\netcoreapp3.1\ejercicio 8.1.2.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ejercicio 8.1.2\obj\Debug\netcoreapp3.1\ejercicio 8.1.2.AssemblyInfo.cs
+C:\Users\david\source\repos\ejercicio 8.1.2\obj\Debug\netcoreapp3.1\ejercicio 8.1.2.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ejercicio 8.1.2\obj\Debug\netcoreapp3.1\ejercicio 8.1.2.dll
+C:\Users\david\source\repos\ejercicio 8.1.2\obj\Debug\netcoreapp3.1\ejercicio 8.1.2.pdb
+C:\Users\david\source\repos\ejercicio 8.1.2\obj\Debug\netcoreapp3.1\ejercicio 8.1.2.genruntimeconfig.cache

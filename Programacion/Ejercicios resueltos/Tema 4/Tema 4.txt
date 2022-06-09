@@ -1,0 +1,2007 @@
+(4.1.1.1) Un programa que pida al usuario 4 números, los memorice (utilizando un array), calcule su media aritmética y después muestre en pantalla la media y los datos tecleados. 
+
+using System;
+
+namespace Ejercicio_4_1_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] numeros = new double[4];
+
+            Console.Write("Introduce número 1: ");
+            numeros[0] = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Introduce número 2: ");
+            numeros[1] = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Introduce número 3: ");
+            numeros[2] = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Introduce número 4: ");
+            numeros[3] = Convert.ToDouble(Console.ReadLine());
+
+            double media = 
+                (numeros[0] + numeros[1] + numeros[2] + numeros[3]) / 4;
+
+            Console.WriteLine("La media de {0}, {1}, {2} y {3} es: {4}.",
+                numeros[0], numeros[1], numeros[2], numeros[3], media);
+        }
+
+    }
+}
+
+(4.1.1.2) Un programa que pida al usuario 5 números reales (pista: necesitarás un array de "float") y luego los muestre en el orden contrario al que se introdujeron.
+
+using System;
+
+namespace Ejercicio_4_1_1_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float[] numeros = new float[5];
+
+            Console.Write("Introduce número 1: ");
+            numeros[0] = Convert.ToSingle(Console.ReadLine());
+
+            Console.Write("Introduce número 2: ");
+            numeros[1] = Convert.ToSingle(Console.ReadLine());
+
+            Console.Write("Introduce número 3: ");
+            numeros[2] = Convert.ToSingle(Console.ReadLine());
+
+            Console.Write("Introduce número 4: ");
+            numeros[3] = Convert.ToSingle(Console.ReadLine());
+
+            Console.Write("Introduce número 5: ");
+            numeros[4] = Convert.ToSingle(Console.ReadLine());
+
+            Console.WriteLine("{0}, {1}, {2}, {3}, {4}.",
+                numeros[4], numeros[3], numeros[2], numeros[1], numeros[0]);
+        }
+
+    }
+}
+
+(4.1.2.1) Un programa que almacene en una tabla el número de días que tiene cada mes (supondremos que es un año no bisiesto), pida al usuario que le indique un mes (1=enero, 12=diciembre) y muestre en pantalla el número de días que tiene ese mes.
+
+using System;
+
+namespace Ejercicio_4_1_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] dias = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+            int mes;
+
+            Console.Write("Indica el mes (1=enero, 12=diciembre): ");
+            mes = Convert.ToInt32(Console.ReadLine());
+
+            mes--; // Decrementamos en 1 unidad para acceder a la posición correcta.
+			try
+			{
+				Console.WriteLine("El mes {0} tiene {1} días.", mes + 1, dias[mes]);
+			}
+			catch (Exception)
+			{
+				Console.WriteLine("Mes desconocido.");
+			}
+        }
+    }
+}
+
+(4.1.3.1) Crea un programa que pida al usuario 6 números enteros cortos y luego los muestre en orden inverso (pista: usa un array para almacenarlos y "for" para mostrarlos).
+
+using System;
+
+namespace ejercicio_4_1_3_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            short[] numeros = new short[6];
+
+            for (int i = 0; i < 6; i++)
+            {
+                Console.Write("Numero {0}: ", i + 1);
+                numeros[i] = Convert.ToByte(Console.ReadLine());
+            }
+
+            for (int i = 5; i >= 0; i--)
+            {
+                Console.WriteLine(numeros[i]);
+            }
+        }
+    }
+}
+
+(4.1.3.2) Crea un programa que pregunte al usuario cuántos números enteros va a introducir (por ejemplo, 10), le pida todos esos números, los guarde en un array y finalmente calcule y muestre la media de esos números.
+
+using System;
+
+namespace ejercicio_4_1_3_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numeros;
+            int numeroElementos;
+            int media = 0;
+
+            Console.Write("Tamaño del array: ");
+            numeroElementos = Convert.ToInt32(Console.ReadLine());
+
+            numeros = new int[numeroElementos];
+
+            for (int i = 0; i < numeroElementos; i++)
+            {
+                Console.Write("Número {0}: ", i + 1);
+                numeros[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < numeroElementos; i++)
+            {
+                media += numeros[i];
+            }
+
+            media /= numeroElementos;
+
+            Console.WriteLine("La media es {0}", media);
+        }
+}
+
+(4.1.3.3) Un programa que pida al usuario 10 reales de doble precisión, calcule su media y luego muestre los que están por encima de la media.
+
+using System;
+
+namespace ejercicio_4_1_3_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] numeros = new double[10];
+            double media = 0.0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("Número {0}: ", i + 1);
+                numeros[i] = Convert.ToDouble(Console.ReadLine());
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                media += numeros[i];
+            }
+
+            media /= 10;
+
+            Console.WriteLine("Número por encima de la media {0}:", media);
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (numeros[i] >= media)
+                    Console.WriteLine(numeros[i]);
+            }
+
+            
+
+        }
+    }
+}
+
+(4.1.3.4) Un programa que almacene en una tabla el número de días que tiene cada mes (de un año no bisiesto), pida al usuario que le indique un mes (ej. 2 para febrero) y un día (ej. el día 15) y diga qué número de día es dentro del año (por ejemplo, el 15 de febrero sería el día número 46, el 31 de diciembre sería el día 365).
+
+using System;
+
+namespace ejercicio_4_1_3_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] meses = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+            int dia;
+            int mes;
+            int numeroDias = 0;
+
+            Console.Write("Mes: ");
+            mes = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Día: ");
+            dia = Convert.ToInt32(Console.ReadLine());
+
+            mes--;
+
+            for (int i = 0; i < mes; i++)
+            {
+                numeroDias += meses[i];
+            }
+
+            numeroDias += dia;
+
+            Console.WriteLine("Han transcurrido {0} días.", numeroDias);
+        }
+    }
+}
+
+(4.1.3.5) A partir del ejercicio anterior, crea otro que pida al usuario que le indique la fecha, formada por día (1 al 31) y el mes (1=enero, 12=diciembre), y como respuesta muestre en pantalla el número de días que quedan hasta final de año.
+
+using System;
+
+namespace ejercicios_4_1_3_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] meses = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+            int dia;
+            int mes;
+            int numeroDias = 0;
+
+            Console.Write("Mes: ");
+            mes = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Día: ");
+            dia = Convert.ToInt32(Console.ReadLine());
+
+            mes--;
+
+            for (int i = mes; i < 12; i++)
+            {
+                numeroDias += meses[i];
+            }
+
+            numeroDias -= dia;
+
+            Console.WriteLine("Faltan {0} días hasta final de año.", numeroDias);
+        }
+    }
+}
+
+(4.1.3.6) Un programa que pida 10 nombres y los memorice (pista: esta vez se trata de un array de "string"). Después deberá pedir que se teclee un nombre y dirá si se encuentra o no entre los 10 que se han tecleado antes. Volverá a pedir otro nombre y a decir si se encuentra entre ellos, y así sucesivamente hasta que se teclee "fin".
+
+using System;
+
+namespace ejercicio_4_1_3_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] nombres = new string[10];
+            string buscar = "";
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("Nombre {0}: ", i + 1);
+                nombres[i] = Console.ReadLine();
+            }
+
+            Console.Write("Nombre a buscar (fin=salir): ");
+            buscar = Console.ReadLine();
+
+            while (buscar != "fin")
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    if (buscar == nombres[i])
+                    {
+                        Console.WriteLine("El buscar {0} se ha encontrado.", buscar);
+                    }
+                }
+
+                Console.Write("Nombre a buscar (fin=salir): ");
+                buscar = Console.ReadLine();
+            }
+        }
+    }
+}
+
+(4.1.3.7) Un programa que prepare espacio para guardar un máximo de 100 nombres. El usuario deberá ir introduciendo un nombre cada vez, hasta que se pulse Intro sin teclear nada, momento en el que dejarán de pedirse más nombres y se mostrará en pantalla la lista de los nombres que se han introducido.
+
+
+using System;
+
+namespace ejercicio_4_1_3_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] nombres = new string[100];
+            string nombre;
+            int nombresLeidos = 0;
+
+            Console.Write("Introduce un nombre (vacío para salir): ");
+            nombre = Console.ReadLine();
+
+            while ((nombre != "") && (nombresLeidos < 100))
+            {
+                nombres[nombresLeidos] = nombre;
+
+                nombresLeidos++;
+
+                Console.Write("Introduce un nombre (vacío para salir): ");
+                nombre = Console.ReadLine();
+            }
+
+            for (int j = 0; j < nombresLeidos; j++)
+                Console.WriteLine(nombres[j]);
+        }
+    }
+}
+
+(4.1.3.8) Un programa que reserve espacio para un vector de 3 componentes, pida al usuario valores para dichas componentes (por ejemplo [2, -5, 7]) y muestre su módulo (raíz cuadrada de la suma de sus componentes al cuadrado).
+
+using System;
+
+namespace ejercicio_4_1_3_8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] vector = new int[3];
+            double modulo = 0;
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("Componente {0}: ", i + 1);
+                vector[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                modulo += Math.Pow(vector[i], 2);
+            }
+
+            modulo = Math.Sqrt(modulo);
+
+            Console.WriteLine("El módulo es {0}.", modulo);
+        }
+    }
+}
+
+(4.1.3.9) Un programa que reserve espacio para dos vectores de 3 componentes, pida al usuario sus valores y calcule la suma de ambos vectores (su primera componente será x1+y1, la segunda será x2+y2 y así sucesivamente).
+
+using System;
+
+namespace ejercicio_4_1_3_9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] vector1 = new int[3];
+            int[] vector2 = new int[3];
+            int[] suma = new int[3];
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("Componente V1 {0}: ", i + 1);
+                vector1[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("Componente V2 {0}: ", i + 1);
+                vector2[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                suma[i] = vector1[i] + vector2[i];
+            }
+
+            Console.WriteLine("La suma es [{0}, {1}, {2}].", suma[0], suma[1], suma[2]);
+        }
+    }
+}
+
+(4.1.3.10) Un programa que reserve espacio para dos vectores de 3 componentes, pida al usuario sus valores y calcule su producto escalar (x1·y1+ x2·y2+x3·y3).
+
+using System;
+
+namespace ejercicio_4_1_3_10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] vector1 = new int[3];
+            int[] vector2 = new int[3];
+            int producto = 0;
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("Componente V1 {0}: ", i + 1);
+                vector1[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("Componente V2 {0}: ", i + 1);
+                vector2[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < 3; i++)
+                producto += (vector1[i] * vector2[i]);
+
+            Console.WriteLine("El producto escalar es {0}", producto);
+        }
+    }
+}
+
+(4.1.3.11) Un programa que pida al usuario 4 números enteros y calcule (y muestre) cuál es el mayor de ellos. Nota: para calcular el mayor valor de un array, hay que comparar cada uno de los valores que tiene almacenados el array con el que hasta ese momento es el máximo provisional. El valor inicial de este máximo provisional no debería ser cero (porque el resultado sería incorrecto si todos los números son negativos), sino el primer elemento del array
+
+using System;
+
+namespace ejercicio_4_1_3_11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numeros = new int[4];
+            int mayor = Int32.MinValue; // Ojo con esto!!!!!
+
+            for (int i = 0; i < 4; i++)
+            {
+                Console.Write("Número {0}: ", i + 1);
+                numeros[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (numeros[i] > mayor)
+                    mayor = numeros[i];
+            }
+
+            Console.WriteLine("El mayor es {0}.", mayor);
+        }
+    }
+}
+
+(4.1.4.1) Crea una variante del ejemplo anterior (04_01_04a) que pida al usuario el dato a buscar, avise si ese dato no aparece, y que diga cuántas veces se ha encontrado en caso contrario.
+
+int veces = 0;
+
+// Buscamos el dato "15"
+for (i = 0; i < cantidad; i++)
+{
+	if (datos[i] == 15)
+		veces++;
+}
+	
+if (veces == 0)
+	Console.WriteLine("15 no se ha encontradro");
+else
+	Console.WriteLine("15 encontrado {0} veces", veces);
+ 
+ 
+(4.1.4.2) Crea una variante del ejemplo anterior (04_01_04a) que añada un dato introducido por el usuario al final de los datos existentes.
+
+Console.Write("Dato: ");
+int dato = Convert.ToInt32(Console.ReadLine());
+
+// Añadimos un dato al final
+Console.WriteLine("Añadiendo 6 al final");
+if (cantidad < capacidad)
+{
+	datos[cantidad] = dato;
+	cantidad++;
+}
+
+(4.1.4.3) Crea una variante del ejemplo anterior (04_01_04a) que inserte un dato introducido por el usuario en la posición que elija el usuario. Debe avisar si la posición escogida es incorrecta (porque esté más allá del final de los datos).
+
+if (cantidad < capacidad)
+{
+	Console.Write("Dato: ");
+	int dato = Convert.ToInt32(Console.ReadLine());
+	
+	Console.Write("Posición: ");
+	int posicionInsertar = Convert.ToInt32(Console.ReadLine());
+	
+	for (i = cantidad; i > posicionInsertar; i--)
+		datos[i] = datos[i-1];
+		
+	datos[posicionInsertar] = 30;
+	cantidad++;
+}
+
+(4.1.4.4) Crea una variante del ejemplo anterior (04_01_04a) que borre el dato que se encuentre en la posición que elija el usuario. Debe avisar si la posición escogida no es válida.
+
+Console.Write("Posición: ");
+int posicionBorrar = Convert.ToInt32(Console.ReadLine());;
+
+if (posicionBorrar > 0 && posicionBorrar < capacidad)
+{
+	for (i = posicionBorrar; i < cantidad - 1; i++)
+		datos[i] = datos[i+1];
+
+	cantidad--;
+}
+else
+	Console.WriteLine("Posición {0} incorrecta.", posicionBorrar);
+
+(4.1.4.5) Crea un programa que prepare espacio para un máximo de 10 nombres. Deberá mostrar al usuario un menú que le permita realizar las siguientes operaciones...
+using System;
+
+public class ejercicio_4_1_4_5
+{
+    public static void Main()
+    {
+        string[] nombres = new string[10];
+        int capacidad = 10;
+        int cantidad = 0;
+        int opcion;
+
+        do
+        {
+            Console.WriteLine("Menú");
+            Console.WriteLine("1. Añadir un nombre al final.");
+            Console.WriteLine("2. Añadir un nombre en una posición.");
+            Console.WriteLine("3. Borrar un nombre en una posición.");
+            Console.WriteLine("4. Mostrar todos los nombres.");
+            Console.WriteLine("5. Salir.");
+            Console.Write("Opción: ");
+            opcion = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("-----------------------");
+
+            switch (opcion)
+            {
+                case 1:
+                    if (cantidad < capacidad)
+                    {
+                        Console.Write("Nombre: ");
+
+                        nombres[cantidad] = Console.ReadLine();
+
+                        cantidad++;
+                    }
+                    else
+                        Console.WriteLine("Capacidad excedida.");
+
+                    break;
+
+                case 2:
+                    if (cantidad < capacidad)
+                    {
+                        Console.Write("Nombre: ");
+                        string nombre = Console.ReadLine();
+
+                        Console.Write("Posición: ");
+                        int posicionInsertar = Convert.ToInt32(Console.ReadLine()) - 1;
+
+                        for (int i = cantidad; i > posicionInsertar; i--)
+                            nombres[i] = nombres[i - 1];
+
+                        nombres[posicionInsertar] = nombre;
+
+                        cantidad++;
+                    }
+                    else
+                        Console.WriteLine("Capacidad excedida.");
+
+                    break;
+
+                case 3:
+                    if (cantidad == 0)
+                    {
+                        Console.WriteLine("Vacío. No se puede borrar.");
+                    }
+                    else
+                    {
+                        Console.Write("Posición a borrar:");
+                        int posicionBorrar = Convert.ToInt32(Console.ReadLine()) - 1;
+
+                        if (posicionBorrar > 0 && posicionBorrar < cantidad)
+                        {
+                            for (int i = posicionBorrar; i < cantidad - 1; i++)
+                                nombres[i] = nombres[i + 1];
+
+                            cantidad--;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Posición incorrecta.");
+                        }
+                    }
+
+                    break;
+
+                case 4:
+                    for (int i = 0; i < cantidad; i++)
+                        Console.WriteLine("{0} ", nombres[i]);
+
+                    break;
+            }
+
+            Console.WriteLine("-----------------------");
+
+        } while (opcion != 5);
+    }
+
+}
+
+(4.1.5.1) Crea un programa que contenga un array con los nombres de los meses del año. El usuario podrá elegir entre verlos en orden natural (de Enero a Diciembre) o en orden inverso (de Diciembre a Enero). Usa constantes para el valor máximo del array en ambos recorridos.
+using System;
+
+namespace ejercicio_4_1_5_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const int NUMERO_MESES = 12;
+            string[] meses = new string[NUMERO_MESES] { "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre" };
+            int orden;
+
+            Console.Write("Indica el orden a mostrar (1 ascendente / 2 descendente): ");
+            orden = Convert.ToInt32(Console.ReadLine());
+
+            switch (orden)
+            {
+                case 1:
+                    for (int i = 0; i < NUMERO_MESES; i++)
+                        Console.WriteLine(meses[i]);
+
+                    break;
+                case 2:
+                    for (int i = NUMERO_MESES - 1; i >= 0; i--)
+                        Console.WriteLine(meses[i]);
+
+                    break;
+
+                default:
+                    Console.WriteLine("Orden desconocido.");
+                    break;
+            }
+
+        }
+    }
+}
+
+(4.2.1) Un programa que pida al usuario dos bloques de 10 números enteros (usando un array de dos dimensiones). Después deberá mostrar el mayor dato que se ha introducido en cada uno de ellos.
+
+using System;
+
+namespace ejercicio_4_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] numeros = new int[2, 10];
+            int mayor;
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    Console.Write("numeros[{0}, {1}]: ", i + 1, j + 1);
+                    numeros[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                mayor = Int32.MinValue;
+
+                for (int j = 0; j < 10; j++)
+                {
+                    if (numeros[i, j] > mayor)
+                        mayor = numeros[i, j];
+                }
+
+                Console.WriteLine("El mayor de la línea {0} es {1}.", i + 1, mayor);
+            }
+        }
+    }
+}
+
+(4.2.2) Un programa que pida al usuario dos bloques de 6 cadenas de texto. Después pedirá al usuario una nueva cadena y comprobará si aparece en alguno de los dos bloques de información anteriores.
+
+using System;
+
+namespace ejercisio_4_2_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[,] cadenas = new string[2, 6];
+            string cadena;
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 6; j++)
+                {
+                    Console.Write("cadenas[{0}, {1}]: ", i + 1, j + 1);
+                    cadenas[i, j] = Console.ReadLine();
+                }
+            }
+
+            Console.Write("Cadena a buscar: ");
+            cadena = Console.ReadLine();
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 6; j++)
+                {
+					if (cadenas[i, j] == cadena)
+                        Console.WriteLine("El cadena aparece en la posición [{0}, {1}].", i + 1, j + 1);
+                }
+            }
+        }
+    }
+}
+
+NOTA: Esta opción de comparación busca la cadena en el contenido.
+
+if (cadenas[i, j].Contains(cadena, StringComparison.CurrentCultureIgnoreCase))
+
+(4.2.3) Un programa que pregunte al usuario el tamaño que tendrán dos bloques de números enteros (por ejemplo, uno de 10 elementos y otro de 12). Luego pedirá los datos para ambos bloques de datos. Finalmente deberá mostrar el mayor dato que se ha introducido en cada uno de ellos.
+
+using System;
+
+namespace ejercicios_4_2_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[][] numeros;
+            int cantidad;
+            int mayor;
+
+            numeros = new int[2][];
+
+            for (int i = 0; i < 2; i++)
+            {
+                Console.Write("Cantidad de elementos de la fila {0}: ", i + 1);
+                cantidad = Convert.ToInt32(Console.ReadLine());
+
+                numeros[i] = new int[cantidad];
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < numeros[i].Length; j++)
+                {
+                    Console.Write("numeros[{0}][{1}]: ", i + 1, j + 1);
+                    numeros[i][j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                mayor = Int32.MinValue;
+
+                for (int j = 0; j < numeros[i].Length; j++)
+                {
+                    if (numeros[i][j] > mayor)
+                        mayor = numeros[i][j];
+                }
+
+                Console.WriteLine("El mayor de la línea {0} es {1}.", i + 1, mayor);
+            }
+        }
+    }
+}
+
+(4.2.4) Un programa que calcule el determinante de una matriz de 2x2.
+
+using System;
+
+namespace ejercicio_4_2_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] matriz = new int[2, 2];
+            int det;
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.Write("matriz[{0}, {1}]: ", i + 1, j + 1);
+                    matriz[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            det = (matriz[0, 0] * matriz[1, 1]) - (matriz[0, 1] * matriz[1, 0]);
+
+            Console.WriteLine("El determinante de la matriz es {0}.", det);
+        }
+    }
+}
+
+(4.2.5) Un programa que calcule el determinante de una matriz de 3x3. 
+
+using System;
+
+namespace ejercicio_4_2_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] matriz = new int[3, 3];
+            int det;
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write("matriz[{0}, {1}]: ", i + 1, j + 1);
+                    matriz[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            det = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2]) +
+                   (matriz[0, 1] * matriz[1, 2] * matriz[2, 0]) +
+                   (matriz[1, 0] * matriz[2, 1] * matriz[0, 2])) -
+                  ((matriz[2, 0] * matriz[1, 1] * matriz[0, 2]) +
+                   (matriz[2, 1] * matriz[1, 2] * matriz[0, 0]) +
+                   (matriz[1, 0] * matriz[0, 1] * matriz[2, 2]));
+
+            Console.WriteLine("El determinante de la matriz es {0}.", det);
+        }
+    }
+}
+
+(4.2.6) Un programa que calcule si las filas de una matriz son linealmente dependientes. 
+
+using System;
+
+namespace ejercicio_4_2_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] matriz = new int[3, 3];
+            int det;
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write("matriz[{0}, {1}]: ", i + 1, j + 1);
+                    matriz[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            det = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2]) +
+                   (matriz[0, 1] * matriz[1, 2] * matriz[2, 0]) +
+                   (matriz[1, 0] * matriz[2, 1] * matriz[0, 2])) -
+                  ((matriz[2, 0] * matriz[1, 1] * matriz[0, 2]) +
+                   (matriz[2, 1] * matriz[1, 2] * matriz[0, 0]) +
+                   (matriz[1, 0] * matriz[0, 1] * matriz[2, 2]));
+
+            if (det == 0)
+                Console.WriteLine("Las filas de la matriz son linealmente dependientes.");
+            else
+                Console.WriteLine("Las filas de la matriz son linealmente independientes.");
+        }
+    }
+}
+
+(4.2.7) Un programa que use matrices para resolver un sistema de ecuaciones lineales mediante el método de Gauss.
+
+
+
+(4.3.1.1) Crea un "struct" que almacene datos de una canción en formato MP3: Artista, Título, Duración (en segundos), Tamaño del fichero (en KB). Un programa debe pedir los datos de una canción al usuario, almacenarlos en dicho "struct" y después mostrarlos en pantalla.
+
+using System;
+
+namespace ejerciciso_4_3_1_1
+{
+    class Program
+    {
+        struct tipoCancion
+        {
+            public string artista;
+            public string titulo;
+            public ushort duracion;
+            public uint tamanyo;
+        }
+
+        static void Main(string[] args)
+        {
+            tipoCancion cancion;
+
+            Console.Write("Artista: ");
+            cancion.artista = Console.ReadLine();
+            
+            Console.Write("Título: ");
+            cancion.titulo = Console.ReadLine();
+
+            Console.Write("Duración: ");
+            cancion.duracion = Convert.ToUInt16(Console.ReadLine());
+
+            Console.Write("Tamaño: ");
+            cancion.tamanyo = Convert.ToUInt32(Console.ReadLine());
+
+            Console.WriteLine("\n\nArtista: {0}\nCanción: {1}\nDuración: {2}\nTamaño: {3}", cancion.artista, cancion.titulo, cancion.duracion, cancion.tamanyo);
+        }
+    }
+}
+
+(4.3.2.1) Amplia el programa del ejercicio 4.3.1.1, para que almacene datos de hasta 100 canciones. Deberá tener un menú que permita las opciones: añadir una nueva canción, mostrar el título de todas las canciones, buscar la canción que contenga un cierto texto (en el artista o en el título). 
+
+using System;
+
+namespace ejercicio_4_3_2_1
+{
+    class Program
+    {
+        struct tipoCancion
+        {
+            public string artista;
+            public string titulo;
+            public ushort duracion;
+            public uint tamanyo;
+        }
+
+        static void Main(string[] args)
+        {
+            tipoCancion[] canciones = new tipoCancion[100];
+            int posicion = 0;
+            int opcion = 0;
+            string texto;
+
+            do
+            {
+                Console.WriteLine(" 1. Añadir canción.");
+                Console.WriteLine(" 2. Mostrar título de todas las canciones.");
+                Console.WriteLine(" 3. Buscar canción.");
+                Console.WriteLine(" 0. Salir.");
+                Console.Write("Opción: ");
+                opcion = Convert.ToInt32(Console.ReadLine());
+
+                Console.Clear();
+
+                switch (opcion)
+                {
+                    case 1:
+                        if (posicion < 100)
+                        {
+                            Console.WriteLine("Añadir canción");
+                            Console.WriteLine("--------------");
+                            Console.Write("Artista: ");
+                            canciones[posicion].artista = Console.ReadLine();
+
+                            Console.Write("Título: ");
+                            canciones[posicion].titulo = Console.ReadLine();
+
+                            Console.Write("Duración: ");
+                            canciones[posicion].duracion = Convert.ToUInt16(Console.ReadLine());
+
+                            Console.Write("Tamaño: ");
+                            canciones[posicion].tamanyo = Convert.ToUInt32(Console.ReadLine());
+
+                            posicion++;
+                        }
+                        else
+                            Console.WriteLine("Q3Ipod lleno.");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Mostrar canción");
+                        Console.WriteLine("---------------");
+                        for (int i = 0; i < posicion; i++)
+                        {
+                            Console.WriteLine(canciones[i].titulo);
+                        }
+                            
+                        break;
+
+                    case 3:
+
+                        Console.WriteLine("Buscar canción");
+                        Console.WriteLine("--------------");
+
+                        Console.Write("Texto a buscar: ");
+                        texto = Console.ReadLine();
+
+                        Console.WriteLine();
+
+                        for (int i = 0; i < posicion; i++)
+                        {
+                            if (canciones[i].artista.Contains(texto) || canciones[i].titulo.Contains(texto))
+                            {
+                                Console.WriteLine("La canción {0} con título {1} contiene el texto buscado.", canciones[i].artista, canciones[i].titulo);
+                            }
+                        }
+                        
+                        break;
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("Pulsa [intro] para continuar");
+                Console.ReadLine();
+
+                 Console.Clear();
+
+            } while (opcion != 0);
+        }
+    }
+}
+
+
+(4.3.2.2) Crea un programa que permita guardar datos de "imágenes" (ficheros de ordenador que contengan fotografías o cualquier otro tipo de información gráfica). De cada imagen se debe guardar: nombre (texto), ancho en píxeles (por ejemplo 2000), alto en píxeles (por ejemplo, 3000), tamaño en Kb (por ejemplo 145,6). El programa debe ser capaz de almacenar hasta 700 imágenes (deberá avisar cuando su capacidad esté llena). Debe permitir las opciones: añadir una ficha nueva, ver todas las fichas (número y nombre de cada imagen), buscar la ficha que tenga un cierto nombre.
+
+using System;
+
+namespace ejercicio_4_3_2_2
+{
+    class Program
+    {
+        struct tipoImagen
+        {
+            public string nombre;
+            public ushort ancho;
+            public ushort alto;
+            public double tamanyo;
+        }
+
+        static void Main(string[] args)
+        {
+            const int CANTIDAD_IMAGENES = 700;
+            tipoImagen[] imagenes = new tipoImagen[CANTIDAD_IMAGENES];
+            int posicion = 0;
+            int opcion = 0;
+            string texto;
+
+            do
+            {
+                Console.WriteLine(" 1. Añadir imagen.");
+                Console.WriteLine(" 2. Ver imágenes.");
+                Console.WriteLine(" 3. Buscar imagen.");
+                Console.WriteLine(" 0. Salir.");
+                Console.Write("Opción: ");
+                opcion = Convert.ToInt32(Console.ReadLine());
+
+                Console.Clear();
+
+                switch (opcion)
+                {
+                    case 1:
+                        if (posicion < CANTIDAD_IMAGENES)
+                        {
+                            Console.WriteLine("Añadir imagen");
+                            Console.WriteLine("-------------");
+                            Console.Write("Nombre: ");
+                            imagenes[posicion].nombre = Console.ReadLine();
+
+                            Console.Write("Ancho: ");
+                            imagenes[posicion].ancho = Convert.ToUInt16(Console.ReadLine());
+
+                            Console.Write("Alto: ");
+                            imagenes[posicion].alto = Convert.ToUInt16(Console.ReadLine());
+
+                            Console.Write("Tamaño: ");
+                            imagenes[posicion].tamanyo = Convert.ToDouble(Console.ReadLine());
+
+                            posicion++;
+                        }
+                        else
+                            Console.WriteLine("Q3Ipod lleno.");
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Mostrar imagénes");
+                        Console.WriteLine("----------------");
+                        for (int i = 0; i < posicion; i++)
+                        {
+                            Console.WriteLine("Imagen nº {0}: {1}", i + 1, imagenes[i].nombre);
+                        }
+
+                        break;
+
+                    case 3:
+
+                        Console.WriteLine("Buscar imagen");
+                        Console.WriteLine("-------------");
+
+                        Console.Write("Imagen a buscar: ");
+                        texto = Console.ReadLine();
+
+                        Console.WriteLine();
+
+                        for (int i = 0; i < posicion; i++)
+                        {
+                            if (imagenes[i].nombre.Contains(texto))
+                            {
+                                Console.WriteLine("Imagen: {0}\nAncho: {1}\nAlto: {2}\nTamaño: {3}", 
+                                    imagenes[i].nombre, imagenes[i].ancho, imagenes[i].alto, imagenes[i].tamanyo);
+                            }
+                        }
+
+                        break;
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("Pulsa [intro] para continuar");
+                Console.ReadLine();
+
+                Console.Clear();
+
+            } while (opcion != 0);
+        }
+    }
+}
+
+(4.3.3.1) Amplia el programa 4.3.2.1, para que el campo "duración" se almacene como minutos y segundos, usando un "struct" anidado que contenga a su vez estos dos campos.
+
+using System;
+
+namespace ejerciciso_4_3_3_1
+{
+    class Program
+    {
+        struct tipoDuracion
+        {
+            public ushort minutos;
+            public ushort segundos;
+        }
+        struct tipoCancion
+        {
+            public string artista;
+            public string titulo;
+            public tipoDuracion duracion;
+            public uint tamanyo;
+        }
+
+        static void Main(string[] args)
+        {
+            tipoCancion cancion;
+
+            Console.Write("Artista: ");
+            cancion.artista = Console.ReadLine();
+
+            Console.Write("Título: ");
+            cancion.titulo = Console.ReadLine();
+
+            Console.Write("Duración (minutos): ");
+            cancion.duracion.minutos = Convert.ToUInt16(Console.ReadLine());
+
+            Console.Write("Duración (segundos): ");
+            cancion.duracion.segundos = Convert.ToUInt16(Console.ReadLine());
+
+            Console.Write("Tamaño: ");
+            cancion.tamanyo = Convert.ToUInt32(Console.ReadLine());
+
+            Console.WriteLine("\n\nArtista: {0}\nCanción: {1}\nDuración: {2}:{3}\nTamaño: {4}", cancion.artista, cancion.titulo, cancion.duracion.minutos, cancion.duracion.segundos, cancion.tamanyo);
+        }
+    }
+}
+
+(4.4.1.1) Crea un programa que te pida tu nombre y lo escriba 5 veces. 
+
+using System;
+
+namespace ejercicio_4_4_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            for (int i = 0; i < 5; i++)
+                Console.WriteLine(nombre);
+        }
+    }
+}
+
+(4.4.1.2) Crea un programa que pida al usuario su nombre. Si se llama como tú (por ejemplo, "Nacho"), responderá "Bienvenido, jefe". En caso contrario, le saludará por su nombre. 
+
+using System;
+
+namespace ejercicio_4_4_1_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            if (nombre == "Javier")
+                Console.Write("¡Bienvenido, Jefe!");
+            else
+                Console.Write("Buenos días {0}", nombre);
+        }
+    }
+}
+
+(4.4.1.3) Un programa que pida tu nombre, tu día de nacimiento y tu mes de nacimiento y lo junte todo en una cadena, separando el nombre de la fecha por una coma y el día del mes por una barra inclinada, así: "Juan, nacido el 31/12". 
+
+using System;
+
+namespace ejercicio_4_4_1_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+            string dia;
+            string mes;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            Console.Write("Día: ");
+            dia = Console.ReadLine();
+
+            Console.Write("Mes: ");
+            mes = Console.ReadLine();
+
+            Console.WriteLine(nombre + ", nacido el " + dia + "/" + mes);
+        }
+    }
+}
+
+(4.4.1.4) Crea un programa que pida al usuario dos números enteros y después una operación que realizar con ellos. La operación podrá ser "suma", "resta", multiplicación" y "división", que también se podrán escribir de forma abreviado con los operadores matemáticos "+", "-", "*" y "/". Para multiplicar también se podrá usar una "x", minúscula o mayúscula. A continuación se mostrará el resultado de esa operación (por ejemplo, si los números son 3 y 6 y la operación es "suma", el resultado sería 9). La operación debes tomarla como una cadena de texto y analizarla con un "switch".
+
+using System;
+
+namespace ejercicio_4_4_1_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1;
+            int numero2;
+            string operacion;
+            int resultado = 0;
+
+            Console.Write("Numero 1: ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Numero 2: ");
+            numero2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Operación: ");
+            operacion = Console.ReadLine();
+
+            switch (operacion)
+            {
+                case "suma":
+                case "+":
+                    resultado = numero1 + numero2;
+                    break;
+
+                case "resta":
+                case "-":
+                    resultado = numero1 - numero2;
+                    break;
+
+
+                case "multiplicacion":
+                case "*":
+                case "x":
+                case "X":
+                    resultado = numero1 * numero2;
+                    break;
+
+                case "división":
+                case "/":
+                    resultado = numero1 / numero2;  // Habría que controlar la división por cero.
+                    break;
+            }
+
+            Console.WriteLine("{0}", resultado);
+        }
+    }
+}
+
+(4.4.2.1) Crea un programa que pregunte al usuario su nombre y le responda cuál es su inicial.
+
+using System;
+
+namespace ejercicio_4_4_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            Console.WriteLine("Tu inicial es {0}", nombre[0]);
+        }
+    }
+}
+
+(4.4.3.1) Un programa que te pida tu nombre y lo muestre en pantalla separando cada letra de la siguiente con un espacio. Por ejemplo, si tu nombre es "Juan", debería aparecer en pantalla "J u a n". 
+
+using System;
+
+namespace ejercicio_4_4_3_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            for (int i = 0; i < nombre.Length; i++)
+            {
+                Console.Write(nombre[i] + " ");
+            }
+        }
+    }
+}
+(4.4.3.2) Un programa que pida una frase al usuario y la muestra en orden inverso (de la última letra a la primera). 
+
+using System;
+
+namespace ejercicio_4_4_3_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string frase;
+
+            Console.Write("Fase: ");
+            frase = Console.ReadLine();
+
+            for (int i = frase.Length - 1; i >= 0; i--)
+                Console.Write(frase[i]);
+        }
+    }
+}
+
+(4.4.3.3) Un programa que pida al usuario una frase, después una letra y finalmente diga si aparece esa letra como parte de esa frase o no. 
+
+using System;
+
+namespace ejercicio_4_4_3_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string frase;
+            char letra;
+            bool edo = false;
+
+            Console.Write("Fase: ");
+            frase = Console.ReadLine();
+
+            Console.Write("Letra: ");
+            letra = Convert.ToChar(Console.ReadLine());
+
+            // for (int i = 0; i < frase.Length; i++)       // Esta sería la forma normal de ponerlo
+            for (int i = 0; i < frase.Length && !edo; i++)  // Esta forma está optimizada porque no recorremos todos los caracteres de la cadena.
+            {
+                if (frase[i] == letra)
+                    edo = true;
+            }
+
+            if (edo)
+                Console.Write("La letra está en la frase");
+            else
+                Console.Write("La letra no está en la frase");
+        }
+    }
+}
+
+(4.4.3.4) Un programa capaz de sumar dos números enteros muy grandes (por ejemplo, de 30 cifras), que se deberán pedir como cadena de texto y analizar letra a letra. 
+
+using System;
+
+namespace ejercicio_4_4_3_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string numero1;
+            string numero2;
+
+            Console.Write("Numero 1: ");
+            numero1 = Console.ReadLine();
+            Console.Write("Numero 2: ");
+            numero2 = Console.ReadLine();
+
+            int acarreo = 0;
+            int suma;
+            char[] resultado = new char[numero1.Length + 1];
+
+            for (int i = numero1.Length - 1; i >= 0; i--)
+            {
+                suma = (int)(numero1[i]) - 48 + (int)(numero2[i]) - 48 + acarreo;
+
+                acarreo = (suma > 9 ? 1 : 0);
+
+                suma = suma % 10;
+
+                resultado[i + 1] = Convert.ToChar(suma + 48);
+            }
+
+            if (acarreo != 0)
+                resultado[0] = Convert.ToChar(acarreo + 48);
+
+            for (int i = 0; i < numero1.Length + 1; i++)
+                Console.Write(resultado[i]);
+
+            Console.ReadLine();
+        }
+    }
+}
+
+(4.4.3.5) Un programa capaz de multiplicar dos números enteros muy grandes (por ejemplo, de 30 cifras), que se deberán pedir como cadena de texto y analizar letra a letra.
+
+Pendiente de hacer.
+
+(4.4.4.1) Un programa que te pida tu nombre y lo muestre en pantalla separando cada letra de la siguiente con un espacio, similar al 4.4.3.1, pero esta vez usando "Substring". Por ejemplo, si tu nombre es "Juan", debería aparecer en pantalla "J u a n". 
+
+using System;
+
+namespace ejercicio_4_4_4_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            for (int i = 0; i < nombre.Length; i++)
+            {
+                Console.Write(nombre.Substring(i, 1) + " ");
+            }
+        }
+    }
+}
+
+4.4.4.2) Un programa que te pida tu nombre y lo muestre en pantalla como un triángulo creciente. Por ejemplo, si tu nombre es "Juan", debería aparecer en pantalla: 
+J 
+Ju 
+Jua 
+Juan
+
+using System;
+
+namespace ejercicio_4_4_4_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            for (int i = 1; i < nombre.Length + 1; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write(nombre[j]);
+                }
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(4.4.5.1) Un programa que pida al usuario 10 frases, las guarde en un array, y luego le pregunte textos de forma repetitiva, e indique si cada uno de esos textos aparece como parte de alguno de los elementos del array. Terminará cuando el texto introducido sea "fin". 
+
+using System;
+
+namespace ejercicio_4_4_5_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] frases = new string[3];
+            string frase;
+
+            for (int i = 0; i < frases.Length; i++)
+            {
+                Console.Write("Frase {0}: ", i + 1);
+                frases[i] = Console.ReadLine();
+            }
+
+            Console.Write("Frase a buscar: ");
+            frase = Console.ReadLine();
+
+            while (frase.ToUpper() != "FIN")  // De esta forma podemos quitarmos problemas.
+            {
+                for (int i = 0; i < frases.Length; i++)
+                {
+                    if (frases[i].IndexOf(frase) >= 0)
+                        Console.WriteLine("Aparece en la frase {0}", i + 1);
+                }
+
+                Console.Write("Frase a buscar: ");
+                frase = Console.ReadLine();
+            }
+        }
+    }
+}
+
+(4.4.5.2) Crea una versión del ejercicio 4.4.5.1 en la que, en caso de que alguno de los textos aparezca como subcadena, se avise además si se encuentra exactamente al principio.
+
+using System;
+
+namespace ejercicio_4_4_5_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] frases = new string[10];
+            string frase;
+            int posicion;
+
+            for (int i = 0; i < frases.Length; i++)
+            {
+                Console.Write("Frase {0}: ", i + 1);
+                frases[i] = Console.ReadLine();
+            }
+
+            Console.Write("Frase a buscar: ");
+            frase = Console.ReadLine();
+
+            while (frase.ToUpper() != "FIN")
+            {
+                for (int i = 0; i < frases.Length; i++)
+                {
+                    posicion = frases[i].IndexOf(frase);
+                    if (posicion == 0)
+                        Console.WriteLine("Aparece en la frase {0} al principio", i + 1);
+                    else
+                        if (posicion > 0)
+                            Console.WriteLine("Aparece en la frase {0}", i + 1);
+                }
+
+                Console.Write("Frase a buscar: ");
+                frase = Console.ReadLine();
+            }
+        }
+    }
+}
+
+(4.4.6.1) Una variante del ejercicio 4.4.5.2, que no distinga entre mayúsculas y minúsculas a la hora de buscar. 
+
+using System;
+
+namespace ejercicio_4_4_6_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] frases = new string[10];
+            string frase;
+            int posicion;
+
+            for (int i = 0; i < frases.Length; i++)
+            {
+                Console.Write("Frase {0}: ", i + 1);
+                frases[i] = Console.ReadLine();
+            }
+
+            Console.Write("Frase a buscar: ");
+            frase = Console.ReadLine();
+
+            while (frase.ToUpper() != "FIN")
+            {
+                for (int i = 0; i < frases.Length; i++)
+                {
+                    posicion = frases[i].ToUpper().IndexOf(frase.ToUpper());
+                    if (posicion == 0)
+                        Console.WriteLine("Aparece en la frase {0} al principio", i + 1);
+                    else
+                        if (posicion > 0)
+                            Console.WriteLine("Aparece en la frase {0}", i + 1);
+                }
+
+                Console.Write("Frase a buscar: ");
+                frase = Console.ReadLine();
+            }
+        }
+    }
+}
+
+(4.4.6.2) Un programa que pida al usuario una frase y elimine todos los espacios redundantes que contenga (debe quedar sólo un espacio entre cada palabra y la siguiente).
+
+using System;
+
+namespace ejercicio_4_4_6_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string frase;
+
+            Console.Write("Frase: ");
+            frase = Console.ReadLine();
+
+            while (frase.Contains("  "))
+            {
+                frase = frase.Replace("  ", " ");
+            }
+
+            Console.Write(frase);
+        }
+    }
+}
+
+(4.4.7.1) Un programa que pida al usuario una frase y muestre sus palabras en orden inverso. 
+
+using System;
+
+namespace ejercicio_4_4_7_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string frase;
+            string[] palabras;
+            
+            Console.Write("Frase: ");
+            frase = Console.ReadLine();
+
+            palabras = frase.Split(' ');
+
+            for (int i = palabras.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(palabras[i]);
+            }
+        }
+    }
+}
+
+(4.4.7.2) Un programa que pida al usuario varios números separados por espacios y muestre su suma.
+
+using System;
+
+namespace ejercicio_4_4_7_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string entrada;
+            string[] numeros;
+            int suma = 0;
+
+            Console.Write("Números: ");
+            entrada = Console.ReadLine();
+
+            numeros = entrada.Split(' ');
+
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                suma += Convert.ToInt32(numeros[i]);
+            }
+
+            Console.WriteLine("La suma es {0}", suma);
+        }
+    }
+}
+
+(4.4.8.1) Un programa que pida al usuario dos frases y diga cual sería la "mayor" de ellas (la que aparecería en último lugar en un diccionario). 
+
+using System;
+
+namespace ejercicio_4_4_8_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string frase1;
+            string frase2;
+
+            Console.Write("Frase 1: ");
+            frase1 = Console.ReadLine();
+
+            Console.Write("Frase 2: ");
+            frase2 = Console.ReadLine();
+
+            if (String.Compare(frase1, frase2, true) > 0)
+            {
+                Console.WriteLine("La frase mayor es {0}", frase1);
+            }
+            else 
+				if (String.Compare(frase1, frase2, true) < 0)
+				{
+					Console.WriteLine("La frase mayor es {0}", frase2);
+				}
+				else
+					Console.WriteLine("Son iguales");
+        }
+    }
+}
+
+(4.4.8.2) Un programa que pida al usuario cinco frases, las guarde en un array y muestre la "mayor" de ellas.
+
+using System;
+
+namespace ejercicio_4_4_8_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] frases = new string[5];
+            string mayor;
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Frase {0}: ", i + 1);
+                frases[i] = Console.ReadLine();
+            }
+
+            mayor = frases[0];
+
+            for (int i = 1; i < 5; i++)  // Ojo, empezamos por 1 en lugar de 0, porque ya hemos cogido la posición 0 como la mayor.
+            {
+                if (String.Compare(mayor, frases[i], true) < 0)  // El true para no tener en cuenta mayúsculas y minúsculas.
+                {
+                    mayor = frases[i];
+                }
+            }
+
+            Console.WriteLine("La frase mayor es {0}", mayor);
+        }
+    }
+}
+
+
+
+(4.4.9.1) Un programa que pida una cadena al usuario y la modifique, de modo que todas las vocales se conviertan en "o". 
+
+using System;
+using System.Text;
+
+namespace ejercicio_4_4_9_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string cadena;
+            string vocales = "aeiouAEIOUáéíóúÁÉÍÓÚ"; // Ponemos todos los resultados posibles .
+            StringBuilder cadenaModificable; 
+
+            Console.Write("Nombre: ");
+            cadena = Console.ReadLine();
+
+            cadenaModificable = new StringBuilder(cadena);
+
+            for (int i = 0; i < cadena.Length; i++)
+            {
+                if (vocales.Contains(cadena[i]))
+                    cadenaModificable[i] = 'o';
+            }
+
+            cadena = cadenaModificable.ToString();
+
+            Console.WriteLine(cadena);
+        }
+    }
+}
+
+(4.4.9.2) Un programa que pida una cadena al usuario y la modifique, de modo que las letras de las posiciones impares (primera, tercera, etc.) estén en minúsculas y las de las posiciones pares estén en mayúsculas, mostrando el resultado en pantalla. Por ejemplo, a partir de un nombre como "Nacho", la cadena resultante sería "nAcHo". 
+
+
+using System;
+using System.Text;
+
+namespace ejercicio_4_4_9_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+            StringBuilder nombreModificable;
+            int par = 1;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            nombreModificable = new StringBuilder(nombre);
+
+            for (int i = 0; i < nombre.Length; i++)
+            {
+                if (par % 2 != 0)
+                    nombreModificable[i] = nombre.ToLower()[i]; // Observar como accedo directamente a la posición.
+                else
+                    nombreModificable[i] = nombre.ToUpper()[i];
+
+                par++;
+            }
+
+            nombre = nombreModificable.ToString();
+
+            Console.WriteLine(nombre);
+        }
+    }
+}
+
+(4.4.9.3) Crea un juego del ahorcado, en el que un primer usuario introduzca la palabra a adivinar, se muestre ésta oculta con guiones (-----) y el programa acepte las letras que introduzca el segundo usuario, cambiando los guiones por letras correctas cada vez que acierte (por ejemplo, a---a-t-). La partida terminará cuando se acierte la palabra por completo o el usuario agote sus 8 intentos.
+
+using System;
+using System.Text;
+
+namespace ejercicio_4_4_9_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string palabra;
+            StringBuilder palabraModificable;
+            int intentos = 8;
+            char letra;
+            bool eda;
+
+            Console.Write("Palabra: ");
+            palabra = Console.ReadLine();
+
+            palabraModificable = new StringBuilder(palabra);
+
+            for (int i = 0; i < palabraModificable.Length; i++)
+                palabraModificable[i] = '-';
+
+            while (intentos > 0)
+            {
+                eda = false;
+
+                Console.Write("Letra: ");
+                letra = Convert.ToChar(Console.ReadLine());
+
+                for (int i = 0; i < palabraModificable.Length; i++)
+                {
+                    if (palabra[i] == letra)
+                    {
+                        palabraModificable[i] = letra;
+                        eda = true;
+                    }
+                }
+
+                if (!eda)
+                {
+                    intentos--;
+                    Console.WriteLine("Quedan {0} intento(s)", intentos);
+                }
+
+                if (!palabraModificable.ToString().Contains("-"))
+                    break;
+
+                Console.WriteLine(palabraModificable);
+            }
+
+            if (intentos > 0)
+                Console.WriteLine("¡¡Enhorabuena!!");
+            else
+                Console.WriteLine("R.I.P.");
+        }
+    }
+}
+
+(4.5.1) Un programa que pida tu nombre y lo muestre con un espacio entre cada par de letras, usando "foreach". 
+
+using System;
+
+namespace ejercicio_4_5_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+            int par = 1;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            foreach (char letra in nombre)
+            {
+                Console.Write("{0}", letra);
+
+                if (par % 2 == 0)
+                    Console.Write(" ");
+
+                par++;
+            }
+        }
+    }
+}
+
+(4.5.2) Un programa que pida al usuario una frase y la descomponga en subcadenas separadas por espacios, usando "Split". Luego debe mostrar cada subcadena en una línea nueva, usando "foreach". 
+
+using System;
+
+namespace ejercicio_4_5_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string entrada;
+            string[] palabras;
+
+            Console.Write("Frase: ");
+            entrada = Console.ReadLine();
+
+            palabras = entrada.Split(' ');
+
+            foreach (string palabra in palabras)
+            {
+                Console.WriteLine("{0}", palabra);
+            }
+        }
+    }
+}
+
+(4.5.3) Un programa que pida al usuario varios números separados por espacios y muestre su suma (como el del ejercicio 4.4.7.2), pero empleando "foreach".
+
+using System;
+
+namespace ejercicio_4_5_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string entrada;
+            string[] numeros; 
+            int suma = 0;
+            
+            Console.Write("Números: ");
+            entrada = Console.ReadLine();
+
+            numeros = entrada.Split(' ');
+
+            foreach(string numero in numeros)
+            {
+                suma += Convert.ToInt32(numero);
+            }
+
+            Console.WriteLine("La suma es {0}", suma);
+        }
+    }
+}

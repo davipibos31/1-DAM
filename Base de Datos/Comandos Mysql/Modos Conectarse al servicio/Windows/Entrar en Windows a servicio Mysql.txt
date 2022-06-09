@@ -1,0 +1,5 @@
+Paso 1: Ir a la carpeta de instalación que normalmente sera C:\Program Files\MySQL\MySQL Server 8.0\bin
+Paso 2: En la ruta poner cmd, una vez dentro de la carpeta de instalación y se abrirá el cmd
+Paso 3: Para conectarte usar comando mysql -u root -p
+Paso 4: Pide contraseña asi que la escribes
+Paso 5: Ya estas dentro

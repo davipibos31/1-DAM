@@ -1,0 +1,14 @@
+C:\Users\david\source\repos\Prueba POO\bin\Debug\netcoreapp3.1\Prueba POO.exe
+C:\Users\david\source\repos\Prueba POO\bin\Debug\netcoreapp3.1\Prueba POO.deps.json
+C:\Users\david\source\repos\Prueba POO\bin\Debug\netcoreapp3.1\Prueba POO.runtimeconfig.json
+C:\Users\david\source\repos\Prueba POO\bin\Debug\netcoreapp3.1\Prueba POO.runtimeconfig.dev.json
+C:\Users\david\source\repos\Prueba POO\bin\Debug\netcoreapp3.1\Prueba POO.dll
+C:\Users\david\source\repos\Prueba POO\bin\Debug\netcoreapp3.1\Prueba POO.pdb
+C:\Users\david\source\repos\Prueba POO\obj\Debug\netcoreapp3.1\Prueba POO.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\Prueba POO\obj\Debug\netcoreapp3.1\Prueba POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Prueba POO\obj\Debug\netcoreapp3.1\Prueba POO.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Prueba POO\obj\Debug\netcoreapp3.1\Prueba POO.AssemblyInfo.cs
+C:\Users\david\source\repos\Prueba POO\obj\Debug\netcoreapp3.1\Prueba POO.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Prueba POO\obj\Debug\netcoreapp3.1\Prueba POO.dll
+C:\Users\david\source\repos\Prueba POO\obj\Debug\netcoreapp3.1\Prueba POO.pdb
+C:\Users\david\source\repos\Prueba POO\obj\Debug\netcoreapp3.1\Prueba POO.genruntimeconfig.cache

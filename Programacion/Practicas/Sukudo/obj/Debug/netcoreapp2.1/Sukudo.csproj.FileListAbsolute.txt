@@ -1,0 +1,39 @@
+C:\Users\david\source\repos\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.deps.json
+C:\Users\david\source\repos\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.runtimeconfig.json
+C:\Users\david\source\repos\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.runtimeconfig.dev.json
+C:\Users\david\source\repos\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.dll
+C:\Users\david\source\repos\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.pdb
+C:\Users\david\source\repos\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.AssemblyInfo.cs
+C:\Users\david\source\repos\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.dll
+C:\Users\david\source\repos\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.pdb
+C:\Users\david\source\repos\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.genruntimeconfig.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.deps.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.runtimeconfig.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.runtimeconfig.dev.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.csproj.AssemblyReference.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.GeneratedMSBuildEditorConfig.editorconfig
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.AssemblyInfoInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.AssemblyInfo.cs
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.csproj.CoreCompileInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.genruntimeconfig.cache
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.deps.json
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.runtimeconfig.json
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.runtimeconfig.dev.json
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.dll
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\bin\Debug\netcoreapp2.1\Sukudo.pdb
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.csproj.AssemblyReference.cache
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.AssemblyInfoInputs.cache
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.AssemblyInfo.cs
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.csproj.CoreCompileInputs.cache
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.dll
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.pdb
+D:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Sukudo\obj\Debug\netcoreapp2.1\Sukudo.genruntimeconfig.cache

@@ -1,0 +1,14 @@
+C:\Users\david\source\repos\ejercicio 2.2.3.6\bin\Debug\netcoreapp3.0\ejercicio 2.2.3.6.exe
+C:\Users\david\source\repos\ejercicio 2.2.3.6\bin\Debug\netcoreapp3.0\ejercicio 2.2.3.6.deps.json
+C:\Users\david\source\repos\ejercicio 2.2.3.6\bin\Debug\netcoreapp3.0\ejercicio 2.2.3.6.runtimeconfig.json
+C:\Users\david\source\repos\ejercicio 2.2.3.6\bin\Debug\netcoreapp3.0\ejercicio 2.2.3.6.runtimeconfig.dev.json
+C:\Users\david\source\repos\ejercicio 2.2.3.6\bin\Debug\netcoreapp3.0\ejercicio 2.2.3.6.dll
+C:\Users\david\source\repos\ejercicio 2.2.3.6\bin\Debug\netcoreapp3.0\ejercicio 2.2.3.6.pdb
+C:\Users\david\source\repos\ejercicio 2.2.3.6\obj\Debug\netcoreapp3.0\ejercicio 2.2.3.6.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ejercicio 2.2.3.6\obj\Debug\netcoreapp3.0\ejercicio 2.2.3.6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ejercicio 2.2.3.6\obj\Debug\netcoreapp3.0\ejercicio 2.2.3.6.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ejercicio 2.2.3.6\obj\Debug\netcoreapp3.0\ejercicio 2.2.3.6.AssemblyInfo.cs
+C:\Users\david\source\repos\ejercicio 2.2.3.6\obj\Debug\netcoreapp3.0\ejercicio 2.2.3.6.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ejercicio 2.2.3.6\obj\Debug\netcoreapp3.0\ejercicio 2.2.3.6.dll
+C:\Users\david\source\repos\ejercicio 2.2.3.6\obj\Debug\netcoreapp3.0\ejercicio 2.2.3.6.pdb
+C:\Users\david\source\repos\ejercicio 2.2.3.6\obj\Debug\netcoreapp3.0\ejercicio 2.2.3.6.genruntimeconfig.cache

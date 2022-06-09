@@ -1,0 +1,28 @@
+C:\Users\david\source\repos\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.exe
+C:\Users\david\source\repos\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.deps.json
+C:\Users\david\source\repos\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.runtimeconfig.json
+C:\Users\david\source\repos\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.runtimeconfig.dev.json
+C:\Users\david\source\repos\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.dll
+C:\Users\david\source\repos\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.pdb
+C:\Users\david\source\repos\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.AssemblyInfo.cs
+C:\Users\david\source\repos\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.dll
+C:\Users\david\source\repos\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.pdb
+C:\Users\david\source\repos\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.genruntimeconfig.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.exe
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.deps.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.runtimeconfig.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.runtimeconfig.dev.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\bin\Debug\netcoreapp3.1\ejercicio 6.8.4.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.csproj.AssemblyReference.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.GeneratedMSBuildEditorConfig.editorconfig
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.AssemblyInfoInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.AssemblyInfo.cs
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.csproj.CoreCompileInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 6\ejercicio 6.8.4\obj\Debug\netcoreapp3.1\ejercicio 6.8.4.genruntimeconfig.cache

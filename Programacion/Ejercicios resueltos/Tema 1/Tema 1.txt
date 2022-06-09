@@ -1,0 +1,636 @@
+(1.2.1) Crea un programa en C# que te salude por tu nombre (por ejemplo, "Hola, Nacho"). 
+
+using System;
+
+namespace ejercicio_1_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(118+56);
+        }
+    }
+}
+
+
+(1.4.1) Crea un programa que diga el resultado de sumar 118 y 56.
+
+using System;
+
+namespace ejercicio_1_4_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(118 + 56);
+        }
+    }
+}
+
+(1.4.2) Crea un programa que diga el resultado de sumar 12345 y 67890
+
+using System;
+
+namespace ejercicio_1_4_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(12345 + 67890);
+        }
+    }
+}
+
+(1.5.1.1) Haz un programa que calcule el producto de los números 12 y 13.
+
+using System;
+
+namespace ejercicio_1_5_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(12 * 13);
+        }
+    }
+}
+
+(1.5.1.2) Un programa que calcule la diferencia (resta) entre 321 y 213.
+
+using System;
+
+namespace ejercicio_1_5_1_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(321 - 213);
+        }
+    }
+}
+
+(1.5.1.3) Un programa que calcule el resultado de dividir 301 entre 3.
+
+using System;
+
+namespace ejercicio_1_5_1_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(301 / 3);
+        }
+    }
+}
+
+(1.5.1.4) Un programa que calcule el resto de la división de 301 entre 3.
+
+using System;
+
+namespace ejercicio_1_5_1_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(301 % 3);
+        }
+    }
+}
+
+(1.5.2.1) Calcular el resultado de -2 + 3 * 5
+
+using System;
+
+namespace ejercicio_1_5_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(-2 + 3 * 5);
+        }
+    }
+}
+
+(1.5.2.2) Calcular el resultado de (20+5) % 6
+
+using System;
+
+namespace ejercicio_1_5_2_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine((20 + 5) % 6);
+        }
+    }
+}
+
+(1.5.2.3) Calcular el resultado de 15 + -5*6 / 10
+
+using System;
+
+namespace ejercicio_1_5_2_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(15 + -5 * 6 / 10);
+        }
+    }
+}
+
+(1.5.2.4) Calcular el resultado de 2 + 10 / 5 * 2 - 7 % 1
+
+using System;
+
+namespace ejercicio_1_5_2_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.WriteLine(2 + 10 / 5 * 2 - 7 % 1);
+        }
+    }
+}
+
+(1.6.1.1): Amplía el "Ejemplo 01.05.02a" para declarar tres variables, llamadas n1, n2, n3
+
+using System;
+
+namespace ejercicio_1_6_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1 = 3;
+            int n2 = 4;
+            int n3 = 5;
+			
+            System.Console.WriteLine("Ejemplo de precedencia de operadores");
+            System.Console.WriteLine("3 + 4 * 5");
+            System.Console.WriteLine(n1 + n2 * n3);
+        }
+    }
+}
+
+(1.6.2.1): Amplía el ejercicio 1.6.1.1, para que las tres variables n1, n2, n3 estén declaradas en la misma línea y tengan valores iniciales.
+
+using System;
+
+namespace ejercicio_1_6_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1 = 3, n2 = 4, n3 = 5;
+			
+            System.Console.WriteLine("Ejemplo de precedencia de operadores");
+            System.Console.WriteLine("3 + 4 * 5");
+            System.Console.WriteLine(n1 + n2 * n3);
+        }
+    }
+}
+
+(1.6.3.1) Crea un programa que calcule el producto de los números 121 y 132, usando variables.
+
+using System;
+
+namespace ejercicio_1_6_3_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1 = 121;
+			int n2 = 132;
+			
+            System.Console.WriteLine(n1 * n2);
+        }
+    }
+}
+
+(1.6.3.2) Crea un programa que calcule la suma de 285 y 1396, usando variables.
+
+using System;
+
+namespace ejercicio_1_6_3_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1 = 285;
+			int n2 = 1396;
+			
+            System.Console.WriteLine(n1 + n2);
+        }
+    }
+}
+ 
+(1.6.3.3) Crea un programa que calcule el resto de dividir 3784 entre 16, usando variables.
+
+using System;
+
+namespace ejercicio_1_6_3_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1 = 3784;
+			int n2 = 16;
+			
+            System.Console.WriteLine(n1 % n2);
+        }
+    }
+}
+
+
+(1.6.3.4) Amplía el ejercicio 1.6.2.1, para que se muestre el resultado de la operación n1+n2*n3.
+
+using System;
+
+namespace ejercicio_1_6_3_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1 = 3, n2 = 4, n3 = 5;
+			
+            System.Console.WriteLine("Ejemplo de precedencia de operadores");
+            System.Console.WriteLine("3 + 4 * 5");
+            System.Console.WriteLine(n1 + n2 * n3);
+        }
+    }
+}
+
+(1.7.1) Crea un programa que calcule el producto de los números 87 y 94, usando variables llamadas "numero1" y "numero2".
+
+using System;
+
+namespace ejercicio_1_7_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1 = 87;
+			int numero2 = 94;
+			
+            System.Console.WriteLine(numero1 * numero2);
+        }
+    }
+}
+
+(1.7.2) Intenta crear una nueva versión del programa que calcula el producto de los números 87 y 94, usando esta vez variables llamadas "1numero" y "2numero".
+
+using System;
+
+namespace ejercicio_1_7_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int 1numero = 87; 
+			int 2numero = 94;
+			
+            System.Console.WriteLine(1numero * 2numero);
+        }
+    }
+}
+
+(1.7.3) Intenta crear una nueva versión del programa que calcula el producto de los números 87 y 94, usando esta vez variables llamadas "numero 1" y "numero 2".
+
+using System;
+
+namespace ejercicio_1_7_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero 1 = 87; 
+			int numero 2 = 94;
+			
+            System.Console.WriteLine(numero 1 * numero 2);
+        }
+    }
+}
+
+
+(1.7.4) Crea una nueva versión del programa que calcula el producto de los números 87 y 94, usando esta vez variables llamadas "número1" y "número2".
+
+
+using System;
+
+namespace ejercicio_1_7_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int número1 = 87; 
+			int número2 = 94;
+			
+            System.Console.WriteLine(número 1 * número 2);
+        }
+    }
+}
+
+(1.8.1) Crea un programa que convierta una cantidad prefijada de metros (por ejemplo, 3000) a millas. La equivalencia es 1 milla = 1609 metros. Usa comentarios donde te parezca adecuado
+
+using System;
+
+namespace ejercicio_1_8_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+		int metros = 3000; // Cantidad de metros a System.Convertir.
+            
+		System.Console.Write("Millas: {0}", num / 1609); // Conversión a millas.
+        }
+    }
+}
+
+
+(1.9.1) Crea un programa que calcule el producto de dos números introducidos por el usuario.
+
+namespace ejercicio_1_9_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1 = System.Convert.ToInt32(System.Console.ReadLine()); 
+			int numero2 = System.Convert.ToInt32(System.Console.ReadLine());
+			
+            System.Console.WriteLine("{0} * {1} = {2}", numero1, mumero2, numero1 * numero2);
+        }
+    }
+}
+
+(1.9.2) Crea un programa que calcule la división de dos números introducidos por el usuario, así como el resto de esa división.
+
+namespace ejercicio_1_9_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1 = System.Convert.ToInt32(System.Console.ReadLine()); 
+			int numero2 = System.Convert.ToInt32(System.Console.ReadLine());
+			
+            System.Console.WriteLine("{0} / {1} = {2}", numero1, mumero2, numero1 / numero2);
+            System.Console.WriteLine("{0} % {1} = {2}", numero1, mumero2, numero1 % numero2);
+        }
+    }
+}
+
+
+(1.9.3) Suma tres números tecleados por usuario.
+
+namespace ejercicio_1_9_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1 = System.Convert.ToInt32(System.Console.ReadLine()); 
+			int numero2 = System.Convert.ToInt32(System.Console.ReadLine());
+			int numero3 = System.Convert.ToInt32(System.Console.ReadLine());
+			
+            System.Console.WriteLine("{0} + {1} + {2} = {3}", numero1, mumero2, numero3, numero1 + numero2 + numero3);
+        }
+    }
+}
+
+(1.9.4) Pide al usuario una cantidad de "millas náuticas" y muestra la equivalencia en metros, usando: 1 milla náutica = 1852 metros.
+
+namespace ejercicio_1_9_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int millas = System.Convert.ToInt32(System.Console.ReadLine()); 
+			
+            System.Console.WriteLine("{0} millas son {1} metros", millas, millas * 1852);
+        }
+    }
+}
+
+(1.10.1) Crea una nueva versión del programa que calcula el producto de dos números introducidos por el usuario (1.9.1), empleando "using System". El programa deberá contener un comentario al principio, que recuerde cual es su objetivo.
+
+using system; // De esta forma nos envitamos poner system en Convert y Console
+
+namespace ejercicio_1_9_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1 = Convert.ToInt32(System.Console.ReadLine()); 
+			int numero2 = Convert.ToInt32(System.Console.ReadLine());
+			
+            Console.WriteLine("{0} * {1} = {2}", numero1, mumero2, numero1 * numero2);
+        }
+    }
+}
+
+(1.10.2) Crea una nueva versión del programa que calcula la división de dos números introducidos por el usuario, así como el resto de esa división (1.9.2), empleando "using System". Deberás incluir un comentario con tu nombre y la fecha en que has realizado el programa.
+
+using system; // De esta forma nos envitamos poner system en Convert y Console
+
+namespace ejercicio_1_9_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1 = Convert.ToInt32(System.Console.ReadLine()); 
+			int numero2 = Convert.ToInt32(System.Console.ReadLine());
+			
+            Console.WriteLine("{0} / {1} = {2}", numero1, mumero2, numero1 / numero2);
+            Console.WriteLine("{0} % {1} = {2}", numero1, mumero2, numero1 % numero2);
+        }
+    }
+}
+
+(1.11.1) El usuario tecleará dos números (a y b), y el programa mostrará el resultado de la operación (a+b)*(a-b) y el resultado de la operación a2-b2. Ambos resultados se deben mostrar en la misma línea.
+
+using System;
+
+namespace ejercicio_1_11_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+	// Opción A
+            int num1 = 0;
+            int num2 = 0;
+
+            Console.Write("Introduce número 1: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            
+	    Console.Write("Introduce número 2:");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            
+	    Console.Write("(a+b)*(a-b): {0}", (num1 + num2) * (num1 - num2));
+            Console.Write(" # a2 - b2: {0}", (num1 * num2) - (num1 * num2));
+        
+	// Opción B
+
+	    Console.WriteLine("Dime un número");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Dime otro número");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            int operacionA = (a + b) * (a - b);
+            int operacionB = a * a - b * b;
+
+            Console.WriteLine("El resultado de ({0} + {1}) * ({0} - {1}) es {2}", a, b, operacionA);
+            Console.WriteLine("El resultado de {0} * {0} - {1} * {1} es {2}", a, b, operacionB);
+    }
+}
+
+(1.11.2) Pedir al usuario un número y mostrar su tabla de multiplicar, usando {0},{1} y {2}. 
+Por ejemplo, si el número es el 3, debería escribirse algo como 3 x 0 = 0 3 x 1 = 3 3 x 2 = 6 … 3 x 10 = 30
+
+using System;
+
+namespace ejercicio_1_11_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			int numero = 0;
+			
+            Console.Write("Escribe un número: ");
+            numero = Convert.ToInt32(Console.ReadLine());
+            
+			Console.WriteLine("{0} x {1} = {2}", numero, 0, numero * 0);
+			Console.WriteLine("{0} x {1} = {2}", numero, 1, numero * 1);
+			Console.WriteLine("{0} x {1} = {2}", numero, 2, numero * 2);
+			Console.WriteLine("{0} x {1} = {2}", numero, 3, numero * 3);
+			Console.WriteLine("{0} x {1} = {2}", numero, 4, numero * 4);
+			Console.WriteLine("{0} x {1} = {2}", numero, 5, numero * 5);
+			Console.WriteLine("{0} x {1} = {2}", numero, 6, numero * 6);
+			Console.WriteLine("{0} x {1} = {2}", numero, 7, numero * 7);
+			Console.WriteLine("{0} x {1} = {2}", numero, 8, numero * 8);
+			Console.WriteLine("{0} x {1} = {2}", numero, 9, numero * 9);
+			Console.WriteLine("{0} x {1} = {2}", numero, 10, numero * 10);
+
+	// Variantes
+	    Console.WriteLine("Dime un número");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            int factor = 0, resultado = num * factor;
+            Console.WriteLine("{0} x {1} = {2}", num, factor, resultado);
+
+            factor = 1;
+            resultado = num * factor;
+            Console.WriteLine("{0} x {1} = {2}", num, factor, resultado);
+
+            factor = 2;
+            resultado = num * factor;
+            Console.WriteLine("{0} x {1} = {2}", num, factor, resultado);
+
+            factor = 3;
+            resultado = num * factor;
+            Console.WriteLine("{0} x {1} = {2}", num, factor, resultado);
+
+            factor = 4;
+            resultado = num * factor;
+            Console.WriteLine("{0} x {1} = {2}", num, factor, resultado);
+
+            int resultado1 = num * 0;
+            int resultado2 = num * 1;
+            int resultado3 = num * 2;
+            int resultado4 = num * 3;
+
+            Console.WriteLine("{0} x 0 = {1}", num, resultado1);
+            Console.WriteLine("{0} x 1 = {1}", num, resultado2);
+            Console.WriteLine("{0} x 2 = {1}", num, resultado3);
+            Console.WriteLine("{0} x 3 = {1}", num, resultado4);
+
+        }
+    }
+}
+
+(1.11.3) Crear una variante del programa anterior, que pide al usuario un número y muestra su tabla de multiplicar. Esta vez no deberás utilizar {0}, {1}, {2}, sino "Write".
+
+using System;
+
+namespace ejercicio_1_11_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			int numero = 0;
+			
+            Console.Write("Escribe un número: ");
+            numero = Convert.ToInt32(Console.ReadLine());
+            
+			Console.Write(numero); Console.Write(" x 0 = "); Console.WriteLine(numero * 0);
+			Console.Write(numero); Console.Write(" x 1 = "); Console.WriteLine(numero * 1);
+			Console.Write(numero); Console.Write(" x 2 = "); Console.WriteLine(numero * 2);
+			Console.Write(numero); Console.Write(" x 3 = "); Console.WriteLine(numero * 3);
+			Console.Write(numero); Console.Write(" x 4 = "); Console.WriteLine(numero * 4);
+			Console.Write(numero); Console.Write(" x 5 = "); Console.WriteLine(numero * 5);
+			Console.Write(numero); Console.Write(" x 6 = "); Console.WriteLine(numero * 6);
+			Console.Write(numero); Console.Write(" x 7 = "); Console.WriteLine(numero * 7);
+			Console.Write(numero); Console.Write(" x 8 = "); Console.WriteLine(numero * 8);
+			Console.Write(numero); Console.Write(" x 9 = "); Console.WriteLine(numero * 9);
+			Console.Write(numero); Console.Write(" x 10 = "); Console.WriteLine(numero * 10);
+
+		// Console.WriteLine("{0} x {1} = {2}", num, factor, resultado);
+            	// Console.Write(num); Console.Write(" x "); Console.Write(factor); Console.Write(" = "); Console.Write(resultado); Console.Write("\n");
+        }
+    }
+}
+
+(1.11.4) Crea un programa que convierta de grados Celsius (centígrados) a Kelvin y a Fahrenheit: pedirá al usuario la cantidad de grados centígrados y usará las siguiente tablas de conversión: kelvin = celsius + 273 ; fahrenheit = celsius x 18 / 10 + 32.  Emplea "Write" en vez de "{0}" cuando debas mostrar varios datos en la misma línea.
+
+using System;
+
+namespace ejercicio_1_11_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			Console.Write("Grados centígrados: ");
+            int centigrados = Convert.ToInt32(Console.ReadLine());
+            
+			int kelvin = centigrados + 273;
+			int	fahrenheit = centigrados * 18 / 10 + 32;
+			
+            Console.Write("Grados Kelvin: ");
+            Console.Write(kelvin);
+            Console.Write(". Grados Fahrenheit: ");
+            Console.Write(fahrenheit);
+        }
+    }
+}
+

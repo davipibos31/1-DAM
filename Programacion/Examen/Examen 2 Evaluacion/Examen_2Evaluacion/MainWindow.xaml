@@ -1,0 +1,50 @@
+﻿<Window x:Class="Examen_2Evaluacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Examen_2Evaluacion"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="principal">
+        <Menu Margin="0,0,0,375">
+            <MenuItem x:Name="menu_alta_distribuidor" Header="Alta distribuidor" Height="32" Click="menu_alta_distribuidor_Click"/>
+            <MenuItem x:Name="menu_datos" Header="Datos" Height="32" Click="menu_datos_Click"/>
+            <MenuItem x:Name="menu_salir" Header="Salir" Height="32" Click="menu_salir_Click"/>
+        </Menu>
+        <TabControl x:Name="altas_ambos" Visibility="Visible" Margin="40,75,75,75">
+            <TabItem x:Name="tb_alta_distribuidor" Header="Alta distribuidores">
+                <Grid x:Name="alta_distribuidores" Background="#FFE5E5E5">
+                    <Label x:Name="lbl_nombre" Content="Nombre*: " HorizontalAlignment="Left" Margin="40,34,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_primer_apellido" Content="Primer_apellido*:  " HorizontalAlignment="Left" Margin="40,83,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_telefono1" Content="Telefono1*:  " HorizontalAlignment="Left" Margin="40,128,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_telefono2" Content="Telefono2:  " HorizontalAlignment="Left" Margin="40,171,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_correo_electronico" Content="Correo Electronico*: " HorizontalAlignment="Left" Margin="366,34,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_direccion" Content="Direccion*:" HorizontalAlignment="Left" Margin="366,83,0,0" VerticalAlignment="Top"/>
+
+                    <RadioButton x:Name="rb_cliente" Content="Cliente" HorizontalAlignment="Left" Margin="509,129,0,0" VerticalAlignment="Top" GroupName="cliente/distribuidor" Checked="rb_cliente_Checked"/>
+                    <RadioButton x:Name="rb_distribuidor" Content="Distribuidor" HorizontalAlignment="Left" Margin="509,149,0,0" VerticalAlignment="Top" GroupName="cliente/distribuidor" Checked="rb_distribuidor_Checked"/>
+                    <Label x:Name="lbl_cliente_distribuidor" Content="Cliente/Distribuidor*:" HorizontalAlignment="Left" Margin="366,129,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cbx_provincia" HorizontalAlignment="Left" Margin="509,197,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+                    <Label x:Name="lbl_provincia" Content="Cliente/Distribuidor*:" HorizontalAlignment="Left" Margin="363,193,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btn_aceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="33,210,0,0" VerticalAlignment="Top" Click="btn_aceptar_Click"/>
+                    <Button x:Name="btn_cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="118,206,0,0" VerticalAlignment="Top" Click="btn_cancelar_Click"/>
+                    <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Margin="142,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_primer_apellido" HorizontalAlignment="Left" Margin="141,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_telefono1" HorizontalAlignment="Left" Margin="141,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="txt_telefono1_KeyDown"/>
+                    <TextBox x:Name="txt_telefono2" HorizontalAlignment="Left" Margin="141,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="txt_telefono1_KeyDown"/>
+                    <TextBox x:Name="txt_correo_electronico" HorizontalAlignment="Left" Margin="509,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="txt_direccion" HorizontalAlignment="Left" Margin="509,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <TabControl x:Name="datos_ambos" Visibility="Hidden" Margin="68,94,53,41">
+            <TabItem x:Name="tb_cliente" Header="Cliente">
+                <Grid x:Name="g_cliente" Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem x:Name="tb_distribuidor" Header="Dsitribuidor">
+                <Grid x:Name="g_distribuidor" Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

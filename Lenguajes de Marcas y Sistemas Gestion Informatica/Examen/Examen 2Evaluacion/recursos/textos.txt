@@ -1,0 +1,89 @@
+﻿Indicaciones generales
+Siempre que cumplan con los criterios de accesibilidad
+Tipografía: a elección
+Tamaño de la tipografía: a elección
+Colores de la tipografía: a elección
+Las imagenes estan indicadas en el propio pdf
+
+Se valorará la estructura del sitio web.
+
+Textos para la web
+
+EXAMEN LENGUAJE DE MARCAS
+INICIO PRODUCTOS CONTACTO
+2ª EVALUACIÓN
+DAM / DAW
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus doloremque veritatis nihil ipsa error consectetur corrupti dolores maiores voluptas excepturi odio repudiandae incidunt perferendis saepe, assumenda animi harum nostrum.
+
+DESCRIPCION
+IG Formación es la Escuela de Formación Profesional de Nuevas Tecnologías en Alicante. Elige entre nuestros ciclos de Grado superior con los que obtendrás la titulación Oficial y homologada en todo el territorio nacional. Una vez acabados tus estudios tienes la posibilidad de seguir formándote en nuestro centro obteniendo la doble titulación en solo 3 años o continuar formándote en la Universidad gracias al acuerdo firmado con la UCAM por el que puedes obtener 4 titulaciones oficiales en 4 años.
+
+F.P. OFICIAL EN DESARROLLO DE APLICACIONES WEB (DAW)
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla temporibus doloremque veritatis nihil ipsa error consectetur corrupti dolores maiores voluptas excepturi odio repudiandae incidunt perferendis saepe, assumenda animi harum nostrum.
+
+F.P. OFICIAL EN DESARROLLO DE APLICACIONES MULTIPLATAFORMA (DAM)
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod minus, explicabo ducimus velit non delectus, inventore voluptatibus doloremque omnis laudantium perferendis harum perspiciatis ad sapiente amet corrupti dignissimos unde repudiandae!
+
+F.P. OFICIAL DOBLE TITULACIÓN DAM + DAW
+Lorem ipsum dolor sit amet consectetur adipisicing elit. A quos facilis ratione tempora ipsa magni voluptas beatae corrupti adipisci iste tenetur labore aliquid quia, eos debitis rem commodi, nemo maxime.
+
+INFORMACIÓN
+
+Lenguaje de marcas
+Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.
+Base de datos
+Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.
+Control de versiones
+Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.
+Virtualización
+Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.
+
+Formación Profesional de confianza
+
+Asignaturas
+Lenguaje de marcas
+Base de datos
+Sistemas informáticos
+Ingles
+Entornos de desarrollo
+Programación
+Formación orientación laboral
+
+CONTACTA CON NOSOTROS
+
+Calle Enriqueta Ortega nº 17, Bajo
+03005 Alicante
+Teléfono: 965 120 039
+Email: info@igformacion.com
+UCAM
+Blog
+Redes sociales
+
+Formulario de Contacto
+
+Nombre
+Email
+Mensaje
+
+Dirección
+Teléfono
+Twitter
+Facebook
+Ubicación
+
+Sobre Nosotros Terminos de uso Política de privacidad Contacto
+Ig formación - Todos los derechos reservados 2022
+
+
+
+
+
+
+
+
+
+
+
+
+

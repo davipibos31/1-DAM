@@ -1,0 +1,14 @@
+C:\Users\david\source\repos\prueba_clase\bin\Debug\netcoreapp3.1\prueba_clase.exe
+C:\Users\david\source\repos\prueba_clase\bin\Debug\netcoreapp3.1\prueba_clase.deps.json
+C:\Users\david\source\repos\prueba_clase\bin\Debug\netcoreapp3.1\prueba_clase.runtimeconfig.json
+C:\Users\david\source\repos\prueba_clase\bin\Debug\netcoreapp3.1\prueba_clase.runtimeconfig.dev.json
+C:\Users\david\source\repos\prueba_clase\bin\Debug\netcoreapp3.1\prueba_clase.dll
+C:\Users\david\source\repos\prueba_clase\bin\Debug\netcoreapp3.1\prueba_clase.pdb
+C:\Users\david\source\repos\prueba_clase\obj\Debug\netcoreapp3.1\prueba_clase.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\prueba_clase\obj\Debug\netcoreapp3.1\prueba_clase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\prueba_clase\obj\Debug\netcoreapp3.1\prueba_clase.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\prueba_clase\obj\Debug\netcoreapp3.1\prueba_clase.AssemblyInfo.cs
+C:\Users\david\source\repos\prueba_clase\obj\Debug\netcoreapp3.1\prueba_clase.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\prueba_clase\obj\Debug\netcoreapp3.1\prueba_clase.dll
+C:\Users\david\source\repos\prueba_clase\obj\Debug\netcoreapp3.1\prueba_clase.pdb
+C:\Users\david\source\repos\prueba_clase\obj\Debug\netcoreapp3.1\prueba_clase.genruntimeconfig.cache

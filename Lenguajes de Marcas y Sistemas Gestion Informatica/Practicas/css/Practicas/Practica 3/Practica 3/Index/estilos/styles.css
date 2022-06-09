@@ -1,0 +1,237 @@
+main{
+ width: 980px;
+ margin: 0 auto;
+ background-color: white;
+}
+
+header{
+    border-left: none;
+    border-right: none;
+    background-color: white;
+    border-bottom: 5px rgb(224, 224, 224) solid;
+    height: 100px;
+}
+
+.section1{
+    border-left: 1px rgb(224, 224, 224) solid;
+    border-right: 1px rgb(224, 224, 224) solid;
+    height: 100px;
+    background-color: white;
+}
+.menu{
+    color: white;
+    background-color: green;
+}
+span{
+    padding-left: 10px;
+}
+li {
+    margin-left: 15px;
+}
+.section2{
+    
+    height: 40px;
+    background-color: rgb(83, 194, 83);
+}
+.baner_principal{
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+.section3{
+    height: 450px;
+    background-color: white;
+}
+.imgtwiter{
+    margin-right: 10px;
+}
+.section4 h3{
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.section4 p{
+    color: black;
+    margin-left: 20px;
+}
+.section4{
+    border-radius: 5px 5px 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 55px;
+    background-color: rgb(83, 194, 83);
+}
+
+.section5{
+    height: 160px;
+    background-color: white;
+}
+footer{
+    height: 100px;
+    margin-top: 25px;
+    background-image: linear-gradient(to right, rgb(231, 231, 231), rgb(133, 133, 133));
+}
+.derecha{
+    float: right;
+}
+.derecha li{
+    padding-top: 7px;
+    padding-right: 5px;
+    float: left;
+    list-style-type: none;
+}
+.izquierda{
+    float: left;
+}
+
+nav ul li{
+    padding-top: 10px;
+    float: left;
+    list-style-type: none;
+    
+}
+
+nav input{
+    border-radius: 15px;
+    width: 80px;
+}
+
+nav{
+    clear: both;
+}
+.verde{
+    color: green;
+}
+.derecha1{
+    float: right;
+    background-color: white;
+    width: 400px;
+    height: 100px;
+}
+
+.derecha1 li{
+    float: left;
+    list-style-type: none;
+}
+
+.baner1, .baner2, .baner3, .baner4{
+    float: left;
+    padding-left: 17px;
+    margin-top: 15px;
+}
+.section6{
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 170px;
+    margin-top: 50px  
+}
+
+.section7, .section8, .section9, .section10{
+    float: left;
+    padding-left: 15px;
+    width: 220px;
+}
+.section11{
+    border-bottom: 2px green solid;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 170px;
+    margin-top: 10px;
+}
+
+.section12, .section13, .section14, .section15{
+    float: left;
+    padding-left: 15px;
+    width: 220px;
+}
+
+
+.section7 figure, .section8 figure, .section9 figure, .section10 figure, .section12 figure, .section13 figure, .section14 figure, .section15 figure{
+    float: left;
+    margin-bottom: 74px;
+    margin-right: 4px;
+}
+.section7 p, .section8 p, .section9 p, .section10 p, .section12 p, .section13 p, .section14 p, .section15 p{
+    
+    text-align: center justify;
+}
+.section7 h3, .section8 h3, .section9 h3, .section10 h3, .section12 h3, .section13 h3, .section14 h3, .section15 h3{
+    text-decoration-color: black;
+    margin-bottom: 7px;
+}
+.pie img{
+    transform: scale3d(0.7, 0.7, 0.7);
+}
+.pie_texto{
+    float: left;
+    width: 400px;
+    padding-top: 15px;
+    padding-left: 35px;
+}
+.pie_texto h1{
+    color: gray;
+}
+.pie_iconos{
+    float: right;
+}
+.pie_iconos li{
+    padding-top: 15px;
+    padding-right: 5px;
+    float: left;
+    list-style-type: none;
+}
+.pie{
+    float: left;
+    text-align: center;
+}
+.pie img{
+    float: left;
+}
+.pie li{
+    text-align: center;
+    margin-top: 30px;
+    float: left;
+    list-style-type: none;
+}
+.buscar img{
+    transform: scale3d(0.4, 0.4, 0.4);
+    float: right;
+}
+.buscar{
+    color: black;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px 10px 10px;
+    background-color: white;
+}
+.buscar p{
+    padding-left: 10px;
+}
+.icon_sob, .icon_you, .icon_twi, .icon_fac, .icon_app, .icon_com{
+    width: 70px;
+    height: 70px;
+    border-radius: 40px 40px 40px 40px;
+}
+.icon_com{
+    background-color: rgb(165, 243, 92);
+}
+.icon_fac{
+    background-color: blue;
+}
+.icon_twi{
+    background-color: aquamarine;
+}
+.icon_sob{
+    background-color: blueviolet;
+}
+.icon_you{
+    background-color: red;
+}
+.icon_app{
+    background-color: gray;
+}
+
+.icon_sob img, .icon_you img, .icon_twi img, .icon_fac img, .icon_app img, .icon_com img{
+    transform: scale3d(0.6, 0.6, 0.6);
+}

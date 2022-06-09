@@ -1,0 +1,13 @@
+.container {
+    background-color: beige;
+}
+.container-fluid {
+    background-color: beige;
+}
+.color {
+    background-color: brown;
+    color: white;
+}
+div {
+    margin: 10px 0;
+}

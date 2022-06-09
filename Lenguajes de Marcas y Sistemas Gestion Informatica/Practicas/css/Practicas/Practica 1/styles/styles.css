@@ -1,0 +1,488 @@
+body{
+    background-color: black;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    background-color: bisque;
+    border: white 3px solid;
+    height: 1035px;
+}
+
+.fila1{
+    background-color: cadetblue;
+    border-top: 1px black solid;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila2{
+    background-color:khaki;
+    padding: 10px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila2 p {
+    border: 1px red solid;
+    width: 158px;
+    background-color: yellow;
+}
+
+.fila3{
+    background-color: aquamarine;
+    padding: 10px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+.elefil3{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    padding-right: 150px;
+}
+.fila3 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    margin-right: 5px;
+}
+
+.fila4{
+    background-color: aquamarine;
+    padding: 10px;
+    height: 20px;
+    border: 1px black solid;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila4 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    padding-right: 60px;
+    margin-right: 5px;
+}
+
+.fila5{
+    background-color: aquamarine;
+    padding: 10px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.ele2fil5{
+    padding-right: 2em;
+}
+
+.ele3fil5{
+    padding-right: 4em;
+}
+
+.ele4fil5{
+    padding-right: 6em;
+}
+
+.fila5 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    margin-right: 5px;
+}
+
+.fila6{
+    background-color: darkcyan ;
+    padding: 10px;
+    height: 20px;
+    border: 1px black solid;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila7{
+    background-color:rgb(253, 229, 94);
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila7 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    margin-right: 5px;
+    float: right;
+}
+
+.fila8{
+    background-color:lightgreen;
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila8 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    margin-right: 5px;
+    float: right;
+}
+
+.fila9{
+    background-color:rgb(186, 122, 247);
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila9 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    margin-right: 5px;
+    float: right;
+    
+}
+
+.fila10{
+    background-color: lightgreen;
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.ele1fil10{
+    float: left;
+}
+
+.ele2fil10{
+    float: right;
+}
+
+.fila10 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    margin-right: 5px;
+}
+
+.fila11{
+    background-color: lightgreen;
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila11 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    margin-right: 5px;
+    
+}
+
+.ele1fil11{
+    float: left;
+}
+
+.ele2fil11{
+    float: right;
+}
+
+.fila12{
+    background-color: lightgreen;
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila12 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    margin-right: 5px;
+}
+
+.ele1fil12{
+    float: left;
+}
+
+.ele2fil12{
+    float: right;
+}
+
+.fila13{
+    background-color: lightgreen;
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila13 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: yellow;
+    display: inline;
+    margin-right: 5px;
+}
+
+.ele1fil13{
+    float: left;
+}
+
+.ele2fil13{
+    float: right;
+}
+
+.fila14{
+    background-color: rgb(100, 132, 173);
+    padding: 10px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila14 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: white;
+    margin-right: 5px;
+    padding: 0.2em;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: inline;
+    margin-left: 300px;
+}
+
+.fila15{
+    background-color: aquamarine;
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila15 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: rgb(113, 143, 226);
+    display: inline;
+    margin-right: 5px;
+}
+
+.ele1fil15{
+    margin-left: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.ele2fil15{
+    margin-left: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.fila16{
+    background-color: aquamarine;
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 20px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila16 p{
+    border: 1px red solid;
+    width: 150px;
+    background-color: rgb(113, 143, 226);
+    display: inline;
+    margin-right: 5px;
+}
+
+.ele1fil16{
+    margin-left: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.ele2fil16{
+    margin-left: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.ele3fil16{
+    margin-left: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.fila17{
+    background-color: rgb(96, 85, 146);
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 50px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila17 p{
+    text-align:left;
+    border: 1px white solid;
+    width: 150px;
+    background-color:brown;
+    display: block;
+    margin-right: 5px;
+}
+
+.ele1fil17{
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-left: 1px;
+    padding-right: 770px;
+}
+
+.ele2fil17{
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-left: 1px;
+    padding-right: 770px;
+}
+
+.div18{
+    text-align:left;
+    border: 2px white solid;
+    margin: 1px;
+    padding: 7px;
+    float: left;
+    background-color: darkcyan;
+}
+
+.fila18{
+    background-color: rgb(96, 85, 146);
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 75px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila18 p{
+    border: 3px white solid;
+    width: 150px;
+    background-color:brown;
+    display: block;
+}
+
+.ele1fil18{
+    margin-top: 4px;
+    padding-left: 1px;
+    padding-right: 235px;
+}
+
+.ele2fil18{
+    margin-top: 4px;
+    padding-left: 1px;
+    padding-right: 235px;
+}
+
+.fila19{
+    background-color: rgb(96, 85, 146);
+    padding: 10px;
+    margin-bottom: 3px;
+    height: 70px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.div19{
+    text-align:left;
+    border: 2px white solid;
+    padding: 6px;
+    float: right;
+    background-color: darkcyan;
+}
+
+.fila19 p{
+    border: 3px white solid;
+    width: 150px;
+    background-color:brown;
+    display: block;
+}
+
+.ele1fil19{
+    padding-left: 1px;
+    padding-right: 205px;
+}
+
+.ele2fil19{
+    margin-top: 4px;
+    padding-left: 1px;
+    padding-right: 205px;
+}
+
+.fila20{
+    
+    background-color: black;
+    padding: 10px;
+    height: 80px;
+    border-left: 2px black solid;
+    border-right: 1px black solid;
+}
+
+.fila20 p{
+    
+    border: 1px white solid;
+    background-color: orange;
+    display: inline;
+}
+
+.ele1fil20{
+    padding: 30px;
+    margin-right: 5px;
+    padding-left: 1px;
+    padding-right: 200px;
+    text-align: left;
+    padding-top: 1px;
+    padding-bottom: 65px;
+}
+
+.ele2fil20{
+    padding: 30px;
+    padding-left: 1px;
+    padding-right: 623.6px;
+    padding-top: 1px;
+    padding-bottom: 65px;
+}

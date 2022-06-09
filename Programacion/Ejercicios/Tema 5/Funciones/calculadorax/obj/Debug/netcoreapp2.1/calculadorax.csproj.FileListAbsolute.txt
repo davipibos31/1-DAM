@@ -1,0 +1,13 @@
+C:\Users\david\source\repos\calculadorax\bin\Debug\netcoreapp2.1\calculadorax.deps.json
+C:\Users\david\source\repos\calculadorax\bin\Debug\netcoreapp2.1\calculadorax.runtimeconfig.json
+C:\Users\david\source\repos\calculadorax\bin\Debug\netcoreapp2.1\calculadorax.runtimeconfig.dev.json
+C:\Users\david\source\repos\calculadorax\bin\Debug\netcoreapp2.1\calculadorax.dll
+C:\Users\david\source\repos\calculadorax\bin\Debug\netcoreapp2.1\calculadorax.pdb
+C:\Users\david\source\repos\calculadorax\obj\Debug\netcoreapp2.1\calculadorax.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\calculadorax\obj\Debug\netcoreapp2.1\calculadorax.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\calculadorax\obj\Debug\netcoreapp2.1\calculadorax.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\calculadorax\obj\Debug\netcoreapp2.1\calculadorax.AssemblyInfo.cs
+C:\Users\david\source\repos\calculadorax\obj\Debug\netcoreapp2.1\calculadorax.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\calculadorax\obj\Debug\netcoreapp2.1\calculadorax.dll
+C:\Users\david\source\repos\calculadorax\obj\Debug\netcoreapp2.1\calculadorax.pdb
+C:\Users\david\source\repos\calculadorax\obj\Debug\netcoreapp2.1\calculadorax.genruntimeconfig.cache

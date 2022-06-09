@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Prueba_clase_string/1.0.0": {
+        "runtime": {
+          "Prueba_clase_string.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Prueba_clase_string/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

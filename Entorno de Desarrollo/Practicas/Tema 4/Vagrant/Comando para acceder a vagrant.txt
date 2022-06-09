@@ -1,0 +1,2 @@
+chcp 1252
+cambia el tipo de dato 

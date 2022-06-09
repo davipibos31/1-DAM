@@ -1,0 +1,9 @@
+{
+    "Nombre" : "Base de Datos",
+    "Fecha" : "10-05-2022",
+    "Evaluacion" : [1,2,3],
+    "Nombre_alumno" : [ {"nombre" : "David", "nota" : 10}, 
+        {"nombre" : "Daniel", "nota": 5}, 
+        {"nombre": "Ricardo", "nota": 1.6}, 
+        {"nombre" : "Carlos", "nota": 7} ]
+}

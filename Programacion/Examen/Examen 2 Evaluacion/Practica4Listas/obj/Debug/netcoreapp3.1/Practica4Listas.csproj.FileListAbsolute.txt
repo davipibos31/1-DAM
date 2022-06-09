@@ -1,0 +1,40 @@
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas_MarkupCompile.cache
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas_MarkupCompile.lref
+C:\Users\david\source\repos\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.exe
+C:\Users\david\source\repos\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.deps.json
+C:\Users\david\source\repos\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.runtimeconfig.json
+C:\Users\david\source\repos\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.runtimeconfig.dev.json
+C:\Users\david\source\repos\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.dll
+C:\Users\david\source\repos\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.pdb
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.g.resources
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.AssemblyInfo.cs
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.dll
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.pdb
+C:\Users\david\source\repos\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.genruntimeconfig.cache
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.exe
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.deps.json
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.runtimeconfig.json
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.runtimeconfig.dev.json
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.dll
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\bin\Debug\netcoreapp3.1\Practica4Listas.pdb
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.csproj.AssemblyReference.cache
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\App.g.cs
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas_MarkupCompile.cache
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas_MarkupCompile.lref
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\MainWindow.baml
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.g.resources
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.GeneratedMSBuildEditorConfig.editorconfig
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.AssemblyInfoInputs.cache
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.AssemblyInfo.cs
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.csproj.CoreCompileInputs.cache
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.dll
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.pdb
+J:\Grado Superior\1º DAM\Asignaturas\Programación\Examen\Practica4Listas\obj\Debug\netcoreapp3.1\Practica4Listas.genruntimeconfig.cache

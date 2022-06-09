@@ -1,0 +1,17 @@
+{
+    "saludo": "Hola",
+    "nombre": "Pedro",
+    "edad": 35,
+    "casado": true,
+    "hijos": [
+        {
+            "nombre": "Juan",
+            "edad": 5
+        },
+        {
+            "nombre": "Juana",
+            "edad": 6
+        }
+    ],
+    "altura": 1.75
+}

@@ -1,0 +1,166 @@
+﻿<Window x:Class="Formulario_y_Calculadora_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Formulario_y_Calculadora_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="148*"/>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="24*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="584*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="6">
+            <TabItem Header="Claculadora">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="104*"/>
+                        <ColumnDefinition Width="174*"/>
+                        <ColumnDefinition Width="117*"/>
+                        <ColumnDefinition Width="400*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btn_1" Content="1" HorizontalAlignment="Left" Margin="24,262,0,0" VerticalAlignment="Top" Height="53" Width="62" Click="MostrarNumeros"/>
+                    <Button x:Name="btn_2" Content="2" HorizontalAlignment="Left" Margin="86,262,0,0" VerticalAlignment="Top" Height="56" Width="64" Click="MostrarNumeros" Grid.ColumnSpan="2"/>
+                    <Button x:Name="btn_3" Content="3" HorizontalAlignment="Left" Margin="46,262,0,0" VerticalAlignment="Top" Height="56" Width="62" Click="MostrarNumeros" Grid.Column="1"/>
+                    <Button x:Name="btn_4" Content="4" HorizontalAlignment="Left" Margin="24,199,0,0" VerticalAlignment="Top" Height="63" Width="62" Click="MostrarNumeros"/>
+                    <Button x:Name="btn_5" Content="5" HorizontalAlignment="Left" Margin="86,199,0,0" VerticalAlignment="Top" Height="63" Width="64" Click="MostrarNumeros" Grid.ColumnSpan="2"/>
+                    <Button x:Name="btn_6" Content="6" HorizontalAlignment="Left" Margin="46,199,0,0" VerticalAlignment="Top" Height="63" Width="62" Click="MostrarNumeros" Grid.Column="1"/>
+                    <Button x:Name="btn_7" Content="7" HorizontalAlignment="Left" Margin="24,141,0,0" VerticalAlignment="Top" Height="59" Width="62" Click="MostrarNumeros"/>
+                    <Button x:Name="btn_8" Content="8" HorizontalAlignment="Left" Margin="86,141,0,0" VerticalAlignment="Top" Height="59" Width="64" Click="MostrarNumeros" Grid.ColumnSpan="2"/>
+                    <Button x:Name="btn_9" Content="9" HorizontalAlignment="Left" Margin="46,141,0,0" VerticalAlignment="Top" Height="59" Width="62" Click="MostrarNumeros" Grid.Column="1"/>
+                    <Button x:Name="btn_Salir" Content="S" HorizontalAlignment="Left" Margin="24,315,0,0" VerticalAlignment="Top" Height="62" Width="62" Click="btn_Salir_Click"/>
+                    <Button x:Name="btn_0" Content="0" HorizontalAlignment="Left" Margin="86,315,0,0" VerticalAlignment="Top" Height="62" Width="64" Click="MostrarNumeros" Grid.ColumnSpan="2"/>
+                    <Button x:Name="btn_Igual" Content="=" HorizontalAlignment="Left" Margin="46,315,0,0" VerticalAlignment="Top" Height="62" Width="62" Click="clickIgual" Grid.Column="1"/>
+                    <Button x:Name="btn_Multiplicacion" Content="*" HorizontalAlignment="Left" Margin="108,262,0,0" VerticalAlignment="Top" Height="53" Width="62" Click="ClickOperacion" Tag="*" Grid.Column="1"/>
+                    <Button x:Name="btn_Resta" Content="-" HorizontalAlignment="Left" Margin="108,199,0,0" VerticalAlignment="Top" Height="63" Width="62" Click="ClickOperacion" Tag="-" Grid.Column="1"/>
+                    <Button x:Name="btn_Suma" Content="+" HorizontalAlignment="Left" Margin="108,141,0,0" VerticalAlignment="Top" Height="59" Width="62" Click="ClickOperacion" Tag="+" Grid.Column="1"/>
+                    <Button x:Name="btn_Division" Content="/" HorizontalAlignment="Left" Margin="108,315,0,0" VerticalAlignment="Top" Height="62" Width="62" Click="ClickOperacion" Tag="/" Grid.Column="1"/>
+                    <TextBox x:Name="txt_Resultado" HorizontalAlignment="Left" Margin="24,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" Height="51" IsEnabled="False" TextAlignment="Right" Text="0" BorderThickness="1,0,1,1" Grid.ColumnSpan="3"/>
+                    <Label x:Name="lbl_calculadora" Content="CALCULADORA WPF" HorizontalAlignment="Left" Margin="22,30,0,0" VerticalAlignment="Top" Width="316" HorizontalContentAlignment="Center" Height="51" BorderThickness="1,1,1,1" Grid.ColumnSpan="3"/>
+                    <Button x:Name="btn_borrar" Content="B" HorizontalAlignment="Left" Margin="170,140,0,0" VerticalAlignment="Top" Height="237" Width="64" Click="Borrar" Grid.ColumnSpan="2" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Formulario">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="93*"/>
+                        <ColumnDefinition Width="304*"/>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox x:Name="cb_1" Content="Fútbol" HorizontalAlignment="Left" Margin="393,102,0,0" VerticalAlignment="Top" Grid.Column="1" Checked="cb_1_Checked"/>
+                    <CheckBox x:Name="cb_2" Content="Baloncesto" HorizontalAlignment="Left" Margin="451,102,0,0" VerticalAlignment="Top" Grid.Column="1" Checked="cb_2_Checked"/>
+                    <CheckBox x:Name="cb_3" Content="Tenis" HorizontalAlignment="Left" Margin="393,132,0,0" VerticalAlignment="Top" Grid.Column="1" Checked="cb_3_Checked"/>
+                    <CheckBox x:Name="cb_4" Content="Padel" HorizontalAlignment="Left" Margin="451,132,0,0" VerticalAlignment="Top" Grid.Column="1" Checked="cb_4_Checked"/>
+                    <ProgressBar x:Name="pb_Barra" Margin="211,345,25,31" Grid.Column="1" Maximum="10"/>
+                    <Label x:Name="lbl_Titulo" Content="Progreso" HorizontalAlignment="Left" Margin="368,309,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Button x:Name="btn_Enviar" Content="Enviar" HorizontalAlignment="Left" Margin="122,345,0,0" VerticalAlignment="Top" Height="20" Width="54" Click="btn_Enviar_Click"/>
+                    <Button x:Name="btn_Salir1" Content="Salir" HorizontalAlignment="Left" Margin="44,345,0,0" VerticalAlignment="Top" Height="20" Width="54" Click="btn_Salir1_Click"/>
+                    <Label x:Name="lbl_nombre" Content="Nombre: " HorizontalAlignment="Left" Margin="36,101,0,0" VerticalAlignment="Top" Width="58"/>
+                    <TextBox x:Name="txt_nombre" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="182,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" TextChanged="txt_nombre_TextChanged"/>
+                    <Label x:Name="lbl_primerapellido" Content="Primer apellido: " HorizontalAlignment="Left" Margin="36,132,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txt_primer_apellido" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="182,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" TextChanged="txt_primer_apellido_TextChanged"/>
+                    <Label x:Name="lbl_segundoapellido" Content="Segundo apellido: " HorizontalAlignment="Left" Margin="36,164,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txt_segundo_apellido" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="182,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" TextChanged="txt_segundo_apellido_TextChanged"/>
+                    <Label x:Name="lbl_localidad" Content="Localidad: " HorizontalAlignment="Left" Margin="36,201,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cbx_localidad" HorizontalAlignment="Left" Margin="182,205,0,0" VerticalAlignment="Top" Width="192" Grid.ColumnSpan="2" SelectionChanged="cbx_localidad_SelectionChanged">
+                        <ComboBoxItem Content="Alicante"/>
+                        <Separator/>
+                        <ComboBoxItem Content="Valencia"/>
+                        <Separator/>
+                        <ComboBoxItem Content="Elche"/>
+                        <Separator/>
+                        <ComboBoxItem Content="Castellon"/>
+                        <Separator/>
+                        <ComboBoxItem Content="Madrid"/>
+                        <Separator/>
+                        <ComboBoxItem Content="Extranjero"/>
+                    </ComboBox>
+                    <Label x:Name="lbl_Deportes__" Content="Deportes: " HorizontalAlignment="Left" Margin="287,92,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label x:Name="lbl_Sexo" Content="Sexo:" HorizontalAlignment="Left" Margin="287,168,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <RadioButton x:Name="rb_masculino" Content="Masculino" HorizontalAlignment="Left" Margin="393,173,0,0" VerticalAlignment="Top" GroupName="sexo" Grid.Column="1" Checked="rb_masculino_Checked"/>
+                    <RadioButton x:Name="rb_femenino" Content="Femenino" HorizontalAlignment="Left" Margin="475,173,0,0" VerticalAlignment="Top" GroupName="sexo" Grid.Column="1" Checked="rb_femenino_Checked"/>
+                    <Menu x:Name="Menu_Principal"  Margin="0,0,0,343" Grid.ColumnSpan="2">
+                        <MenuItem x:Name="marchivo" Header="Archivo" Height="51">
+                            <MenuItem x:Name="marchivo_nuevo" Header="Nuevo">
+                                <MenuItem.Icon>
+                                    <Image Source="C:\Users\david\source\repos\Formulario y Calculadora WPF\Imagenes\Nuevo.png"></Image>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <Separator/>
+                            <MenuItem x:Name="marchivo_guardar" Header="Guardar">
+                                <MenuItem.Icon>
+                                    <Image Source="C:\Users\david\source\repos\Formulario y Calculadora WPF\Imagenes\Guardar.png"></Image>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem x:Name="meditar" Header="Editar" Height="58">
+                            <MenuItem x:Name="mediatr_atras" Header="Atras">
+                                <MenuItem.Icon>
+                                    <Image Source="C:\Users\david\source\repos\Formulario y Calculadora WPF\Imagenes\Atras.png"></Image>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                            <Separator/>
+                            <MenuItem x:Name="meditar_avanzar" Header="Avanzar">
+                                <MenuItem.Icon>
+                                    <Image Source="C:\Users\david\source\repos\Formulario y Calculadora WPF\Imagenes\Avanzar.png"></Image>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem x:Name="majustes" Header="Ajustes" Height="58">
+                            <MenuItem x:Name="majustes_settings" Header="Settings">
+                                <MenuItem.Icon>
+                                    <Image Source="C:\Users\david\source\repos\Formulario y Calculadora WPF\Imagenes\Ajustes.png"></Image>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem x:Name="Propiedades" Header="Propiedades" Height="52">
+                            <MenuItem x:Name="mpropiedades_pro" Header="Propiedades">
+                                <MenuItem.Icon>
+                                    <Image Source="C:\Users\david\source\repos\Formulario y Calculadora WPF\Imagenes\Propiedades.png"></Image>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem x:Name="Herramientas" Header="Heramientas" Height="56">
+                            <MenuItem x:Name="mHerramientas" Header="Herramientas Avanzadas">
+                                <MenuItem.Icon>
+                                    <Image Source="C:\Users\david\source\repos\Formulario y Calculadora WPF\Imagenes\Ajustes.png"></Image>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem x:Name="mVentana" Header="Ventana" Height="52">
+                            <MenuItem x:Name="mVentana_editar" Header="Ventana">
+                                <MenuItem.Icon>
+                                    <Image Source="C:\Users\david\source\repos\Formulario y Calculadora WPF\Imagenes\Editar.png"></Image>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem x:Name="Ayuda" Header="Ayuda" Height="50">
+                            <MenuItem x:Name="mAyuda" Header="Ayuda">
+                                <MenuItem.Icon>
+                                    <Image Source="C:\Users\david\source\repos\Formulario y Calculadora WPF\Imagenes\Ayuda.png"></Image>
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </MenuItem>
+                    </Menu>
+                    <ListBox x:Name="lbx_nacimiento" Grid.Column="1" Margin="0,254,420,88">
+                        <ListBoxItem x:Name="lbx_opcion1" Content="España" Selected="lbx_opcion1_Selected"/>
+                        <Separator/>
+                        <ListBoxItem x:Name="lbx_opcion2" Content="Extranjero" Selected="lbx_opcion2_Selected"/>
+                    </ListBox>
+                    <Label x:Name="lbl_nacimiento" Content="Nacimiento:" HorizontalAlignment="Left" Margin="36,254,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_barra_progreso" Content="0/10" Grid.Column="1" HorizontalAlignment="Left" Margin="378,349,0,0" VerticalAlignment="Top" Width="61" Height="26"/>
+                    <Label x:Name="lbl_Telefono" Content="Telefono: " HorizontalAlignment="Left" Margin="248,210,0,0" VerticalAlignment="Top" Width="58" Grid.Column="1"/>
+                    <TextBox x:Name="txt_telefono" HorizontalAlignment="Left" Margin="394,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Grid.Column="1" TextChanged="txt_telefono_TextChanged"/>
+                    <Label x:Name="lbl_movil" Content="Movil: " HorizontalAlignment="Left" Margin="251,245,0,0" VerticalAlignment="Top" Width="58" Grid.Column="1"/>
+                    <TextBox x:Name="txt_movil" HorizontalAlignment="Left" Margin="397,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Grid.Column="1" TextChanged="txt_movil_TextChanged"/>
+                    <Label x:Name="lbl_email" Content="Email: " HorizontalAlignment="Left" Margin="251,273,0,0" VerticalAlignment="Top" Width="58" Grid.Column="1"/>
+                    <TextBox x:Name="txt_email" HorizontalAlignment="Left" Margin="397,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Grid.Column="1" TextChanged="txt_email_TextChanged"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

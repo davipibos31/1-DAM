@@ -1,0 +1,71 @@
+13. 	Mostrar el código de ticket, fecha y nombre del cliente sin que se pierda ningún ticket, aunque su cliente sea NULL.
+
+select ticket.codigo, ticket.fecha, cliente.nombre from ticket, cliente where ticket.cliente = cliente.codigo order by ticket.codigo;
+
+14. 	Mostrar el nombre y dirección de los clientes junto con el nombre de su municipio sin perder aquellos municipios que no tienen clientes.
+
+select cliente.nombre, cliente.direccion, municipio.nombre from cliente, municipio where municipio.codigo = cliente.municipio;
+
+15. 	Escribe una consulta que devuelva el código de ticket, línea, código y descripción del artículo para todas las líneas del ticket 108, aunque el código de artículo sea nulo.
+
+select linea_ticket.ticket, linea_ticket.nlinea, articulo.descripcion from linea_ticket right join articulo on linea_ticket.ticket = 108 ;
+
+16. 	Si has resuelto la sentencia anterior con RIGHT JOIN, resuélvela con LEFT JOIN. Si la has resuelto con LEFT JOIN, resuélvela con RIGHT JOIN.
+
+select linea_ticket.ticket, linea_ticket.nlinea, articulo.descripcion from linea_ticket left join articulo on linea_ticket.ticket = 108 ;
+
+17. 	Mostrar el nombre de cada municipio y el número de clientes residiendo en cada uno de ellos. Los municipios que no tienen ningún cliente no aparecerán.
+
+select municipio.nombre, count(cliente.nombre) from municipio right join cliente on municipio.codigo = cliente.municipio group by municipio.nombre;
+
+18. 	Mostrar el nombre de cada municipio y el número de clientes residiendo en cada uno de ellos. Los municipios que no tienen ningún cliente también aparecerán.
+
+select municipio.nombre, count(cliente.nombre) from municipio left join cliente on municipio.codigo = cliente.municipio group by municipio.nombre;
+
+19. 	Escribe una consulta que devuelva el código y fecha de cada ticket junto al nombre del vendedor que realizó la venta y el nombre del cliente destinatario del ticket. No se debe perder ningún ticket aunque no tenga código de vendedor o código de cliente.
+
+select vendedor.codigo, vendedor.nombre, linea_ticket.cant from vendedor, linea_ticket, ticket where vendedor.codigo = ticket.vendedor and ticket.codigo = linea_ticket.ticket;
+
+20. 	Obtén el nombre de los clientes y el número de tickets en los que aparece cada uno. También se mostrará el nombre de los clientes que no aparecen en ningún ticket.
+
+select cliente.nombre, ticket.codigo from cliente left join ticket on ticket.cliente = cliente.codigo;
+
+21. 	Escribe una sentencia que muestre el código y nombre de cada vendedor y el total de ventas (importe total de sus tickets ignorando posibles descuentos e impuestos).
+
+select vendedor.codigo, vendedor.nombre, sum(linea_ticket.cant* linea_ticket.precio) as importe_total from vendedor, linea_ticket, ticket where linea_ticket.ticket = ticket.codigo and vendedor.codigo = ticket.vendedor group by vendedor;
+
+22. 	Escribe una sentencia que muestre el nombre de la provincia y la cantidad total de artículos vendidos a clientes que residen en dicha provincia.
+
+select provincia.nombre,count(ticket.codigo) from provincia left join municipio on provincia.codigo = municipio.provincia left join cliente on cliente.municipio = municipio.codigo left join ticket on ticket.cliente = cliente.codigo group by provincia.nombre 
+
+23. 	Escribe una consulta que muestre el código y nombre de aquellos clientes de la provincia de Castellón (con código de provincia ‘CA’) que en total han gastado más de 100 euros (ignora descuentos e impuestos).
+
+select cliente.codigo, cliente.nombre from provincia  left join municipio on provincia.codigo = municipio.provincia  left join cliente on cliente.municipio = municipio.codigo left join ticket on ticket.cliente = cliente.codigo left join linea_ticket on linea_ticket.ticket = ticket.codigo where provincia = "CA" group by cliente having sum(linea_ticket.cant * linea_ticket.precio) > 100;
+
+24. 	Escribe una consulta que obtenga el nombre de cada vendedor y el de su jefe. 
+
+select v.nombre, j.nombre as jefe from vendedor as v join vendedor as j where j.codigo = v.jefe;  
+
+25. 	Obtén el nombre de cada asignatura, así como el curso, edificio y aula donde se imparte.
+
+select asignatura.nombre, imparte.edificioAula, imparte.claseAula, asignatura.curso from asignatura join imparte;  
+
+26. 	Obtén el nombre completo de cada profesor junto con el nombre y curso de cada una de las asignaturas asignatura que imparte.
+
+select profesor.nombre, profesor.apellido1, profesor.apellido2, asignatura.nombre, asignatura.curso from profesor join asignatura join imparte;
+
+27. 	Obtén el nombre y apellidos de los alumnos nacidos en 1999 junto con el nombre de cada una de las asignaturas que cursa y la nota obtenida.
+
+select alumno.nombre, alumno.apellido1, alumno.apellido2, asignatura.nombre, matricula.nota from alumno join asignatura left join matricula on matricula.alumno = alumno.DNI and matricula.asignatura = asignatura.codigo where alumno.fechNac > '1999-01-01' and alumno.fechNac < '1999-12-31';
+
+28. 	Obtén el nombre de los profesores y el número de alumnos que tienen.
+
+select profesor.nombre, count(reparto.alumno) as numero_alumnos from profesor join reparto left join ensenya on ensenya.profesor = profesor.DNI and ensenya.grupo = reparto.grupo  group by profesor;
+
+29. 	Para cada asignatura, obtén el nombre, el curso y la nota media obtenida por los alumnos que la cursan.
+
+select asignatura.nombre, asignatura.curso, avg(matricula.nota) from asignatura left join matricula on matricula.asignatura = asignatura.codigo group by asignatura;  
+
+30. 	Obtén el nombre completo de cada alumno y la cantidad de asignaturas en que está matriculado cada uno de ellos siempre y cuando esté matriculado en menos de 5 asignaturas. 
+
+select alumno.nombre, alumno.apellido1, alumno.apellido2, count(matricula.asignatura) from alumno join asignatura left join matricula on matricula.asignatura = asignatura.codigo and matricula.alumno = alumno.DNI group by alumno having count(matricula.asignatura) < 5;

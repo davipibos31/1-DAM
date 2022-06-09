@@ -1,0 +1,12 @@
+C:\Users\david\source\repos\Funcionescalculadora\bin\Debug\netcoreapp2.1\Funcionescalculadora.deps.json
+C:\Users\david\source\repos\Funcionescalculadora\bin\Debug\netcoreapp2.1\Funcionescalculadora.runtimeconfig.json
+C:\Users\david\source\repos\Funcionescalculadora\bin\Debug\netcoreapp2.1\Funcionescalculadora.runtimeconfig.dev.json
+C:\Users\david\source\repos\Funcionescalculadora\bin\Debug\netcoreapp2.1\Funcionescalculadora.dll
+C:\Users\david\source\repos\Funcionescalculadora\bin\Debug\netcoreapp2.1\Funcionescalculadora.pdb
+C:\Users\david\source\repos\Funcionescalculadora\obj\Debug\netcoreapp2.1\Funcionescalculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Funcionescalculadora\obj\Debug\netcoreapp2.1\Funcionescalculadora.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Funcionescalculadora\obj\Debug\netcoreapp2.1\Funcionescalculadora.AssemblyInfo.cs
+C:\Users\david\source\repos\Funcionescalculadora\obj\Debug\netcoreapp2.1\Funcionescalculadora.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Funcionescalculadora\obj\Debug\netcoreapp2.1\Funcionescalculadora.dll
+C:\Users\david\source\repos\Funcionescalculadora\obj\Debug\netcoreapp2.1\Funcionescalculadora.pdb
+C:\Users\david\source\repos\Funcionescalculadora\obj\Debug\netcoreapp2.1\Funcionescalculadora.genruntimeconfig.cache

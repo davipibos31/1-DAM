@@ -1,0 +1,47 @@
+1. Muestra el nombre de usuario, fecha de nacimiento y email de los usuarios que le
+gustan a emgonzalez.
+
+select nom_usuario, email, fechanac from citas.perfil join citas.gusta on citas.perfil.nom_usuario = citas.gusta.nom_usuario_1
+
+2. Muestra el código de aquellas citas en las que ambos participantes comparten la
+misma valoración.
+
+select citas.encuesta.cita, citas.encuesta.valoracion from citas.encuesta, citas.cita where citas.encuesta.cita = citas.cita.id group by citas.encuesta.valoracion
+
+3. Muestra para todas las citas los nombres de usuario que han asistido, el número de
+cita y la valoración. Ordena los resultados por nombre de usuario alfabéticamente.
+
+select citas.perfil.nom_usuario, citas.encuesta.cita, citas.encuesta.valoracion from citas.perfil, citas.encuesta, citas.cita where citas.perfil.nom_usuario = citas.encuesta.nom_usuario and citas.encuesta.cita = citas.cita.id order by nom_usuario asc
+
+4. Muestra el nombre de usuario de aquellos usuarios que practiquen alguna afición
+todos los meses y que gusten al usuario djrodrigo. 
+
+select citas.practica.nom_usuario from citas.practica, citas.aficion, citas.gusta, citas.usuario where citas.practica.aficion = citas.aficion.codigo and citas.practica.frecuencia = "todos los meses" group by citas.gusta.nom_usuario_2 = "djrodrigo"
+
+5. Obtén el título de las películas junto con su recaudación total.
+
+
+
+6. Obtén el DNI de aquellos socios que aún no han comprado ninguna entrada.
+
+select cine.socio.dni from cine.socio, cine.compra, cine.entrada where cine.compra.socio = cine.socio.dni and cine.entrada.id = cine.compra.entrada 
+
+7. Obtén el nombre de los cines y la recaudación de cada uno de ellos considerando
+únicamente las películas de Acción.
+
+select cine.pelicula.titulo from cine.pelicula
+
+8. Obtén el título de las películas que se han proyectado en salas con Sonido Dolby
+Atmos.
+
+select cine.pelicula.titulo from cine.pelicula, cine.sala, cine.equipamiento, cine.cine, cine.sesion where cine.sala.cine = cine.cine.id  and cine.sesion.pelicula = cine.pelicula.id 
+
+9. Obtén el número total de entradas vendidas, el número de entradas vendidas a
+socios y el número de entradas vendidas a no socios.
+
+
+
+10. Obtén el descuento total en euros que han recibido los diferentes socios. Es decir,
+la cantidad total en euros que les han descontado sobre el precio base de todas las
+entradas que han adquirido. 
+

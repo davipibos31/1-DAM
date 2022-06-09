@@ -1,0 +1,39 @@
+1. 	Para la asignatura con código 7 muestra el DNI de los profesores que la enseñan y a qué grupos.
+
+select profesor, grupo from ensenya where asignatura = 7;
+
+2. 	Mostrar el DNI del alumno, el código de la asignatura y la nota que ha obtenido en aquellos resultados cuya nota supere el 8.
+
+ select alumno, asignatura, nota from matricula where nota > 8;
+
+3. 	Mostrar el nombre completo de los profesores cuyo año de incorporación fue 2015 y posterior.
+
+select nombre, apellido1, apellido2 from profesor where anyoIng >= 2015;
+
+4. 	Obtén los grupos a los que da clase el profesor con DNI “45362734P”.
+
+select grupo from ensenya where profesor="45362734P";
+
+5. 	Obtén las notas obtenidas por el alumno “67392863B”.
+
+ select nota from matricula where alumno="67392863B";
+
+6. 	Obtén el DNI y nombre completo de los alumnos cuya fecha de nacimiento se encuentre entre noviembre de 1998 y marzo de 1999.
+
+select DNI, nombre, apellido1, apellido2 from alumno where 1998-11 >= fechNac <= 1999-03;
+
+7. 	Mostrar los nombres de las diferentes asignaturas, sin que se repitan.
+
+select distinct nombre from asignatura;
+
+8. 	Mostrar el nombre completo de los alumnos cuyo nombre comience por “C”.
+
+select nombre, apellido1, apellido2 from alumno where nombre like 'C%';
+
+9. 	Mostrar el nombre completo de los profesores que tienen algún apellido acabado en “z”.
+
+select nombre, apellido1, apellido2 from profesor where apellido1 like '%z' or apellido2 like '%z';
+
+10. 	Mostrar, sin que se repitan, los DNIs de los alumnos que tienen algún 5 es sus notas finales. 
+
+select distinct alumno from matricula where nota = 5;

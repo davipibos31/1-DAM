@@ -1,0 +1,28 @@
+C:\Users\david\source\repos\prueba manejo ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.exe
+C:\Users\david\source\repos\prueba manejo ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.deps.json
+C:\Users\david\source\repos\prueba manejo ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.runtimeconfig.json
+C:\Users\david\source\repos\prueba manejo ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.runtimeconfig.dev.json
+C:\Users\david\source\repos\prueba manejo ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.dll
+C:\Users\david\source\repos\prueba manejo ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.pdb
+C:\Users\david\source\repos\prueba manejo ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\prueba manejo ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\prueba manejo ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.AssemblyInfo.cs
+C:\Users\david\source\repos\prueba manejo ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\prueba manejo ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.dll
+C:\Users\david\source\repos\prueba manejo ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.pdb
+C:\Users\david\source\repos\prueba manejo ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.genruntimeconfig.cache
+C:\Users\david\source\repos\prueba manejo ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\prueba_manejo_ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.exe
+C:\Users\david\source\repos\prueba_manejo_ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.deps.json
+C:\Users\david\source\repos\prueba_manejo_ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.runtimeconfig.json
+C:\Users\david\source\repos\prueba_manejo_ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.runtimeconfig.dev.json
+C:\Users\david\source\repos\prueba_manejo_ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.dll
+C:\Users\david\source\repos\prueba_manejo_ficheros\bin\Debug\netcoreapp3.1\prueba manejo ficheros.pdb
+C:\Users\david\source\repos\prueba_manejo_ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\prueba_manejo_ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\prueba_manejo_ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\prueba_manejo_ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.AssemblyInfo.cs
+C:\Users\david\source\repos\prueba_manejo_ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\prueba_manejo_ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.dll
+C:\Users\david\source\repos\prueba_manejo_ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.pdb
+C:\Users\david\source\repos\prueba_manejo_ficheros\obj\Debug\netcoreapp3.1\prueba manejo ficheros.genruntimeconfig.cache

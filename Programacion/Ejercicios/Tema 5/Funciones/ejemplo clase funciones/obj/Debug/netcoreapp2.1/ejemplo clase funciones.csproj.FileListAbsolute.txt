@@ -1,0 +1,13 @@
+C:\Users\david\source\repos\ejemplo clase funciones\bin\Debug\netcoreapp2.1\ejemplo clase funciones.deps.json
+C:\Users\david\source\repos\ejemplo clase funciones\bin\Debug\netcoreapp2.1\ejemplo clase funciones.runtimeconfig.json
+C:\Users\david\source\repos\ejemplo clase funciones\bin\Debug\netcoreapp2.1\ejemplo clase funciones.runtimeconfig.dev.json
+C:\Users\david\source\repos\ejemplo clase funciones\bin\Debug\netcoreapp2.1\ejemplo clase funciones.dll
+C:\Users\david\source\repos\ejemplo clase funciones\bin\Debug\netcoreapp2.1\ejemplo clase funciones.pdb
+C:\Users\david\source\repos\ejemplo clase funciones\obj\Debug\netcoreapp2.1\ejemplo clase funciones.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\ejemplo clase funciones\obj\Debug\netcoreapp2.1\ejemplo clase funciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ejemplo clase funciones\obj\Debug\netcoreapp2.1\ejemplo clase funciones.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ejemplo clase funciones\obj\Debug\netcoreapp2.1\ejemplo clase funciones.AssemblyInfo.cs
+C:\Users\david\source\repos\ejemplo clase funciones\obj\Debug\netcoreapp2.1\ejemplo clase funciones.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ejemplo clase funciones\obj\Debug\netcoreapp2.1\ejemplo clase funciones.dll
+C:\Users\david\source\repos\ejemplo clase funciones\obj\Debug\netcoreapp2.1\ejemplo clase funciones.pdb
+C:\Users\david\source\repos\ejemplo clase funciones\obj\Debug\netcoreapp2.1\ejemplo clase funciones.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+C:\Users\david\source\repos\Prueba_ficheros\bin\Debug\netcoreapp3.1\Prueba_ficheros.exe
+C:\Users\david\source\repos\Prueba_ficheros\bin\Debug\netcoreapp3.1\Prueba_ficheros.deps.json
+C:\Users\david\source\repos\Prueba_ficheros\bin\Debug\netcoreapp3.1\Prueba_ficheros.runtimeconfig.json
+C:\Users\david\source\repos\Prueba_ficheros\bin\Debug\netcoreapp3.1\Prueba_ficheros.runtimeconfig.dev.json
+C:\Users\david\source\repos\Prueba_ficheros\bin\Debug\netcoreapp3.1\Prueba_ficheros.dll
+C:\Users\david\source\repos\Prueba_ficheros\bin\Debug\netcoreapp3.1\Prueba_ficheros.pdb
+C:\Users\david\source\repos\Prueba_ficheros\obj\Debug\netcoreapp3.1\Prueba_ficheros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Prueba_ficheros\obj\Debug\netcoreapp3.1\Prueba_ficheros.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Prueba_ficheros\obj\Debug\netcoreapp3.1\Prueba_ficheros.AssemblyInfo.cs
+C:\Users\david\source\repos\Prueba_ficheros\obj\Debug\netcoreapp3.1\Prueba_ficheros.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Prueba_ficheros\obj\Debug\netcoreapp3.1\Prueba_ficheros.dll
+C:\Users\david\source\repos\Prueba_ficheros\obj\Debug\netcoreapp3.1\Prueba_ficheros.pdb
+C:\Users\david\source\repos\Prueba_ficheros\obj\Debug\netcoreapp3.1\Prueba_ficheros.genruntimeconfig.cache

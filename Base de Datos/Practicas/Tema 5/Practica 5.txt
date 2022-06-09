@@ -1,0 +1,88 @@
+A)  INSERT INTO despacho VALUES ('DP01', '900102030');
+
+Funciona correctamente y se ejecuta correctamente por que los datos a insertar son validos y el comando es correcto
+
+
+
+B) INSERT INTO despacho (codigo) VALUES ('DP02'),('DP03'); 
+
+Funciona y se ejecuta perfectamente puesto que los datos a insertar son correctos.
+
+
+
+C) INSERT INTO empleado VALUES (1, 'Juan', 'DP01', 1, 1200);
+
+No funciona ni se ejecuta porque departamento es clave foranea.
+
+
+
+D) INSERT INTO empleado VALUES (2, 'Sonia', 'DP01', NULL, 1200);
+
+No funciona ni se ejecuta porque departamento no puede ser nulo puesto que es clave foranea y clave primaria de departamento.
+
+
+
+E) INSERT INTO departamento VALUES (1, 'Matemáticas'), (2, 'Física'), (3, 'Informática');
+
+Funciona y se ejecuta perfectamente puesto que los datos a insertar son validos.
+
+
+
+F) INSERT INTO empleado VALUES (1, 'Juan', 'DP01', 1, DEFAULT),(2, 'Sonia', 'DP01', 2, 1300);
+
+No funciona ni se ejecuta porque el departamento no puede repetirse.
+
+
+
+G) INSERT INTO empleado VALUES (3, 'Juan', 'DP02', 1, DEFAULT), (4, 'Sonia', 'DP01', 2, 1300);
+
+Funciona y se ejecuta perfectamente puesto que los datos a insertar son validos.
+
+
+
+H) DELETE FROM departamento WHERE id = 1;
+
+No se puede eliminar, no funciona ni se ejecuta puesto que esta la restriccion delete y update de empleado y no puede eliminarlo. 
+
+
+
+I) DELETE FROM departamento WHERE id = 3; 
+
+Funciona y se ejecuta correctamente.
+
+
+
+J) DELETE FROM despacho WHERE codigo = 'DP01';
+
+Funciona y se ejecuta correctamente.
+
+
+
+K) UPDATE empleado SET nombre = 'Laura' WHERE id = 4;
+
+Funciona y se ejecuta correctamente.
+
+
+
+L) UPDATE departamento SET id = 3 WHERE id = 1;
+
+Funciona y se ejecuta correctamente.
+
+
+
+M) DELETE FROM empleado WHERE departamento = 1;
+
+Funciona y se ejecuta correctamente.
+
+
+
+N) UPDATE despacho SET codigo = 'DP10' WHERE codigo = 'DP02';
+
+Funciona y se ejecuta correctamente.
+
+
+
+O) DELETE FROM empleado WHERE despacho IS NULL;
+
+Funciona y se ejecuta correctamente.
+

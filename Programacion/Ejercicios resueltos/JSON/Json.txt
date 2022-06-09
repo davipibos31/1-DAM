@@ -1,0 +1,123 @@
+Ejercicio 2
+
+{
+   "mensaje":{
+      "remitente":{
+         "nombre":"Javier Miras",
+         "email":"ajmiras@gmail.com"
+      },
+      "destinatario":{
+         "nombre":"Carlos Martinez",
+         "email":"carlos.igformacion@gmail.com"
+      },
+      "asunto":"Práctica evaluable nº1",
+      "texto":[
+         {
+            "parrafo":"Buenos dias"
+         },
+         {
+            "parrafo":"Lorem Ipsum"
+         }
+      ]
+   }
+}
+
+Ejercicio 3
+
+Solución a (una sola evaluación)
+
+{
+   "nombre":"Base de Datos",
+   "fecha":"09/05/2022",
+   "evaluacion":2,
+   "alumnos":[
+      {
+         "nombre":"Carlos",
+         "nota":7.5
+      },
+      {
+         "nombre":"Pepe",
+         "nota":8
+      },
+      {
+         "nombre":"Pablo",
+         "nota":3.5
+      },
+      {
+         "nombre":"Jorge",
+         "nota":10
+      }
+   ]
+}
+
+Solución b (todas las evaluaciones)
+
+{
+   "nombreAsigantura":"Base de Datos",
+   "fecha":"10/05/2022",
+   "evaluaciones":[
+      {
+         "numero":1,
+         "alumnos":[
+            {
+               "nombre":"Carlos",
+               "nota":10
+            },
+            {
+               "nombre":"Pepe",
+               "nota":2.5
+            },
+            {
+               "nombre":"Álvaro",
+               "nota":0.5
+            },
+            {
+               "nombre":"Guille",
+               "nota":4.99
+            }
+         ]
+      },
+      {
+         "numero":2,
+         "alumnos":[
+            {
+               "nombre":"Carlos",
+               "nota":10
+            },
+            {
+               "nombre":"Pepe",
+               "nota":2.5
+            },
+            {
+               "nombre":"Álvaro",
+               "nota":0.5
+            },
+            {
+               "nombre":"Guille",
+               "nota":4.99
+            }
+         ]
+      },
+      {
+         "numero":3,
+         "alumnos":[
+            {
+               "nombre":"Carlos",
+               "nota":null
+            },
+            {
+               "nombre":"Pepe",
+               "nota":null
+            },
+            {
+               "nombre":"Álvaro",
+               "nota":null
+            },
+            {
+               "nombre":"Guille",
+               "nota":null
+            }
+         ]
+      }
+   ]
+}

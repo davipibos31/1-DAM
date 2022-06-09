@@ -1,0 +1,65 @@
+1. Mostrar el precio más alto y bajo de todos los artículos.
+
+select max(precio), min(precio) from articulo group by precio like precio;
+
+2. Mostrar el precio medio de aquellos artículos cuyo stock es inferior a las 25
+unidades.
+
+select avg(precio) from articulo where stock < 25 group by precio like precio;
+
+3. Escribir una sentencia que obtenga el stock más alto de aquellos artículos cuyo
+precio es inferior a 1.5 euros.
+
+select max(stock) from articulo where precio < 1.5 group by stock;
+
+4. Obtener el número de artículos almacenados en la base de datos.
+
+select count(codigo) from articulo;
+
+5. Mostrar el precio medio de los artículos.
+
+ select avg(precio) from articulo;
+
+6. Mostrar la cantidad de municipios de cada provincia.
+
+select provincia,count(codigo) from municipio group by provincia;
+
+7. Mostrar el último código de municipio de cada provincia.
+
+select provincia, max(codigo) from municipio group by provincia ;
+
+8. Obtener la cantidad de tickets que hay por cada tipo de IVA.
+
+ select iva,count(codigo) from ticket group by iva;
+
+9. Obtener la media de descuentos aplicados a cada cliente.
+
+select cliente,avg(dto) from ticket group by cliente;
+
+10. Obtén el código de aquellos clientes cuyo descuento medio aplicado en sus tickets es superior al 4%. Considera solo los tickets cuyo código es superior a 25.
+
+select cliente, avg(dto) from ticket where codigo > 25 group by cliente having avg(dto) > 4;
+
+11. Obtén los tickets del año 2019.
+
+select count(codigo) from ticket where fecha >= '2019-01-01' and fecha <= '2019-12-31';
+
+12. Obtén el código de los clientes con más de 2 tickets.
+
+select cliente,count(cliente) from ticket group by cliente having count(cliente) > 2;
+
+13. Obtener tickets con código menor que 20.
+
+select codigo from ticket where codigo < 20;
+
+14. Obtén el id de aquellos clientes que tienen algún ticket con IVA del 21%.
+
+select distinct cliente from ticket where iva=21 and cliente is not null;
+
+15. Por cada artículo, obtén el descuento máximo aplicado en los tickets donde aparece. Considérense sólo los artículos cuyo código comienza por 'SEG'.
+
+select articulo,Max(ticket) from linea_ticket where articulo like 'SEG%' group by articulo;
+
+16. Obtén la cantidad media de artículos vendidos en los tickets con más de 2 líneas. 
+
+select avg(cant) from linea_ticket where nlinea > 2;

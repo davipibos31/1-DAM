@@ -1,0 +1,18 @@
+﻿<Window x:Class="ejercicio_6_2_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ejercicio_6_2_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtNombre1" HorizontalAlignment="Left" Height="23" Margin="202,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNombre2" HorizontalAlignment="Left" Height="23" Margin="202,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblNombre1" Content="Nombre 1:" HorizontalAlignment="Left" Margin="133,49,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNombre2" Content="Nombre 2:" HorizontalAlignment="Left" Margin="133,90,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAsignarNombre" Content="Asignar nombre" HorizontalAlignment="Left" Margin="138,137,0,0" VerticalAlignment="Top" Width="184" Click="btnAsignarNombre_Click"/>
+        <Button x:Name="btnSaludar" Content="Saludar" HorizontalAlignment="Left" Margin="138,195,0,0" VerticalAlignment="Top" Width="184" Click="btnSaludar_Click"/>
+
+    </Grid>
+</Window>

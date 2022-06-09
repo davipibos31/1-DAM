@@ -1,0 +1,191 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+main{
+
+    width: 980px;
+    height: 980px;
+}
+header{
+    height:700px;
+    width: 980px;
+    background-color: aqua;
+    margin-bottom: 100px;
+}
+.titulo{
+    background-color: white;
+    height: 100px;
+    text-align: center;
+}
+.titulo h1{
+    padding-top: 25px;
+}
+
+.menu{
+    height: 75px;
+    background-color: black;
+}
+.menu li{
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+    color: white;
+}
+.menu2{
+    margin-left: 350px;
+    padding-top: 25px;
+}
+.secimg{
+    height: 450px;
+    background-color: steelblue;
+}
+.evalua{
+    height: 100px;
+    width: 980px;
+    background-color: black;
+}
+.evalua h3, input{
+    text-align: center;
+    margin-right: 25px;
+    float: left;
+    margin-top: 30px;
+}
+.evalua h3{
+    color: white;
+    margin-left: 350px;
+}
+
+.evalua input{
+    padding: 0.5em;
+}
+
+.sec1{
+    height: 600px;
+    margin-bottom: 50px;
+    background-color: white;
+    float: left;
+}
+.sec1 img,p{
+    margin-left: 50px;
+}
+.div1{
+    
+    float: left;
+}
+.div2{
+    float: right;
+}
+
+.sec3{
+    margin-top: 50px;
+    background-color: rgb(233, 233, 233);
+}
+.sec3 h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.sec3 p{
+    padding-bottom: 50px;
+    text-align: center;
+    margin-right: 50px;
+    text-align-last: center;
+}
+.sec5{
+    padding-top: 50px;
+    height: 1100px;
+    background-color: white;
+}
+
+.div4 img{
+    float: left;
+    width: 150px;
+    margin-right: 30px;
+}
+.div4{
+    margin-bottom: 130px;
+    margin-left: 50px;
+    margin-right: 500px;
+    float: left;
+}
+.div5 img{
+    float: left;
+    width: 150px;
+    margin-right: 30px;
+}
+.div5{
+    margin-bottom: 130px;
+    margin-left: 50px;
+    margin-right: 500px;
+    float: right;
+}
+.section1{
+    
+    height: 100px;
+    background-color: rgb(49, 28, 236);
+    text-align: center;
+    color: white;
+}
+.section1 h3{
+    padding-top: 40px;
+}
+
+.section2{
+    height: 600px;
+    background-color: rgb(240, 240, 240);
+}
+.section2 p{
+    font-weight: bold;
+    color: black;
+    padding-bottom: 30px;
+    padding-top: 100px;
+    
+}
+.diva{
+    float: left;
+    padding-right:70px;
+}
+.diva li{
+    list-style-type: none;
+}
+.p1{
+    font-weight: bold;
+}
+.divb input{
+    float: left;
+    padding-right:70px;
+    width: 45px;
+}
+.divb textarea{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.bu{
+    margin-left: 600px;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+}
+.listas img{
+    width: 40px;
+}
+.listas li{
+    margin-top: 150px;
+    float: left;
+    list-style-type: none;
+    
+}
+.listas{
+    margin-left: 300px;
+}
+footer{
+    height: 150px;
+    background-color: gray;
+}
+footer p{
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}

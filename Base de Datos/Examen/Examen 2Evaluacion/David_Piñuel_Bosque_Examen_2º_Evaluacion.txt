@@ -1,0 +1,90 @@
+1- Partiendo del siguiente grafo relacional realiza el diseño físico escribiendo las
+sentencias SQL correspondientes (2 Puntos)
+
+
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table    | Create Table                                                                                                                                                                                                                                                               |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| youtuber | CREATE TABLE `youtuber` (
+  `dni` varchar(9) NOT NULL,
+  `nombre` varchar(50) DEFAULT NULL,
+  `numSeguidores` int DEFAULT NULL,
+  `paisResidencia` varchar(50) DEFAULT 'Andorra',
+  PRIMARY KEY (`dni`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
++----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+
+
+
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                                                                                                                                                                                                                                                                    |
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| video | CREATE TABLE `video` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(50) DEFAULT NULL,
+  `duracion` int DEFAULT NULL,
+  `youtuber` varchar(9) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `youtuber` (`youtuber`),
+  CONSTRAINT `video_ibfk_1` FOREIGN KEY (`youtuber`) REFERENCES `youtuber` (`dni`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
++-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+
+
+
+
+
+2.- Escribe la sentencia UPDATE necesaria para reducir en 1 el numero de
+seguidores a aquellos youtubers que residen en Andorra (0.5puntos)
+
+
+ALTER TABLE `examen_1`.`video` 
+DROP FOREIGN KEY `video_ibfk_1`;
+ALTER TABLE `examen_1`.`video` 
+ADD COLUMN `megusta` VARCHAR(45) NULL AFTER `youtuber`;
+ALTER TABLE `examen_1`.`video` 
+ADD CONSTRAINT `video_ibfk_1`
+  FOREIGN KEY (`youtuber`)
+  REFERENCES `examen_1`.`youtuber` (`dni`)
+  ON UPDATE CASCADE;
+
+
+
+3.- Escribe la sentencia ALTER que permite añadir una nueva columna a la tabla
+video para guardar el numero de “me gustas” que ha recibido (0.5puntos)
+
+alter table video ADD COLUMN `megusta` VARCHAR(45);
+
+4.- Selecciona todos los productos con un precio menor o igual a 200€
+
+select precio from productos where precio <= 200;
+
+5.- Selecciona todos los productos con un precio entre 60€ y 120€
+
+select codigo from productos where precio >= 60 and precio <= 120;
+
+6.- Incrementa en un 10% el precio los productos de Sony (1)
+
+select precio*0.1+precio as incremento_precio from productos where fabricante=1;
+
+7.- Selecciona la media de los productos de cada fabricante, mostrando código del
+fabricante.
+
+select fabricante,avg(codigo) as media_productos from productos group by fabricante;
+
+8.-Selecciona todos los empleados que trabajan en los departamentos 37 o77.
+
+select codigo from empleados where departamento = 37 or 77;
+
+9.-Selecciona el número de empleados de cada departamento, mostrar solo el
+código de departamento y número de empleados
+
+select departamento,count(codigo) as numero_empleados from empleados group by departamento;
+
+10.- Selecciona los empleados que su apellido empieza por ‘S’.
+
+select apellido from empleados where apellido like 'S%';

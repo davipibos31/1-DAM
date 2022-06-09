@@ -1,0 +1,19 @@
+1.	select nom_usuario, email from perfil where trabajo = "policia";
+
+2.	select nom_usuario, email, sexo from perfil where fechNac < '1988-01-01';
+
+3.	select nom_usuario, cita from encuesta where valoracion = "mal" ;
+
+4.	select nom_usuario_2 from gusta where nom_usuario_1 = "djrodrigo";
+
+5.	select cita from encuesta where nom_usuario = "vgmartinez";
+
+6.	select nom_usuario, aficion, frecuencia from practica where aficion = 3 or aficion = 4 or aficion = 5 or aficion = 6;
+
+7.	select distinct nom_usuario from formacion;
+
+8.	select nif from usuario where nif like ('%L') ;
+
+9.	select nombre, telefono from usuario where nombre like ('% Perez%');
+
+10.	select nom_usuario from perfil where sexo = 'f' and religion = "Ateo";

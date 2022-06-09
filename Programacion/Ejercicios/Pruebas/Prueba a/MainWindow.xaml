@@ -1,0 +1,96 @@
+﻿<Window x:Class="Practica_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="Principal" Background="#FF3C3333">
+        <Image Source="https://d26lpennugtm8s.cloudfront.net/stores/515/327/rte/Transferencia%20Bancaria.png" HorizontalAlignment="Center" Height="326" VerticalAlignment="Top" Width="328" Opacity="0.265" Margin="0,69,0,0"/>
+        <Menu x:Name="Menu_principal" VerticalAlignment="Top">
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF3A2D2D" Offset="1"/>
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem x:Name="Minicio" Header="Inicio" Height="34" Background="#FF535353" Click="Minicio_Click" Foreground="Black"/>
+            <MenuItem x:Name="Mbanc" Header="Banco" Height="34" Background="#FF535353" Click="Mbanc_Click" Foreground="Black"/>
+            <MenuItem x:Name="Mform" Header="Formulario" Height="34" Width="70" Background="#FF535353" Click="Mform_Click" Foreground="Black"/>
+            <MenuItem x:Name="Msalir" Header="Salir" Height="34" Background="#FF535353" Width="43" Click="Msalir_Click" Foreground="Black"/>
+        </Menu>
+        <TabControl x:Name="tcbanco" Margin="52,80,56,50" Background="#FF320808" Visibility="Hidden">
+            <TabItem Header="Sucursal">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#EE5C9B9B"/>
+                        <GradientStop Color="#FF5D5D5D" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid x:Name="gsucursal" Background="#FF250E0E">
+                    <ListBox x:Name="list_Sucursal" Margin="10,10,473,10" Background="#FF8D5B5B" SelectionChanged="list_Sucursal_SelectionChanged"/>
+                    <ListBox x:Name="list_CuentasSucursal" Margin="438,78,10,69" Background="#FF8D5B5B" Visibility="Hidden"/>
+                    <Button x:Name="btn_cuentas_asociadas" Content="Mostrar Cuentas" HorizontalAlignment="Left" Margin="509,228,0,0" VerticalAlignment="Top" Width="96" Height="25" Click="btn_cuentas_asociadas_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Cliente">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#EE5C9B9B"/>
+                        <GradientStop Color="#FF5D5D5D" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid x:Name="gcliente" Background="#FF250E0E">
+                    <ListBox x:Name="list_Cliente" Margin="10,10,473,10" Background="#FF8D5B5B" SelectionChanged="list_Cliente_SelectionChanged"/>
+                    <Button x:Name="btn_crear_IBAN" Content="Crear IBAN" HorizontalAlignment="Left" Margin="557,223,0,0" VerticalAlignment="Top" Height="29" Width="89" Click="btn_crear_IBAN_Click"/>
+                    <Button x:Name="btn_retirar_dinero" Content="Retirar Dinero" HorizontalAlignment="Left" Margin="557,189,0,0" VerticalAlignment="Top" Height="29" Width="89" Click="btn_retirar_dinero_Click" Visibility="Hidden"/>
+                    <Button x:Name="btn_Ingresar_dinero" Content="Ingresar Dinero" HorizontalAlignment="Left" Margin="557,155,0,0" VerticalAlignment="Top" Height="29" Width="89" Click="btn_Ingresar_dinero_Click" Visibility="Hidden"/>
+                    <Button x:Name="btn_retirar" Content="Retirar" HorizontalAlignment="Left" Margin="446,223,0,0" VerticalAlignment="Top" Height="29" Width="89" Click="btn_retirar_Click" Visibility="Hidden"/>
+                    <Button x:Name="btn_ingresar" Content="Ingresar" HorizontalAlignment="Left" Margin="446,223,0,0" VerticalAlignment="Top" Height="29" Width="89" Click="btn_ingresar_Click" Visibility="Hidden"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Cuenta Bancaria">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#EE5C9B9B"/>
+                        <GradientStop Color="#FF5D5D5D" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid x:Name="gcuenta_bancaria" Background="#FF250E0E">
+                    <ListBox x:Name="list_Cuenta_bancaria" Margin="10,10,473,10" Background="#FF8D5B5B" SelectionChanged="list_Cuenta_bancaria_SelectionChanged"/>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <TabControl x:Name="tcformulario" Margin="52,80,56,50" Background="#FF320808" Visibility="Hidden" Cursor="None">
+            <TabItem Header="Dar Alta Cliente" Foreground="Black" Cursor="Hand">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#EE5C9B9B"/>
+                        <GradientStop Color="#FF5D5D5D" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid x:Name="alta_cliente" Background="#FF250E0E">
+
+                    
+                </Grid>
+            </TabItem>
+            <TabItem Header="Dar Alta Sucursal" Cursor="Hand">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#EE5C9B9B"/>
+                        <GradientStop Color="#FF5D5D5D" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid x:Name="alta_sucursal" Background="#FF250E0E">
+
+                    
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>

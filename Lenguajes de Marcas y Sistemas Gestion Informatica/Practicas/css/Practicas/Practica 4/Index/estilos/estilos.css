@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 980px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header{
+    width: 980px;
+    height: 100px;
+    background-color: white;
+}
+
+footer{
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 980px;
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(231, 231, 231), rgb(133, 133, 133));
+}
+
+.sec8 p{
+    text-indent: 40px;
+    text-align: justify;
+}
+
+ .sec8 p span{
+    font-weight: bold;
+}
+
+.logo{
+    float: left;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.envio{
+    float: left;
+}
+
+.telefono{
+    width: 300px;
+    height: 50px;
+    float: right;
+}
+
+.telefono figure{
+    float: right;
+    margin-right: 8px;
+}
+
+.telefono img{
+    float: left;
+    margin-right: 8px;
+}
+
+.cesta{
+    width: 150px;
+    height: 63px;
+    margin-right: 50px;
+    float: right;    
+}
+
+.cesta div{
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100px;
+    height: 11px;
+    float: right;
+    margin-right: 30px;
+    border-top: 1px gray solid;
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+}
+
+div a:hover{
+    color: #009B77;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.cesta1 a{
+    text-decoration: none;
+    float: left;
+    color: black;
+}
+
+.cartimg:hover{
+    background-image: url(../imagenes/cart-hover.png);
+    width: 19px;
+    color: black;
+}
+
+.cartimg{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hed{
+    width: 980px;
+    height: 100px;
+    padding-left: 50px;
+}
+
+.menu{
+    width: 980px;
+    height: 100px;
+    background-color: white;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+    padding-left: 50px;
+}
+
+.menu p{
+    margin-right: 20px;
+    float: left;
+    padding-top: 35px;
+    font-size: 2em;
+}
+
+.principal{
+    width: 980px;
+    height: 800px;
+    background-color: white;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.sec1{
+    margin-bottom: 20px;
+}
+
+.sec2{
+    width: 980px;
+    height: 100px;
+    float: left;
+}
+
+.sec3, .sec4, .sec5{
+    width: 980px;
+    height: 100px;
+    float: left;
+}
+
+.sec4, .sec5{
+    width: 980px;
+    height: 100px;
+    float: left;
+}
+
+.sec5{
+    width: 980px;
+    height: 100px;
+    float: left;
+}
+
+.sec3 img, .sec2 img, .sec4 img, .sec5 img{
+    float: left;
+    width: 150px;
+    height: 100px;
+    border-left: 0.3px gray solid;
+    border-right: 0.3px gray solid;
+    border-top: 0.3px gray solid;
+    border-bottom: 0.3px gray solid;
+    margin-bottom: 1px;
+}
+
+.txt_pro{
+    margin-top: 450px;
+    width: 980px;
+    height: 100px;
+
+    background-color: white;
+}
+
+.destacado{
+    padding-top: 30px;
+    font-size: 2em;
+    float: left;
+}
+
+.td_marcas{
+    color: cyan;
+    float: right;
+}
+
+.articulos{
+    width: 1000px;
+    height: 100px;
+}
+
+.a1{
+    margin-left: 45px;
+    margin-top: 30px;
+    width: 120px;
+    height: 140px;
+    float: left;
+}
+
+.a2{
+    margin-right: 25px;
+    width: 200px;
+    height: 250px;
+    float: left;
+    border: 1px gray solid;
+}
+
+.a3{
+    margin-right: 25px;
+    width: 200px;
+    height: 250px;
+    float: left;
+    border: 1px gray solid;
+}
+
+.a4{
+    margin-right: 25px;
+    width: 200px;
+    height: 250px;
+    float: left;
+}
+
+.articulos img{
+    margin-left: 20px;
+    width: 100px;
+    height: 120px;
+    float: left;
+}
+
+.des1{
+    float:right;
+    width: 5px;
+    
+}
+
+.des1 img{
+    float: right;
+    margin-left: 10px;
+}
+
+.seca1{
+    width: 230px;
+    height: 270px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    border: 1px gray solid;
+}
+
+.dep2{
+    margin-top: 180px;
+    margin-left: 75px;
+    color: cyan;
+}
+
+.dep1{
+    margin-top: 5px;
+    margin-left: 45px;
+}
+
+.dat1{
+    margin-top: 15px;
+    width: 230px;
+    height: 30px;
+    background-color: rgb(192, 192, 192);
+}
+
+.p2{
+    float: left;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(100, 100, 100);
+}
+
+.p2 span{
+    text-decoration:line-through;
+}
+
+.p3 span{
+    font-size: 1.5em;
+}
+
+.p3{
+    color: rgb(206, 44, 44);
+    float: left;
+}
+
+.im12 img{
+    float: left;
+    width: 35px;
+    height: 30px;
+}
+
+.im123 img{
+    float: left;
+    width: 35px;
+    height: 30px; 
+    margin-right: -100px;
+    background-color: green;
+}
+
+.im123{
+    background-color: rgb(83, 145, 83);
+}
+
+.pie img{
+    transform: scale3d(0.7, 0.7, 0.7);
+}
+
+.pie_texto{
+    float: left;
+    width: 400px;
+    padding-top: 15px;
+    padding-left: 35px;
+}
+
+.pie_texto h1{
+    color: gray;
+}
+
+.pie_iconos{
+    float: right;
+}
+
+.pie_iconos li{
+    padding-top: 15px;
+    padding-right: 5px;
+    float: left;
+    list-style-type: none;
+}
+
+.pie{
+    float: left;
+    text-align: center;
+}
+
+.pie img{
+    float: left;
+}
+
+.pie li{
+    text-align: center;
+    margin-top: 30px;
+    float: left;
+    list-style-type: none;
+}
+
+.icon_sob, .icon_you, .icon_twi, .icon_fac, .icon_app, .icon_com{
+    width: 70px;
+    height: 70px;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.icon_com{
+    background-color: rgb(165, 243, 92);
+}
+
+.icon_fac{
+    background-color: blue;
+}
+
+.icon_twi{
+    background-color: aquamarine;
+}
+
+.icon_sob{
+    background-color: blueviolet;
+}
+
+.icon_you{
+    background-color: red;
+}
+
+.icon_app{
+    background-color: gray;
+}
+
+.icon_sob img, .icon_you img, .icon_twi img, .icon_fac img, .icon_app img, .icon_com img{
+    transform: scale3d(0.6, 0.6, 0.6);
+}
+
+.sec8{
+    margin-top: 650px;
+    margin-left: 50px;
+    text-align: justify;
+}

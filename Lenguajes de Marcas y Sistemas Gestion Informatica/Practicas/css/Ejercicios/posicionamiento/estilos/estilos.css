@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+h2{
+position:absolute;
+top:100px;
+left:3em;
+}
+.div1{
+    background-color:aquamarine;
+    width: 200px;
+    height: 100px;
+}
+p{
+    position: relative;
+    top:10px;
+    
+}
+
+div{
+    width: 200px;
+    height: 100px;
+    background-color: blueviolet;
+    display:inline-block;
+
+}
+.div2{
+    position: relative;
+    top: 25px;
+    left: 50px;
+    background-color: aqua;
+}

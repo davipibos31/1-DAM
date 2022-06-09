@@ -1,0 +1,24 @@
+*{
+    margin:10px 0;
+    padding:0;
+
+}
+.div1{
+    background-color: aquamarine;
+    column-width: 100px;
+    /*column-count: 3;*/
+ column-rule: 5px solid red ;
+    column-fill: balance;
+    column-gap: 150px;
+    text-align: justify;
+    
+}
+h2{
+    column-span: all;
+    background-color: violet;
+    text-align: center;
+}
+.div2{
+    background-color: blueviolet;
+    column-count: 3;
+}

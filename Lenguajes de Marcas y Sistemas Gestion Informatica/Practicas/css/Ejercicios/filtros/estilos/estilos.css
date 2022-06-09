@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.img1{
+  
+    filter:blur(20px);
+ 
+}
+.img2{
+    
+    filter:drop-shadow(5px 10px 5px red)
+    sepia(1)
+}
+.img3{
+    
+    filter: grayscale(8)
+}
+
+.h1a{
+    filter:blur(5px);
+  
+}
+
+.h1b{
+   
+    
+    filter:drop-shadow(5px 10px 5px green);
+  
+}
+.img4{
+    
+    filter:brightness(0.5)
+}
+.img5{
+    
+    filter:contrast(0.5)
+}
+.img6{
+    
+    filter:hue-rotate(180deg);
+}

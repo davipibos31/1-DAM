@@ -1,0 +1,1723 @@
+(5.2.1) Crea una función llamada "BorrarPantalla", que borre la pantalla dibujando 25 líneas en blanco. Crea también un "Main" que permita probarla.
+
+using System;
+
+namespace ejercicio_5_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            Console.ReadLine();
+
+            BorrarPantalla();
+        }
+
+        static void BorrarPantalla()
+        {
+            // Console.Clear(); // Profesional
+
+            for (int i = 0; i < 25; i++)  
+                Console.WriteLine();
+        }
+    }
+}
+
+(5.2.2) Crea una función llamada "DibujarCuadrado3x3", que dibuje un cuadrado formato por 3 filas con 3 asteriscos cada una. Incluye un "Main" para probarla.
+
+using System;
+
+namespace ejercicio_5_2_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DibujarCuadrado3x3();
+        }
+
+        static void DibujarCuadrado3x3()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(5.2.3) Descompón en funciones la base de datos de ficheros (ejemplo 04_06a), de modo que el "Main" sea breve y más legible (Pista: las variables que se compartan entre varias funciones deberán estar fuera de todas ellas, y deberán estar precedidas por la palabra "static").
+
+using System;
+
+namespace ejercicio_5_2_3
+{
+    class Program
+    {
+        struct tipoFicha
+        {
+            public string nombreFich;
+            public long tamanyo;
+        }
+
+        static tipoFicha[] fichas = new tipoFicha[1000];
+        static int numeroFichas = 0;
+
+        public static void Main(string[] args)
+        {
+            int opcion;
+
+            do
+            {
+                switch (opcion = Menu())
+                {
+                    case 1: Anadir(); break;
+                    case 2: MostrarTodo(); break;
+                    case 3: MostrarEncimaDe(); break;
+                    case 4: Ver(); break;
+                    case 5: Console.WriteLine("Fin del programa"); break;
+                    default: Console.WriteLine("Opción desconocida!"); break;
+                }
+            } while (opcion != 5);
+        }
+        //-------------------------------------------------------------------
+        public static int Menu()
+        {
+            Console.Clear();
+            Console.WriteLine("Escoja una opción:");
+            Console.WriteLine("1.- Añadir datos de un nuevo fichero");
+            Console.WriteLine("2.- Mostrar los nombres de todos los ficheros");
+            Console.WriteLine("3.- Mostrar ficheros por encima de un cierto tamaño");
+            Console.WriteLine("4.- Ver datos de un fichero");
+            Console.WriteLine("5.- Salir");
+            Console.WriteLine();
+            Console.Write("Opcion: ");
+
+            return Convert.ToInt32(Console.ReadLine());
+        }
+        //-------------------------------------------------------------------
+        public static void Anadir()
+        {
+            if (numeroFichas < 1000)
+            {
+                Console.Write("Introduce el nombre del fichero: ");
+                fichas[numeroFichas].nombreFich = Console.ReadLine();
+
+                Console.Write("Introduce el tamaño en KB: ");
+                fichas[numeroFichas].tamanyo = Convert.ToInt32(Console.ReadLine());
+
+                numeroFichas++;
+            }
+            else
+                Console.WriteLine("Máximo de fichas alcanzado (1000)");
+        }
+        //-------------------------------------------------------------------
+        public static void MostrarTodo()
+        {
+            for (int i = 0; i < numeroFichas; i++)
+                Console.WriteLine("Nombre: {0}; Tamaño: {1} KB", fichas[i].nombreFich, fichas[i].tamanyo);
+
+            Console.WriteLine("\n\nPulsa intro para continuar");
+            Console.ReadLine();
+        }
+        //-------------------------------------------------------------------
+        public static void MostrarEncimaDe()
+        {
+            int tamanyoBuscar;
+
+            Console.Write("¿A partir de que tamaño quieres ver? ");
+            tamanyoBuscar = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < numeroFichas; i++)
+                if (fichas[i].tamanyo >= tamanyoBuscar)
+                    Console.WriteLine("Nombre: {0}; Tamaño: {1} KB", fichas[i].nombreFich, fichas[i].tamanyo);
+
+            Console.WriteLine("\n\nPulsa intro para continuar");
+            Console.ReadLine();
+        }
+		//-------------------------------------------------------------------
+        public static void Ver()
+        {
+            string nomnbreFich;
+
+            Console.Write("¿Fichero a ver todos sus datos? ");
+            nomnbreFich = Console.ReadLine();
+
+            for (int i = 0; i < numeroFichas; i++)
+                if (fichas[i].nombreFich == nomnbreFich)
+                    Console.WriteLine("Nombre: {0}; Tamaño: {1} KB", fichas[i].nombreFich, fichas[i].tamanyo);
+
+            Console.WriteLine("\n\nPulsa intro para continuar");
+            Console.ReadLine();
+        }
+    }
+}
+
+(5.3.1) Crea una función "DibujarCuadrado" que dibuje en pantalla un cuadrado del ancho (y alto) que se indique como parámetro. Completa el programa con un Main que permita probarla.
+
+using System;
+
+namespace ejercicio_5_3_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int lado;
+
+            Console.Write("Lado: ");
+            lado = Convert.ToInt32(Console.ReadLine());
+
+            DibujarCuadrado(lado);
+        }
+
+        static void DibujarCuadrado(int lado)
+        {
+            for (int i = 0; i < lado; i++)
+            {
+                for (int j = 0; j < lado; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(5.3.2) Crea una función "DibujarRectangulo" que dibuje en pantalla un rectángulo del ancho y alto que se indiquen como parámetros. Incluye un Main para probarla.
+
+using System;
+
+namespace ejercicio_5_3_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int alto, ancho;
+
+            Console.Write("Acho: ");
+            ancho = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Alto: ");
+            alto = Convert.ToInt32(Console.ReadLine());
+
+            DibujarRectangulo(ancho, alto);
+        }
+
+        static void DibujarRectangulo(int ancho, int alto)
+        {
+            for (int i = 0; i < alto; i++)
+            {
+                for (int j = 0; j < ancho; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(5.3.3) Crea una función "DibujarRectanguloHueco" que dibuje en pantalla un rectángulo hueco del ancho y alto que se indiquen como parámetros, formado por una letra que también se indique como parámetro. Completa el programa con un Main que pida esos datos al usuario y dibuje el rectángulo.
+
+using System;
+
+namespace ejercicio_5_3_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int ancho, alto;
+            char caracter;
+
+            Console.Write("Ancho: ");
+            ancho = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Alto: ");
+            alto = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Carácter: ");
+            caracter = Convert.ToChar(Console.ReadLine());
+
+            DibujarRectanguloHueco(ancho, alto, caracter);
+        }
+
+        static void DibujarRectanguloHueco(int ancho, int alto, char caracter)
+        {
+            for (int i = 1; i <= alto; i++)
+            {
+                Console.Write(caracter);
+                for (int j = 2; j <= ancho - 1; j++)
+                {
+                    if (i == 1 || i == alto)
+                        Console.Write(caracter);
+                    else
+                        Console.Write(" ");
+                }
+
+                Console.WriteLine(caracter);
+            }
+        }
+    }
+}
+
+
+// FALTA LOS 4's
+
+
+
+
+
+(5.5.1) Crea una función "PedirEntero", que reciba como parámetros el texto que se debe mostrar en pantalla, el valor mínimo aceptable y el valor máximo aceptable. Deberá pedir al usuario que introduzca el valor tantas veces como sea necesario, volvérselo a pedir en caso de error, y devolver un valor correcto. Pruébalo con un programa que pida al usuario un año entre 1800 y 2100.
+
+using System;
+
+namespace ejercicio_5_5_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(PedirEntero("Numero entero: ", 1800, 2100));
+        }
+
+        static int PedirEntero(string texto, int max, int min)
+        {
+            int entero = 0;
+            bool cto = false;
+
+            while (!cto)
+            {
+                Console.WriteLine(texto);
+                entero = Convert.ToInt32(Console.ReadLine());
+
+                if (entero >= min && entero <= max)
+                    cto = true;
+            }
+
+
+            return entero;
+        }
+    }
+}
+
+(5.5.2) Crea una función "EscribirTablaMultiplicar", que reciba como parámetro un número entero, y escriba la tabla de multiplicar de ese número (por ejemplo, para el 3 deberá llegar desde "3x0=0" hasta "3x10=30").
+
+using System;
+
+namespace ejercicio_5_5_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+
+            EscribirTablaMultiplicar(numero);
+        }
+        static void EscribirTablaMultiplicar(int x)
+        {
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("{0} x {1} = {2}", x, i, i * x);
+            }
+        }
+    }
+}
+
+(5.5.3) Crea una función "EsPrimo", que reciba un número y devuelva el valor booleano "true" si es un número primo o "false" en caso contrario.
+
+using System;
+
+namespace ejercicio_5_5_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe un número: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+        
+            Console.WriteLine(EsPrimo(numero));
+        }
+
+        static bool EsPrimo(int x)
+        {
+            for (int i = 2; i < x; i++)
+            {
+                if (x % i == 0)
+                    return false;
+            }
+
+            return true;
+        }
+    }
+}
+
+(5.5.4) Crea una función "ContarLetra", que reciba una cadena y una letra, y devuelva la cantidad de veces que dicha letra aparece en la cadena. Por ejemplo, si la cadena es "Barcelona" y la letra es 'a', debería devolver 2 (porque la "a" aparece 2 veces).
+
+using System;
+
+namespace ejercicio_5_5_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string frase = "";
+            char letra = '\0';
+
+            Console.Write("Escribe una frase: ");
+            frase = Console.ReadLine();
+
+            Console.Write("Escribe una letra: ");
+            letra = Convert.ToChar(Console.ReadLine());
+            
+            Console.WriteLine(ContarLetra(frase, letra));
+        }
+
+        static int ContarLetra(string frase, char letra)
+        {
+            int contador = 0;
+
+            foreach (char c in frase)
+            {
+                if (c == letra)
+                    contador++;
+            }
+
+            return contador;
+        }
+    }
+}
+
+(5.5.5) Crea una función "SumaCifras" que reciba un numero cualquiera y que devuelva como resultado la suma de sus dígitos. Por ejemplo, si el número fuera 123 la suma sería 6.
+
+using System;
+
+namespace ejercicio_5_5_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String numero = "";
+
+            Console.Write("Escribe un número: ");
+            numero = Console.ReadLine();
+
+            Console.WriteLine(SumarCifras(numero));
+        }
+
+        static int SumarCifras(string numero)
+        {
+            int resultado = 0;
+
+            foreach (int digito in numero)
+            {
+                resultado += (digito - 48);
+            }
+
+            return resultado;
+        }
+    }
+}
+
+(5.5.6) Crea una función "Triángulo" que reciba una letra y un número, y escriba un "triángulo" formado por esa letra, que tenga como anchura inicial la que se ha indicado. Por ejemplo, si la letra es * y la anchura es 4, debería escribir
+****
+***
+**
+*
+
+using System;
+
+namespace ejercicio_5_5_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero = 0;
+            char caracter = '\0';
+
+            Console.Write("Escribe un número: ");
+            numero = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Escribe un carácter: ");
+            caracter = Convert.ToChar(Console.ReadLine());
+
+            Triangulo(numero, caracter);
+        }
+
+        static void Triangulo(int numero, char caracter)
+        {
+            for (int i = 0; i < numero; i++)
+            {
+                for (int j = numero; j > i; j--)
+                    Console.Write(caracter);
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(5.7.1) Crea una función "Intercambiar", que intercambie el valor de los dos números enteros que se le indiquen como parámetro. Crea también un programa que la pruebe.
+
+using System;
+
+namespace ejercicio_5_7_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1 = 0;
+            int numero2 = 0;
+
+            Console.Write("Escribe un número 1: ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Escribe otro número 2: ");
+            numero2 = Convert.ToInt32(Console.ReadLine());
+
+            Intercambiar(ref numero1, ref numero2);
+
+            Console.WriteLine("Al intercambiar el número 1 vale {0} y el número 2 vale {1}", numero1, numero2);
+        }
+
+        static void Intercambiar(ref int x, ref int y)
+        {
+            int temp;
+
+            temp = x;
+            x = y;
+            y = temp;
+        }
+    }
+}
+
+(5.7.2) Crea una función "Iniciales", que reciba una cadena como "Nacho Cabanes" y devuelva las letras N y C (primera letra, y letra situada tras el primer espacio), usando parámetros por referencia. Crea un "Main" que te permita comprobar que funciona correctamente
+
+using System;
+
+namespace ejercicio_5_7_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre = "";
+            
+            Console.Write("Escribe tu nombre completo: ");
+            nombre = Console.ReadLine();
+
+            Iniciales(nombre);
+        }
+        static void Iniciales(string nombre)
+        {
+            int pos = -1;
+
+            Console.WriteLine(nombre[0]);
+
+            pos = nombre.IndexOf(" ");
+
+            if (pos >= 0)
+                Console.WriteLine(nombre[pos + 1]);
+        }
+    }
+}
+
+(5.9.1.1) Crea un programa que imite el lanzamiento de un dado, generando un número al azar entre 1 y 6.
+
+using System;
+
+namespace ejercicio_5_9_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random dado = new Random();
+            
+            Console.WriteLine(dado.Next(1, 7));
+        }
+    }
+}
+
+(5.9.1.2) Crea un programa que genere un número al azar entre 1 y 100. El usuario tendrá 6 oportunidades para acertarlo.
+
+using System;
+
+namespace ejercicio_5_9_1_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool cto = false;
+            int intentos = 6;
+            int numAdivinar = 0;
+            int numUsuario = 0;
+            Random aleatorio = new Random();
+
+            numAdivinar = aleatorio.Next(1, 101);
+
+            while (intentos > 0 && !cto)
+            {
+                Console.Write("Número: ");
+                numUsuario = Convert.ToInt32(Console.ReadLine());
+
+                if (numUsuario == numAdivinar)
+                    cto = true;
+		
+                intentos--;
+            }
+
+            if (cto)
+                Console.WriteLine("Lo adivinaste");
+            else
+                Console.WriteLine("Lo siento. El número era {0}", numAdivinar);
+        }
+    }
+}
+
+(5.9.1.3) Mejora el programa del ahorcado (4.4.9.3), para que la palabra a adivinar no sea tecleada por un segundo usuario, sino que se escoja al azar de un "array" de palabras prefijadas (por ejemplo, nombres de ciudades). 
+
+using System;
+
+namespace ejercicio_5_9_1_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] palabras = new string[] { "Alicante", "Elche", "Elda", "Villena", "Almoradí", "Benidorm", "Campello" };
+
+            int palabraAdivinar = new Random().Next(8); // Observar como hemos hecho el random.
+
+            Console.WriteLine("Palabra a adivinar {0}", palabras[palabraAdivinar]);
+
+            // El resto por todos conocido.
+        }
+    }
+}
+
+(5.9.1.4) Crea un programa que genere un array relleno con 100 números reales al azar entre -1000 y 1000. 
+Luego deberá calcular y mostrar su media.
+
+using System;
+
+namespace ejercicio_5_9_1_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double media = 0.0;
+            double[] numeros = new double[100];
+            int signo = 0;
+            Random numAleatorio = new Random();
+            Random signoAleatorio = new Random();
+
+            for (int i = 0; i < 100; i++)
+            {
+                signo = signoAleatorio.Next(2);
+                if (signo == 0)
+                    numeros[i] = (-1) * numAleatorio.NextDouble() * 1000;
+                else
+                    numeros[i] = numAleatorio.NextDouble() * 1000;
+
+                Console.Write("{0} ", numeros[i]);
+                media += numeros[i];
+            }
+
+             media = media / 100;
+
+            Console.WriteLine("\n\nMedia {0}", media);
+        }
+    }
+}
+
+(5.9.1.5) Crea un programa que "dibuje" asteriscos en 100 posiciones al azar de la pantalla. Para ayudarte para escribir en cualquier coordenada, puedes usar un array de dos dimensiones (con tamaños 24 para el alto y 79 para el ancho), que primero rellenes y luego dibujes en pantalla.
+
+using System;
+
+namespace ejercicio_5_9_1_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char[,] pantalla = new char[24, 79];
+            Random aleatorio = new Random();
+
+            // "Limpiamos la pantalla".
+            for (int fila = 0; fila < 24; fila++)
+            {
+                for (int columna = 0; columna < 79; columna++)
+                {
+                    pantalla[fila, columna] = ' ';
+                }
+            }
+
+            // Ponemos 100 astericos aleatóriamente.
+            for (int i = 0; i < 100; i++)
+                pantalla[aleatorio.Next(24), aleatorio.Next(79)] = '*';
+
+            // Volcamos la pantalla.
+            for (int fila = 0; fila < 24; fila++)
+            {
+                for (int columna = 0; columna < 79; columna++)
+                {
+                    Console.Write(pantalla[fila, columna]);
+                }
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(5.9.2.1) Crea un programa que halle (y muestre) la raíz cuadrada del número que introduzca el usuario. Se repetirá hasta que introduzca 0.
+
+using System;
+
+namespace ejercicio_5_9_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double numero;
+            double raiz;
+            
+            Console.Write("Número: ");
+            numero = Convert.ToDouble(Console.ReadLine());
+
+            // Primera forma de hacerlo
+            // Controlo lo que me introducen y luego opero.
+            if (numero < 0)
+            {
+                Console.WriteLine("No se puede calcular la raíz del número {0}", numero);
+            }
+            else
+            {
+                // En este caso se podría haber declarado la variable raiz aquí.
+                raiz = Math.Sqrt(numero);
+                Console.WriteLine("La raíz del número {0} es {1}", numero, raiz);
+            }
+
+            // Segunda forma de hacerlo
+            // Opero y luego controlo el resultado.
+            raiz = Math.Sqrt(numero);
+
+            if (Double.IsNaN(raiz)) // Si el resultado no es un número correcto.
+                Console.WriteLine("No se puede calcular la raíz del número {0}", numero);
+            else
+                Console.WriteLine("La raíz del número {0} es {1}", numero, raiz);
+        }
+    }
+}
+
+(5.9.2.2) Crea un programa que halle cualquier raíz (de cualquier orden) de un número. El usuario deberá indicar el número (por ejemplo, 2) y el índice de la raíz (por ejemplo, 3 para la raíz cúbica). Pista: hallar la raíz cúbica de 2 es lo mismo que elevar 2 a 1/3.
+
+using System;
+
+namespace ejercicio_4_9_2_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double numero;
+            double orden;
+            double raiz;
+
+            Console.Write("Número: ");
+            numero = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Orden: ");
+            orden = Convert.ToDouble(Console.ReadLine());
+
+
+
+            // Primera forma de hacerlo
+            // Controlo lo que me introducen y luego opero.
+            if (orden == 0)
+            {
+                Console.WriteLine("No se puede calcular la raíz de orden {0}", orden);
+            }
+            else
+            {
+                // En este caso se podría haber declarado la variable raiz aquí.
+                raiz = Math.Pow(numero, 1 / orden);
+                Console.WriteLine("La raíz {0} del numero {1} es {2}", orden, numero, raiz);
+            }
+
+            // Segunda forma de hacerlo
+            // Opero y luego controlo el resultado.
+            raiz = Math.Pow(numero, 1 / orden);
+
+            if (Double.IsNaN(raiz)) // Si el resultado no es un número correcto.
+                Console.WriteLine("No se puede calcular la raíz de orden {0}", orden);
+            else
+                Console.WriteLine("La raíz {0} del numero {1} es {2}", orden, numero, raiz);
+        }
+    }
+}
+
+(5.9.2.3) Haz un programa que resuelva ecuaciones de segundo grado, del tipo ax2 + bx + c = 0. El usuario deberá introducir los valores de a, b y c. Se deberá crear una función "CalcularRaicesSegundoGrado", que recibirá como parámetros los coeficientes a, b y c (por valor), así como las soluciones x1 y x2 (por referencia). Deberá devolver los valores de las dos soluciones x1 y x2. Si alguna solución no existe, se devolverá como valor 100.000 para esa solución. Pista: la solución se calcula con x = -b  raíz (b2 – 4·a·c) / (2·a)
+
+using System;
+
+namespace ejercicio_4_9_2_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, c;
+            double x1 = 0;
+            double x2 = 0;
+
+            Console.Write("a: ");
+            a = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("b: ");
+            b = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("c: ");
+            c = Convert.ToDouble(Console.ReadLine());
+
+            if (CalcularRaicesSegundoGrado(a, b, c, ref x1, ref x2))
+            {
+                Console.WriteLine("Las raices son:\n {0}\n{1} ", x1, x2);
+            }
+            else
+            {
+                Console.WriteLine("Error: 100.000");
+            }
+        }
+
+        static bool CalcularRaicesSegundoGrado(double a, double b, double c, ref double x1, ref double x2)
+        {
+            double discriminante = Math.Pow(b, 2) - 4 * a * c;
+
+            if (discriminante < 0)
+                return false;
+
+            if (a == 0)
+                return false;
+
+            x1 = (-b + Math.Sqrt(discriminante)) / (2 * a);
+            x2 = (-b - Math.Sqrt(discriminante)) / (2 * a);
+
+            return true;
+        }
+    }
+}
+
+
+(5.9.2.4) Haz un programa que pida al usuario 5 datos numéricos enteros, los guarde en un array, pida un nuevo dato y muestre el valor del array que se encuentra más cerca de ese dato, siendo mayor que él, o el texto "Ninguno es mayor" si ninguno lo es.
+
+using System;
+
+namespace ejercicio_5_9_2_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numeros = new int[5];
+            int numero, numeroCercano, distanciaMinima, distancia;
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Número {0}: ", i + 1);
+                numeros[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.Write("Número a buscar: ");
+            numero = Convert.ToInt32(Console.ReadLine());
+
+            distanciaMinima = Int32.MaxValue;
+            numeroCercano = numeros[0];
+
+            for (int i = 0; i < 5; i++)
+            {
+                distancia = Math.Abs(numero - numeros[i]);
+
+                if (distancia < distanciaMinima)
+                {
+                    distanciaMinima = distancia;
+                    numeroCercano = numeros[i];
+                }
+            }
+
+            if (numeroCercano > numero)
+                Console.WriteLine("El más cerano es {0}", numeroCercano);
+            else
+                Console.WriteLine("No existe el más cerano");
+        }
+    }
+}
+
+
+(5.9.2.5) Crea un programa que pida al usuario 5 datos numéricos reales, los guarde en un array, pida un nuevo dato y muestre el valor del array que se encuentra más cerca de ese dato en valor absoluto (es decir, el más próximo, sea mayor que él o menor que él). 
+
+using System;
+
+namespace ejercicio_5_9_2_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] numeros = new double[5];
+            double numero, numeroCercano, distanciaMinima, distancia;
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Número {0}: ", i + 1);
+                numeros[i] = Convert.ToDouble(Console.ReadLine());
+            }
+
+            Console.Write("Número a buscar: ");
+            numero = Convert.ToDouble(Console.ReadLine());
+
+            distanciaMinima = Int32.MaxValue;
+            numeroCercano = numeros[0];
+
+            for (int i = 0; i < 5; i++)
+            {
+                distancia = Math.Abs(numero - numeros[i]);
+
+                if (distancia < distanciaMinima)
+                {
+                    distanciaMinima = distancia;
+                    numeroCercano = numeros[i];
+                }
+            }
+
+            Console.WriteLine("El más cerano es {0}", numeroCercano);
+        }
+    }
+}
+
+(5.9.2.6) Crea una función "Distancia", que calcule la distancia entre dos puntos (x1,y1) y (x2,y2), usando la expresión d = raíz [ (x1-x2) 2+ (y1-y2)2].
+
+using System;
+
+namespace Ejercicio_5_9_2_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x1, y1, x2, y2, distancia;
+
+            Console.Write("Introduce x1: ");
+            x1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Introduce y1: ");
+            y1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Introduce x2: ");
+            x2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Introduce y2: ");
+            y2 = Convert.ToDouble(Console.ReadLine());
+
+            distancia = Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2));
+
+            Console.WriteLine("La distancia es: {0}", distancia);
+        }
+    }
+}
+
+
+(5.9.2.7) Crea un programa que pida al usuario un ángulo (en grados) y muestre su seno, coseno y tangente. Recuerda que las funciones trigonométricas esperan que el ángulo se indique en radianes, no en grados. La equivalencia es que 360 grados son 2*PI radianes.
+
+using System;
+
+namespace Ejercicio_5_9_2_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double angulo, seno, coseno, tangente;
+
+            Console.Write("Introduce un ángulo: ");
+            angulo = Convert.ToDouble(Console.ReadLine());
+
+            // El ángulo lo pasamos a radianes.
+            angulo = angulo * (Math.PI / 180);
+
+            // Calculamos los valores y redondeamos a 5 decimales.
+            coseno = Math.Round(Math.Cos(angulo), 5);
+            seno = Math.Round(Math.Sin(angulo), 5);
+            tangente = Math.Round(Math.Tan(angulo), 5);
+
+            Console.WriteLine("El coseno del ángulo es: {0}", coseno);
+            Console.WriteLine("El seno del ángulo es: {0}", seno);
+            Console.WriteLine("La tangente del ángulo es: {0}", tangente);
+        }
+    }
+}
+
+(5.9.2.8) Crea un programa que muestre los valores de la función y = 10 * seno(x*5), para valores de x entre 0 y 72 grados.
+
+using System;
+
+namespace Ejercicio_5_9_2_8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] valores = new double[73];
+
+            for (int i = 0; i < 73; i++)
+            {
+                valores[i] = 10 * Math.Sin(5 * i * (Math.PI / 180));
+                Console.WriteLine(Math.Round(valores[i], 5));
+            }
+        }
+    }
+}
+
+(5.9.2.9) Crea un programa que "dibuje" la gráfica de la función y = 10 * seno(x*5), para valores de x entre 0 y 72 grados. Para ayudarte para escribir en cualquier coordenada, puedes usar un array de dos dimensiones, que primero rellenes y luego dibujes en pantalla (mira el ejercicio 5.9.1.5).
+
+using System;
+
+namespace Ejercicio_5_9_2_9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double[] valores = new double[73];
+
+            for (int i = 0; i < 73; i++)
+            {
+                valores[i] = 10 * Math.Sin(5 * i * (Math.PI / 180));
+
+                // Observar que desplazamos hacia abajo 10 líneas  
+                Console.SetCursorPosition(i, (int)valores[i] + 10);
+                Console.Write("·");
+            }
+
+            // Esto es para que no se "chafe" la gráfica con las letras que pone el visual studio
+            // para no cerrar la consola automáticamente.
+            Console.SetCursorPosition(0, 20);
+            Console.WriteLine();
+        }
+    }
+}
+
+(5.9.2.10) Crea un programa que "dibuje" un círculo dentro de un array de dos dimensiones, usando las ecuaciones x = xCentro + radio * coseno(ángulo), y = yCentro + radio * seno(ángulo). Si tu array es de 24x79, las coordenadas del centro serían (12,40). Recuerda que el ángulo se debe indicar en radianes (mira el ejercicio 5.9.1.5 y el 5.9.2.9).
+
+using System;
+
+namespace Ejercicio_5_9_2_10
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const int XPANTALLA = 24;
+            const int YPANTALLA = 74;
+
+            const double XCENTRO = XPANTALLA / 2;
+            const double YCENTRO = YPANTALLA / 2;
+
+            int radio = 25;
+
+            char[,] pantalla = new char[XPANTALLA, YPANTALLA];
+            int coord_x, coord_y;
+
+            // Calculamos el círculo
+            for (int angulo = 0; angulo < 360; angulo++)
+            {
+                coord_x = (int)(XCENTRO + (radio * Math.Cos(angulo * (Math.PI / 180))));
+                coord_y = (int)(YCENTRO + (radio * Math.Sin(angulo * (Math.PI / 180))));
+
+                pantalla[coord_x, coord_y] = '*';
+            }
+
+            // Dibujamos el círculo
+            for (int i = 0; i < XPANTALLA; i++)
+            {
+                for (int j = 0; j < YPANTALLA; j++)
+                {
+                    if (pantalla[i, j] == '*')
+                        Console.Write('*');
+                    else
+                        Console.Write(' ');
+                }
+                Console.WriteLine();
+            }
+
+        }
+    }
+}
+
+(5.10.1) Crea una función que calcule el valor de elevar un número entero a otro número entero (por ejemplo, 5 elevado a 3 = 53 = 5 ·5 ·5 = 125). Esta función se debe crear de forma recursiva. Piensa cuál será el caso base (qué potencia se puede calcular de forma trivial) y cómo pasar del caso "n-1" al caso "n" (por ejemplo, si sabes el valor de 54, cómo hallarías el de 55 a partir de él).
+
+using System;
+
+namespace Ejercicio_5_10_1
+{
+    public class Program 
+    {
+        public static void Main(string[] args)
+        {
+            int bas;
+            int exp;
+
+            Console.Write("Base: ");
+            bas = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Exponente: ");
+            exp = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("{0} elevado a {1} es {2}", bas, exp, Potencia(bas, exp));
+        }
+
+        public static long Potencia(int b, int e)
+        {
+            if (e == 0)
+                return 1;
+
+            return b * Potencia(b, e - 1);
+        }
+    }
+}
+
+(5.10.2) Como alternativa, crea una función que calcule el valor de elevar un número entero a otro número entero de forma NO recursiva (lo que llamaremos "de forma iterativa"), usando la orden "for".
+
+
+using System;
+
+namespace Ejercicio_5_10_2
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int bas;
+            int exp;
+
+            Console.Write("Base: ");
+            bas = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Exponente: ");
+            exp = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("{0} elevado a {1} es {2}", bas, exp, Potencia(bas, exp));
+        }
+
+        public static long Potencia(int b, int e)
+        {
+            long potencia = 1;
+
+            for (int i = 0; i < e; i++)
+            {
+                potencia *= b; // potencia = potencia * b;
+            }
+
+            return potencia;
+        }
+    }
+}
+
+(5.10.3) Crea un programa que emplee recursividad para calcular un número de la serie Fibonacci (en la que los dos primeros elementos valen 1, y para los restantes, cada elemento es la suma de los dos anteriores).
+
+using System;
+
+namespace ejercicio_5_10_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int posicion;
+
+            Console.Write("Posición: ");
+            posicion = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Posición {0} de la serie {1}", posicion, Fibonacci(posicion));
+        }
+
+        static long Fibonacci(int posicion)
+        {
+            if (posicion == 0)
+                return 0;
+
+            if (posicion == 1)
+                return 1;
+
+            return Fibonacci(posicion - 1) + Fibonacci(posicion - 2);
+        }
+    }
+}
+
+
+(5.10.4) Crea un programa que emplee recursividad para calcular la suma de los elementos de un vector de números enteros, desde su posición inicial a la final, usando una función recursiva que tendrá la apariencia: SumaVector(v, desde, hasta). Nuevamente, piensa cuál será el caso base (cuántos elementos podrías sumar para que dicha suma sea trivial) y cómo pasar del caso "n-1" al caso "n" (por ejemplo, si conoces la suma de los 6 primeros elementos y el valor del séptimo elemento, cómo podrías emplear esta información para conocer la suma de los 7 primeros).
+
+using System;
+
+namespace Ejercicio_5_10_4
+{
+    public class Program 
+    {
+        public static void Main(string[] args)
+        {
+            int cantidad;
+            int i = 0;
+
+            Console.Write("Número de elementos del vector: ");
+            cantidad = Convert.ToInt32(Console.ReadLine());
+
+            int[] vector = new int[cantidad];
+
+            for (i = 0; i < cantidad; i++)
+            {
+                Console.Write("Valor de la posicion {0}: ", i + 1);
+                vector[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("La suma es {0}", SumaVector(vector, 0, vector.Length - 1));
+        }
+
+        public static int SumaVector(int[] vector, int desde, int hasta)
+        {
+            if (desde == hasta)
+                return vector[desde];
+
+            return vector[desde] + SumaVector(vector, desde + 1, hasta);
+        }
+
+        /*   0   1   2   3   4
+         *  --------------------
+         * | 1 | 2 | 5 | 8 | 9 |
+         *  
+         *  1 + | 2 | 5 | 8 | 9 |
+         *  
+         *  1 + 2 + | 5 | 8 | 9 |
+         *  
+         *  1 + 2 + 5 + | 8 | 9 |
+         *  
+         *  1 + 2 + 5 + 8 + | 9 |  <-- desde y hasta son iguales
+         *  
+         *  1 + 2 + 5 + 8 + 9 
+         * 
+         */
+    }
+}
+
+
+(5.10.5) Crea un programa que emplee recursividad para calcular el mayor de los elementos de un vector. El planteamiento será muy similar al del ejercicio anterior.
+
+using System;
+
+namespace Ejercicio_5_10_5
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int cantidad;
+
+            Console.Write("Número de elementos del vector: ");
+            cantidad = Convert.ToInt32(Console.ReadLine());
+
+            int[] vector = new int[cantidad];
+
+            for (i = 0; i < cantidad; i++)
+            {
+                Console.Write("Valor de la posicion {0}: ", i + 1);
+                vector[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("El mayor es {0}", Mayor(vector, vector[0], 0));
+        }
+
+        public static int Mayor(int[] vector, int mayor, int indice)
+        {
+            // Si es el final del vector, tenemos el mayor
+            if (indice >= vector.Length)
+                return mayor;
+
+            // Si posición actual del vector es mayor, cambiamos el que pasamos como el mayor
+            if (vector[indice] > mayor)
+                return Mayor(vector, vector[indice], indice + 1);
+
+            // Seguimos analizando hasta el final del vector
+            return Mayor(vector, mayor, indice + 1);
+        }
+    }
+}
+
+(5.10.6) Crea un programa que emplee recursividad para dar la vuelta a una cadena de caracteres (por ejemplo, a partir de "Hola" devolvería "aloH"). La función recursiva se llamará "Invertir(cadena)". Como siempre, analiza cuál será el caso base (qué longitud debería tener una cadena para que sea trivial darle la vuelta) y cómo pasar del caso "n-1" al caso "n" (por ejemplo, si ya has invertido las 5 primeras letras, que ocurriría con la de la sexta posición)
+
+using System;
+
+namespace Ejercicio_5_10_6
+{
+    public class Program 
+    {
+        public static void Main(string[] args)
+        {
+            string cadena;
+
+            Console.Write("Escribe una cadena: ");
+            cadena = Console.ReadLine();
+
+            Console.WriteLine(InvertirCadena(cadena));
+        }
+
+        public static string InvertirCadena(string cadena)
+        {
+            if (cadena.Length <= 1)
+                return cadena;
+
+            return InvertirCadena(cadena.Substring(1)) + cadena[0];
+        }
+    }
+}
+
+(5.10.7) Crea, tanto de forma recursiva como de forma iterativa, una función diga si una cadena de caracteres es simétrica (un palíndromo). Por ejemplo, "DABALEARROZALAZORRAELABAD" es un palíndromo.
+
+using System;
+
+namespace Ejercicio_5_10_7
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string cadena;
+
+            Console.Write("Cadena: ");
+            cadena = Console.ReadLine();
+
+            if (BuscarPalindromo(cadena))
+                Console.WriteLine("La cadena {0} es palindroma", cadena);
+            else
+                Console.WriteLine("La cadena {0} no es palindroma", cadena);
+        }
+
+        public static bool BuscarPalindromo(string cadena)
+        {
+            if (cadena.Length < 2)
+                return true;
+
+            if (cadena[0] == cadena[cadena.Length - 1])
+                return BuscarPalindromo(cadena.Substring(1, cadena.Length - 2));
+
+            return false;
+        }
+    }
+}
+
+(5.10.8) Crear un programa que encuentre el máximo común divisor de dos números usando el algoritmo de Euclides: Dados dos números enteros positivos m y n, tal que m > n, para encontrar su máximo común divisor, es decir, el mayor entero positivo que divide a ambos: - Dividir m por n para obtener el resto r (0 ≤ r < n) ; - Si r = 0, el MCD es n.; - Si no, el máximo común divisor es MCD(n,r).
+
+using System;
+
+namespace Ejercicio_5_10_8
+{
+    public class Program 
+    {
+        public static void Main(string[] args)
+        {
+            int a;
+            int b;
+
+            Console.Write("Número 1: ");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Número 2: ");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            if (a > b)
+                Console.WriteLine("El MCD es {0}", EncontrarMCD(a, b));
+            else
+                Console.WriteLine("No es posible calcular el MCD.");
+        }
+
+        public static double EncontrarMCD(int a, int b)
+        {
+            int r = a % b;
+
+            if (r == 0 && a >= b)
+                return b;
+
+            return EncontrarMCD(b, r);
+        }
+    }
+}
+
+(5.10.9) Crea dos funciones que sirvan para saber si un cierto texto es subcadena de una cadena. No puedes usar "Contains" ni "IndexOf", sino que debes analizar letra a letra. Una función debe ser iterativa y la otra debe ser recursiva.
+
+using System;
+
+namespace _5_10_9
+{
+    public class Program 
+    {
+        public static void Main(string[] args)
+        {
+            string cadena;
+            string subcadena;
+
+            Console.Write("Cadena: ");
+            cadena = Console.ReadLine();
+
+            Console.Write("Subcadena: ");
+            subcadena = Console.ReadLine();
+
+            if (EsSubcadena(cadena, subcadena))
+                Console.WriteLine("Es subcadena");
+            else
+                Console.WriteLine(" No es subcadena");
+        }
+
+        public static bool EsSubcadena(string cadena, string subcadena)
+        {
+            if (cadena.Length == 0)
+                return false;
+
+            if (subcadena.Length == 0)
+                return true;
+
+            if ((subcadena.Length == 1) &&  (cadena[0] == subcadena[0]))
+                return true;
+
+            if (cadena[0] == subcadena[0])
+                return EsSubcadena(cadena.Substring(1), subcadena.Substring(1));
+
+            return EsSubcadena(cadena.Substring(1), subcadena);
+        }
+    }
+}
+
+(5.10.10) Crea una función que reciba una cadena de texto, y una subcadena, y devuelva cuántas veces aparece la subcadena en la cadena, como subsecuencia formada a partir de sus letras en orden. Por ejemplo, si recibes la palabra "Hhoola" y la subcadena "hola", la respuesta sería 4, porque se podría tomar la primera H con la primera O (y con la L y con la A), la primera H con la segunda O, la segunda H con la primera O, o bien la segunda H con la segunda O. Si recibes "hobla", la respuesta sería 1. Si recibes "ohla", la respuesta sería 0, porque tras la H no hay ninguna O que permita completar la secuencia en orden.
+
+using System;
+
+namespace ejercicio5_10_10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int cantidad = 1;
+            string cadena;
+            string subcadena;
+
+            Console.Write("Cadena: ");
+            cadena = Console.ReadLine();
+
+            Console.Write("Subcadena: ");
+            subcadena = Console.ReadLine();
+
+            cantidad = Veces(cadena, subcadena);
+
+            Console.WriteLine("Aparece {0} veces", cantidad);
+        }
+
+        static int Veces(string cadena, string subcadena)
+        {
+            if (cadena.Length < subcadena.Length)
+                return 0;
+
+            if (cadena.Length == 0 && subcadena.Length == 0)
+                return 1;
+
+            if (subcadena.Length == 0)
+                return 1;
+
+            int temp = 0;
+
+            if (char.ToUpper(cadena[0]) == char.ToUpper(subcadena[0]))
+            {
+                for (int i = 0; i < cadena.Length; i++)
+                {
+                    if (char.ToUpper(cadena[i]) == char.ToUpper(subcadena[0]))
+                        temp++;
+                    else
+                        break;
+                }
+            }
+
+            if (temp == 0)
+                return Veces(cadena.Substring(1), subcadena);
+            else
+                return temp * Veces(cadena.Substring(temp), subcadena.Substring(1));
+        }
+    }
+}
+
+(5.10.11) El algoritmo de ordenación conocido como "Quicksort", parte de la siguiente idea: para ordenar un array entre dos posiciones "i" y "j", se comienza por tomar un elemento del array, llamado "pivote" (por ejemplo, el punto medio); luego se recoloca el array de modo que los elementos menores que el pivote queden a su izquierda y los mayores a su derecha; finalmente, se llama de forma recursiva a Quicksort para cada una de las dos mitades. El caso base de la función recursiva es cuando se llega a un array de tamaño 0 ó 1. Implementa una función que ordene un array usando este método
+
+using System;
+
+namespace ejercicio_5_10_11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] vector = { 10, 25, 69, 1, 5, 72, 32, 520, -5, 15, 2, 36, 458, 4139, 999, 25 };
+
+            quicksort(vector, 0, vector.Length - 1);
+
+            for (int i = 0; i < vector.Length - 1; i++)
+            {
+                Console.Write("{0} ", vector[i]);
+            }
+            Console.WriteLine();
+        }
+
+
+        static void quicksort(int[] vector, int primero, int ultimo)
+        {
+            int i, j, central;
+            double pivote;
+
+            central = (primero + ultimo) / 2;
+            pivote = vector[central];
+            i = primero;
+            j = ultimo;
+
+            do
+            {
+                while (vector[i] < pivote)
+                    i++;
+
+                while (vector[j] > pivote)
+                    j--;
+
+                if (i <= j)
+                {
+                    int temp;
+
+                    temp = vector[i];
+                    vector[i] = vector[j];
+                    vector[j] = temp;
+
+                    i++;
+                    j--;
+                }
+            } while (i <= j);
+
+            if (primero < j)
+                quicksort(vector, primero, j);
+
+            if (i < ultimo)
+                quicksort(vector, i, ultimo);
+        }
+    }
+}
+
+(5.11.1) Crea un programa llamado "suma", que calcule (y muestre) la suma de dos números que se le indiquen como parámetros en línea de comandos. Por ejemplo, si se teclea "suma 2 3" deberá responder "5", si se teclea "suma 2" responderá "2" y si se teclea únicamente "suma" deberá responder "no hay suficientes datos" y devolver un código de error 1.
+
+using System;
+
+namespace ejercicio_5_11_1
+{
+    class Program
+    {
+        static int Main(string[] args)
+        {
+            int salida = 0;
+
+            switch (args.Length)
+            {
+                case 0 :
+                    Console.WriteLine("no hay suficientes datos");
+                    salida = 1;
+                    break;
+                case 1 :
+                    Console.WriteLine(args[0]);
+                    break;
+                case 2 :
+                    Console.WriteLine(Convert.ToInt32(args[0]) + Convert.ToInt32(args[1]));
+                    break;
+            }
+
+            return salida;
+        }
+    }
+}
+
+
+(5.11.2) Crea una calculadora básica, llamada "calcula", que deberá sumar, restar, multiplicar o dividir los dos números que se le indiquen como parámetros. Ejemplos de su uso sería "calcula 2 + 3" o "calcula 5 * 60". 
+
+using System;
+
+namespace ejercicio_5_11_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int arg1 = Convert.ToInt32(args[0]);
+            char arg2 = Convert.ToChar(args[1]);
+            int arg3 = Convert.ToInt32(args[2]);
+            int resultado = 0;
+
+            switch (arg2)
+            {
+                case '+':
+                    resultado = arg1 + arg3;
+                    break;
+                case '-':
+                    resultado = arg1 - arg3;
+                    break;
+                case '*':
+                    resultado = arg1 * arg3;
+                    break;
+                case '/':
+                    resultado = arg1 / arg3;
+                    break;
+            }
+
+            Console.WriteLine(resultado);
+
+        }
+    }
+}
+
+(5.11.3) Crea una variante del ejercicio 5.11.2, en la que Main devuelva el código 1 si la operación indicada no es válida o 0 cuando sí sea una operación aceptable.
+
+using System;
+
+namespace ejercicio_5_11_3
+{
+    class Program
+    {
+        static int Main(string[] args)
+        {
+            int arg1 = Convert.ToInt32(args[0]);
+            char arg2 = Convert.ToChar(args[1]);
+            int arg3 = Convert.ToInt32(args[2]);
+            int resultado = 0;
+            int salida = 0;
+
+            switch (arg2)
+            {
+                case '+':
+                    resultado = arg1 + arg3;
+                    break;
+                case '-':
+                    resultado = arg1 - arg3;
+                    break;
+                case '*':
+                    resultado = arg1 * arg3;
+                    break;
+                case '/':
+                    if (arg3 == 0)
+                        salida = 1;
+                    else
+                        resultado = arg1 / arg3;
+                    break;
+            }
+
+            if (salida == 0)
+                Console.WriteLine(resultado);
+            else
+                Console.WriteLine("Error");
+
+            return salida;
+        }
+    }
+}
+
+(5.11.4) Crea una variante del ejercicio 5.11.3, en la que Main devuelva también el código 2 si alguno de los dos números con los que se quiere operar no tiene un valor numérico válido.
+
+using System;
+
+namespace ejercicio_5_11_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int arg1 = 0;
+            char arg2 = '\0';
+            int arg3 = 0;
+            int resultado = 0;
+
+            try
+            {
+                arg1 = Convert.ToInt32(args[0]);
+            } 
+            catch(Exception)
+            {
+                Environment.Exit(2);
+            }
+
+            try
+            {
+                arg2 = Convert.ToChar(args[1]);
+
+                if ((arg2 != '+') && (arg2 != '-') && (arg2 != '*') && (arg2 != '/'))
+                {
+                    Environment.Exit(1);
+                }
+            }
+            catch (Exception)
+            {
+                Environment.Exit(2);
+            }
+
+            try
+            {
+                arg3 = Convert.ToInt32(args[2]);
+            }
+            catch (Exception)
+            {
+                Environment.Exit(2);
+            }
+
+            switch (arg2)
+            {
+                case '+':
+                    resultado = arg1 + arg3;
+                    break;
+                case '-':
+                    resultado = arg1 - arg3;
+                    break;
+                case '*':
+                    resultado = arg1 * arg3;
+                    break;
+                case '/':
+                    if (arg3 == 0)
+                    {
+                        Environment.Exit(1);
+                    }
+
+                    resultado = arg1 / arg3;
+                    break;
+            }
+
+            Console.WriteLine(resultado);
+            
+            Environment.Exit(0);
+        }
+    }
+}

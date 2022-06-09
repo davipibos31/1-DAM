@@ -1,0 +1,5 @@
+El Resultado es : 2 / 0 = 0
+El Resultado es : 3 * 2 = 6
+El Resultado es : 0 / 2 = 0
+El Resultado es : 2 / 2 = 0
+El Resultado es : 2 / 2 = 0

@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0051)https://www.csharp-examples.net/dataview-rowfilter/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type="text/css" href="./DataView RowFilter Syntax [C#]_files/style.css" media="screen" title="Normal Style">
+<link rel="stylesheet" type="text/css" href="./DataView RowFilter Syntax [C#]_files/print.css" media="print" title="Print Style">
+<link rel="alternate" type="application/rss+xml" href="https://www.csharp-examples.net/rss.xml" title="C# Examples">
+<title>DataView RowFilter Syntax [C#]</title>
+<meta http-equiv="origin-trial" content="AzoawhTRDevLR66Y6MROu167EDncFPBvcKOaQispTo9ouEt5LvcBjnRFqiAByRT+2cDHG1Yj4dXwpLeIhc98/gIAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A6+nc62kbJgC46ypOwRsNW6RkDn2x7tgRh0wp7jb3DtFF7oEhu1hhm4rdZHZ6zXvnKZLlYcBlQUImC4d3kKihAcAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/9La288e7MDEU2ifusFnMg1C2Ij6uoa/Z/ylwJIXSsWfK37oESIPbxbt4IU86OGqDEPnNVruUiMjfKo65H/CQwAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AzoawhTRDevLR66Y6MROu167EDncFPBvcKOaQispTo9ouEt5LvcBjnRFqiAByRT+2cDHG1Yj4dXwpLeIhc98/gIAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A6+nc62kbJgC46ypOwRsNW6RkDn2x7tgRh0wp7jb3DtFF7oEhu1hhm4rdZHZ6zXvnKZLlYcBlQUImC4d3kKihAcAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/9La288e7MDEU2ifusFnMg1C2Ij6uoa/Z/ylwJIXSsWfK37oESIPbxbt4IU86OGqDEPnNVruUiMjfKo65H/CQwAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="./DataView RowFilter Syntax [C#]_files/f.txt" as="script"><script type="text/javascript" src="./DataView RowFilter Syntax [C#]_files/f.txt"></script><link rel="preload" href="./DataView RowFilter Syntax [C#]_files/f(1).txt" as="script"><script type="text/javascript" src="./DataView RowFilter Syntax [C#]_files/f(1).txt"></script></head>
+<body><div id="wrap">
+<a href="https://www.csharp-examples.net/"><img src="./DataView RowFilter Syntax [C#]_files/csharp-examples.png" width="790" height="120" alt="C# Examples"></a>
+
+<div id="avmenu">
+<h2 class="hide">Menu:</h2>
+<ul>
+  <li><a href="https://www.csharp-examples.net/">Homepage</a></li>
+  <li><a href="https://www.csharp-examples.net/contact/" rel="nofollow">Contact</a></li>
+</ul>
+<br>
+
+
+
+<script src="./DataView RowFilter Syntax [C#]_files/f(2).txt"></script><script src="./DataView RowFilter Syntax [C#]_files/f(3).txt" id="google_shimpl"></script><script async="" src="./DataView RowFilter Syntax [C#]_files/f(4).txt"></script>
+<!-- C# Examples, 160x600 -->
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-7264751136766103" data-ad-slot="3539272462" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_0_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 600px; width: 160px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_0_anchor" style="border: none; height: 600px; width: 160px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:160px;height:600px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./DataView RowFilter Syntax [C#]_files/ads.html" data-google-container-id="a!1" data-google-query-id="CLO28cuaoPgCFZNEFQgdxr8M9Q" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div id="content">
+
+<h1>DataView RowFilter Syntax [C#]</h1>
+
+<p>This example describes syntax of <a href="http://msdn2.microsoft.com/en-us/library/system.data.dataview.rowfilter.aspx">DataView.RowFil­ter</a>
+expression. It shows how to correctly build expression string (without „SQL
+injection“) using methods to escape values.</p>
+
+<h2>Column names</h2>
+
+<p>If a column name contains any of these special characters <code>~</code>
+<code>(</code> <code>)</code> <code>#</code> <code>\</code> <code>/</code>
+<code>=</code> <code>&gt;</code> <code>&lt;</code> <code>+</code> <code>-</code>
+<code>*</code> <code>%</code> <code>&amp;</code> <code>|</code> <code>^</code>
+<code>'</code> <code>"</code> <code>[</code> <code>]</code>, you must enclose
+the column name within square brackets <code>[</code> <code>]</code>. If a
+column name contains right bracket <code>]</code> or backslash <code>\</code>,
+escape it with backslash (<code>\]</code> or <code>\\</code>).</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"id = 10"</span>;      <span class="comments">// no special character in column name "id"</span>
+dataView.RowFilter = <span class="string">"$id = 10"</span>;     <span class="comments">// no special character in column name "$id"</span>
+dataView.RowFilter = <span class="string">"[#id] = 10"</span>;   <span class="comments">// special character "#" in column name "#id"</span>
+dataView.RowFilter = <span class="string">"[[id\]] = 10"</span>; <span class="comments">// special characters in column name "[id]"</span>
+
+</pre>
+
+<h2>Literals</h2>
+
+<p><strong>String values</strong> are enclosed within single quotes
+<code>'</code> <code>'</code>. If the string contains single quote
+<code>'</code>, the quote must be doubled.</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"Name = 'John'"</span>        <span class="comments">// string value</span>
+dataView.RowFilter = <span class="string">"Name = 'John ''A'''"</span>  <span class="comments">// string with single quotes "John 'A'"</span>
+
+dataView.RowFilter = <span class="type">String</span>.Format(<span class="string">"Name = '{0}'"</span>, <span class="string">"John 'A'"</span>.Replace(<span class="string">"'"</span>, <span class="string">"''"</span>));
+
+</pre>
+
+<p><strong>Number values</strong> are not enclosed within any characters. The
+values should be the same as is the result of <code>int.ToString()</code> or
+<code>float.ToString()</code> method for invariant or English culture.</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"Year = 2008"</span>          <span class="comments">// integer value</span>
+dataView.RowFilter = <span class="string">"Price = 1199.9"</span>       <span class="comments">// float value</span>
+
+dataView.RowFilter = <span class="type">String</span>.Format(<span class="type">CultureInfo</span>.InvariantCulture.NumberFormat,
+                     <span class="string">"Price = {0}"</span>, 1199.9f);
+
+</pre>
+
+<p><strong>Date values</strong> are enclosed within sharp characters
+<code>#</code> <code>#</code>. The date format is the same as is the result of
+<code>DateTime.ToString()</code> method for invariant or English culture.</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"Date = #12/31/2008#"</span>          <span class="comments">// date value (time is 00:00:00)</span>
+dataView.RowFilter = <span class="string">"Date = #2008-12-31#"</span>          <span class="comments">// also this format is supported</span>
+dataView.RowFilter = <span class="string">"Date = #12/31/2008 16:44:58#"</span> <span class="comments">// date and time value</span>
+
+dataView.RowFilter = <span class="type">String</span>.Format(<span class="type">CultureInfo</span>.InvariantCulture.DateTimeFormat,
+                     <span class="string">"Date = #{0}#"</span>, <span class="keyword">new</span> <span class="type">DateTime</span>(2008, 12, 31, 16, 44, 58));
+
+</pre>
+
+<p><strong>Alternatively</strong> you can enclose all values within single
+quotes <code>'</code> <code>'</code>. It means you can <strong>use string
+values</strong> for numbers or date time values. In this case the current
+culture is used to convert the string to the specific&nbsp;value.</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"Date = '12/31/2008 16:44:58'"</span> <span class="comments">// if current culture is English</span>
+dataView.RowFilter = <span class="string">"Date = '31.12.2008 16:44:58'"</span> <span class="comments">// if current culture is German</span>
+
+dataView.RowFilter = <span class="string">"Price = '1199.90'"</span>            <span class="comments">// if current culture is English</span>
+dataView.RowFilter = <span class="string">"Price = '1199,90'"</span>            <span class="comments">// if current culture is German</span>
+
+</pre>
+
+<h2>Comparison operators</h2>
+
+<p><strong>Equal, not equal, less, greater</strong> operators are used to
+include only values that suit to a comparison expression. You can use these
+operators <code>=</code> <code>&lt;&gt;</code> <code>&lt;</code>
+<code>&lt;=</code> <code>&gt;</code> <code>&gt;=</code>.</p>
+
+<p>Note: <strong>String comparison</strong> is
+<strong>culture-sensitive</strong>, it uses CultureInfo from <a href="http://msdn2.microsoft.com/en-us/library/system.data.datatable.locale.aspx">DataTable.Locale</a>
+property of related table (<code>dataView.Table.Locale</code>). If the property
+is not explicitly set, its default value is DataSet.Locale (and its default
+value is current system culture Thread.Curren­tThread.Curren­tCulture).</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"Num = 10"</span>             <span class="comments">// number is equal to 10</span>
+dataView.RowFilter = <span class="string">"Date &lt; #1/1/2008#"</span>    <span class="comments">// date is less than 1/1/2008</span>
+dataView.RowFilter = <span class="string">"Name &lt;&gt; 'John'"</span>       <span class="comments">// string is not equal to 'John'</span>
+dataView.RowFilter = <span class="string">"Name &gt;= 'Jo'"</span>         <span class="comments">// string comparison</span>
+
+</pre>
+
+<p><strong>Operator IN</strong> is used to include only values from the list.
+You can use the operator for all data types, such as numbers or strings.</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"Id IN (1, 2, 3)"</span>                    <span class="comments">// integer values</span>
+dataView.RowFilter = <span class="string">"Price IN (1.0, 9.9, 11.5)"</span>          <span class="comments">// float values</span>
+dataView.RowFilter = <span class="string">"Name IN ('John', 'Jim', 'Tom')"</span>     <span class="comments">// string values</span>
+dataView.RowFilter = <span class="string">"Date IN (#12/31/2008#, #1/1/2009#)"</span> <span class="comments">// date time values</span>
+
+dataView.RowFilter = <span class="string">"Id NOT IN (1, 2, 3)"</span>  <span class="comments">// values not from the list</span>
+
+</pre>
+
+<p><strong>Operator LIKE</strong> is used to include only values that match a
+pattern with wildcards. <strong>Wildcard</strong> character is <code>*</code> or
+<code>%</code>, it can be at the beginning of a pattern <code>'*value'</code>,
+at the end <code>'value*'</code>, or at both <code>'*value*'</code>. Wildcard in
+the middle of a patern <code>'va*lue'</code> is <strong>not
+allowed</strong>.</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"Name LIKE 'j*'"</span>       <span class="comments">// values that start with 'j'</span>
+dataView.RowFilter = <span class="string">"Name LIKE '%jo%'"</span>     <span class="comments">// values that contain 'jo'</span>
+
+dataView.RowFilter = <span class="string">"Name NOT LIKE 'j*'"</span>   <span class="comments">// values that don't start with 'j'</span>
+
+</pre>
+
+<p>If a pattern in a LIKE clause contains any of these special characters
+<code>*</code> <code>%</code> <code>[</code> <code>]</code>, those characters
+must be escaped in brackets <code>[</code> <code>]</code> like this
+<code>[*]</code>, <code>[%]</code>, <code>[[]</code> or <code>[]]</code>.</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"Name LIKE '[*]*'"</span>     <span class="comments">// values that starts with '*'</span>
+dataView.RowFilter = <span class="string">"Name LIKE '[[]*'"</span>     <span class="comments">// values that starts with '['</span>
+
+</pre>
+
+<p>The following method escapes a text value for usage in a LIKE clause.</p>
+[C#]<br>
+
+<pre class="code"><span class="keyword">public static string</span> <strong>EscapeLikeValue</strong>(<span class="keyword">string</span> valueWithoutWildcards)
+{
+  <span class="type">StringBuilder</span> sb = <span class="keyword">new</span> <span class="type">StringBuilder</span>();
+  <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; valueWithoutWildcards.Length; i++)
+  {
+    <span class="keyword">char</span> c = valueWithoutWildcards[i];
+    <span class="keyword">if</span> (c == <span class="string">'*'</span> || c == <span class="string">'%'</span> || c == <span class="string">'['</span> || c == <span class="string">']'</span>)
+      sb.Append(<span class="string">"["</span>).Append(c).Append(<span class="string">"]"</span>);
+    <span class="keyword">else if</span> (c == <span class="string">'\''</span>)
+      sb.Append(<span class="string">"''"</span>);
+    <span class="keyword">else</span>
+      sb.Append(c);
+  }
+  <span class="keyword">return</span> sb.ToString();
+}
+
+</pre>
+ [C#]<br>
+
+<pre class="code"><span class="comments">// select all that starts with the value string (in this case with "*")</span>
+<span class="keyword">string</span> value = <span class="string">"*"</span>;
+<span class="comments">// the dataView.RowFilter will be: "Name LIKE '[*]*'"</span>
+dataView.RowFilter = <span class="type">String</span>.Format(<span class="string">"Name LIKE '{0}*'"</span>, <strong>EscapeLikeValue</strong>(value));
+
+</pre>
+
+<h2>Boolean operators</h2>
+
+<p>Boolean operators <code>AND</code>, <code>OR</code> and <code>NOT</code> are
+used to concatenate expressions. Operator NOT has precedence over AND operator
+and it has precedence over OR operator.</p>
+[C#]<br>
+
+<pre class="code"><span class="comments">// operator AND has precedence over OR operator, parenthesis are needed</span>
+dataView.RowFilter = <span class="string">"City = 'Tokyo' AND (Age &lt; 20 OR Age &gt; 60)"</span>;
+
+<span class="comments">// following examples do the same</span>
+dataView.RowFilter = <span class="string">"City &lt;&gt; 'Tokyo' AND City &lt;&gt; 'Paris'"</span>;
+dataView.RowFilter = <span class="string">"NOT City = 'Tokyo' AND NOT City = 'Paris'"</span>;
+dataView.RowFilter = <span class="string">"NOT (City = 'Tokyo' OR City = 'Paris')"</span>;
+dataView.RowFilter = <span class="string">"City NOT IN ('Tokyo', 'Paris')"</span>;
+
+</pre>
+
+<h2>Arithmetic and string operators</h2>
+
+<p><strong>Arithmetic operators</strong> are addition <code>+</code>,
+subtraction <code>-</code>, multiplication <code>*</code>, division
+<code>/</code> and modulus <code>%</code>.</p>
+[C#]<br>
+
+<pre class="code">dataView.RowFilter = <span class="string">"MotherAge - Age &lt; 20"</span>;   <span class="comments">// people with young mother</span>
+dataView.RowFilter = <span class="string">"Age % 10 = 0"</span>;           <span class="comments">// people with decennial birthday</span>
+
+</pre>
+
+<p>There is also one <strong>string</strong> operator
+<strong>concatenation</strong> <code>+</code>.</p>
+
+<h2>Parent-Child Relation Referencing</h2>
+
+<p>A&nbsp;<strong>parent table</strong> can be referenced in an expression using
+parent column name with <code>Parent.</code> prefix. A&nbsp;column in a
+<strong>child table</strong> can be referenced using child column name with
+<code>Child.</code> prefix.</p>
+
+<p>The reference to the child column must be in an <strong>aggregate
+function</strong> because child relationships may return multiple rows. For
+example expression <code>SUM(Child.Price)</code> returns sum of all prices in
+child table related to the row in parent&nbsp;table.</p>
+
+<p>If a table has more than one child relation, the prefix must contain relation
+name. For example expression <code>Child(OrdersToItemsRelation).Price</code>
+references to column Price in child table using relation named
+OrdersToItemsRe­lation.</p>
+
+<h2>Aggregate Functions</h2>
+
+<p>There are supported following aggregate functions <code>SUM</code>,
+<code>COUNT</code>, <code>MIN</code>, <code>MAX</code>, <code>AVG</code>
+(average), <code>STDEV</code> (statistical standard deviation) and
+<code>VAR</code> (statistical variance).</p>
+
+<p>This example shows aggregate function performed on a single&nbsp;table.</p>
+[C#]<br>
+
+<pre class="code"><span class="comments">// select people with above-average salary</span>
+dataView.RowFilter = <span class="string">"Salary &gt; AVG(Salary)"</span>;
+
+</pre>
+
+<p>Following example shows aggregate functions performed on two tables which
+have parent-child relation. Suppose there are tables Orders and Items with the
+parent-child relation.</p>
+[C#]<br>
+
+<pre class="code"><span class="comments">// select orders which have more than 5 items</span>
+dataView.RowFilter = <span class="string">"COUNT(Child.IdOrder) &gt; 5"</span>;
+
+<span class="comments">// select orders which total price (sum of items prices) is greater or equal $500</span>
+dataView.RowFilter = <span class="string">"SUM(Child.Price) &gt;= 500"</span>;
+
+</pre>
+
+<h2>Functions</h2>
+
+<p>There are also supported following functions. Detailed description can be
+found here <a href="http://msdn2.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx">DataColumn.Ex­pression</a>.</p>
+
+<ul>
+	<li><code>CONVERT</code>&nbsp;– converts particular expression to a specified .NET
+	Framework&nbsp;type</li>
+
+	<li><code>LEN</code>&nbsp;– gets the length of a string</li>
+
+	<li><code>ISNULL</code>&nbsp;– checks an expression and either returns the checked
+	expression or a replacement&nbsp;value</li>
+
+	<li><code>IIF</code>&nbsp;– gets one of two values depending on the result of a
+	logical expression</li>
+
+	<li><code>TRIM</code>&nbsp;– removes all leading and trailing blank characters
+	like \r, \n, \t, ‚&nbsp;‘</li>
+
+	<li><code>SUBSTRING</code>&nbsp;– gets a sub-string of a specified length,
+	starting at a specified point in the&nbsp;string</li>
+</ul>
+
+<br><p style="text-align:center;">
+<script async="" src="./DataView RowFilter Syntax [C#]_files/f(4).txt"></script>
+<!-- C# Examples, 336x280 -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-7264751136766103" data-ad-slot="5236331666" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="border: none; height: 280px; width: 336px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_1_anchor" style="border: none; height: 280px; width: 336px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p><h2>See also</h2>
+
+<ul>
+	<li><a href="http://msdn2.microsoft.com/en-us/library/system.data.dataview.rowfilter.aspx">DataView.RowFil­ter</a>&nbsp;–
+	MSDN&nbsp;– expression used to filter&nbsp;rows</li>
+
+	<li><a href="http://msdn2.microsoft.com/en-us/library/system.data.datacolumn.expression.aspx">DataColumn.Ex­pression</a>&nbsp;–
+	MSDN&nbsp;– syntax description</li>
+</ul>
+
+<p class="author">By <a href="https://www.csharp-examples.net/jan-slama/">Jan Slama</a>, 15-Mar-2008</p>
+
+<!-- by Texy2! --></div>
+
+<div id="footer">
+Copyright © 2019 Jan Slama. 
+</div>
+
+</div>
+
+<script src="./DataView RowFilter Syntax [C#]_files/urchin.js.descarga" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2661407-1";
+urchinTracker();
+</script>
+
+
+<div id="fatkun-drop-panel">
+    <a id="fatkun-drop-panel-close-btn">×</a>
+        <div id="fatkun-drop-panel-inner">
+            <div class="fatkun-content">
+                <svg class="fatkun-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5892"><path d="M494.933333 782.933333c2.133333 2.133333 4.266667 4.266667 8.533334 6.4h8.533333c6.4 0 10.666667-2.133333 14.933333-6.4l2.133334-2.133333 275.2-275.2c8.533333-8.533333 8.533333-21.333333 0-29.866667-8.533333-8.533333-21.333333-8.533333-29.866667 0L533.333333 716.8V128c0-12.8-8.533333-21.333333-21.333333-21.333333s-21.333333 8.533333-21.333333 21.333333v588.8L249.6 475.733333c-8.533333-8.533333-21.333333-8.533333-29.866667 0-8.533333 8.533333-8.533333 21.333333 0 29.866667l275.2 277.333333zM853.333333 874.666667H172.8c-12.8 0-21.333333 8.533333-21.333333 21.333333s8.533333 21.333333 21.333333 21.333333H853.333333c12.8 0 21.333333-8.533333 21.333334-21.333333s-10.666667-21.333333-21.333334-21.333333z" p-id="5893"></path></svg>
+                <div class="fatkun-title">Arrastra y suelta aquí</div>
+                <div class="fatkun-desc">La imagen terminará de descargarse.</div>
+            </div>
+            <div id="fatkun-supported-by">Apoyado por AIX Downloader(Pictrue/Video/Music/Document)</div>
+        </div>
+    </div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><ins id="aswift_2_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins id="aswift_2_anchor" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./DataView RowFilter Syntax [C#]_files/ads(1).html" data-google-container-id="a!3" data-load-complete="true"></iframe></ins></ins></ins><iframe src="./DataView RowFilter Syntax [C#]_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./DataView RowFilter Syntax [C#]_files/zrt_lookup.html" style="display: none;"></iframe></html>

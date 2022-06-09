@@ -1,0 +1,20 @@
+C:\Users\david\source\repos\Prueba Wpf y objetos\bin\Debug\netcoreapp3.1\Prueba Wpf y objetos.exe
+C:\Users\david\source\repos\Prueba Wpf y objetos\bin\Debug\netcoreapp3.1\Prueba Wpf y objetos.deps.json
+C:\Users\david\source\repos\Prueba Wpf y objetos\bin\Debug\netcoreapp3.1\Prueba Wpf y objetos.runtimeconfig.json
+C:\Users\david\source\repos\Prueba Wpf y objetos\bin\Debug\netcoreapp3.1\Prueba Wpf y objetos.runtimeconfig.dev.json
+C:\Users\david\source\repos\Prueba Wpf y objetos\bin\Debug\netcoreapp3.1\Prueba Wpf y objetos.dll
+C:\Users\david\source\repos\Prueba Wpf y objetos\bin\Debug\netcoreapp3.1\Prueba Wpf y objetos.pdb
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos_MarkupCompile.cache
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos_MarkupCompile.lref
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos.g.resources
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos.AssemblyInfo.cs
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos.dll
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos.pdb
+C:\Users\david\source\repos\Prueba Wpf y objetos\obj\Debug\netcoreapp3.1\Prueba Wpf y objetos.genruntimeconfig.cache

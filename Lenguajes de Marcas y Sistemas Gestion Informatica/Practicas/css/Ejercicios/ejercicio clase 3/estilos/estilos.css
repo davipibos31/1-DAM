@@ -1,0 +1,10 @@
+input{
+    background-color: brown;
+    color: white;
+    border: 5px solid black;
+}
+
+fieldset {
+    background-color: aqua;
+    width: 300px;
+}

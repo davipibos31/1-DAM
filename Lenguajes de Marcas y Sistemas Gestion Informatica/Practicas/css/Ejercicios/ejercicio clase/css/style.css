@@ -1,0 +1,40 @@
+p {
+    color: cadetblue;
+}
+h1,h2,h3 {
+    color: coral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+p span {
+
+    color: black;
+}
+.destacado {
+    color: aqua;
+}
+
+#prueba {
+    color: deeppink;
+}
+a {
+    color: cadetblue;
+    text-decoration: none;
+}
+a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+ul li a {
+    color: blueviolet;
+    text-decoration: none;
+}
+ul li a {
+    text-decoration: underline;
+}
+#texto1{
+    color: coral;
+}
+.texto2{
+    color: aqua;
+}

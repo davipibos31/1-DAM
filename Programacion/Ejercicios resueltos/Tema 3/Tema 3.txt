@@ -1,0 +1,1122 @@
+
+(3.1.1.1) Calcula el producto de 1.000.000 por 1.000.000, usando una variable llamada "producto", de tipo "long". Prueba también a calcularlo usando una variable de tipo "int".
+
+using System;
+
+namespace ejercicio_3_1_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			long productoLong = 1000000L * 1000000L;
+			int productoInt = 1000000 * 1000000;
+        }
+    }
+}
+
+
+(3.1.2.1) Pregunta al usuario su edad, que se guardará en un "byte". A continuación, le deberás decir que no aparenta tantos años (por ejemplo, "No aparentas 20 años").
+
+using System;
+
+namespace ejercicio_3_1_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			byte edad;
+            
+			Console.Write("Escribe tu edad: ");
+            edad = Convert.ToByte(Console.ReadLine());
+
+            Console.WriteLine("No aparentas {0}.", edad);
+    }
+}
+
+(3.1.2.2) Pide al usuario dos números de dos cifras ("byte"), calcula su multiplicación, que se deberá guardar en un "ushort", y muestra el resultado en pantalla. 
+
+using System;
+
+namespace ejercicio_3_1_2_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            byte numero1;
+            byte numero2;
+            ushort numero3;
+
+            Console.Write("Escribe un número: ");
+            numero1 = Convert.ToByte(Console.ReadLine());
+
+            Console.Write("Escribe otro número: ");
+            numero2 = Convert.ToByte(Console.ReadLine());
+
+            numero3 = (ushort)(numero1 * numero2);
+
+            Console.WriteLine("Resultado: {0}", numero3);
+        }
+    }
+}
+
+
+(3.1.2.3) Pide al usuario dos números enteros largos ("long") y muestra su suma, su resta y su producto.
+
+using System;
+
+namespace ejercicio_3_1_2_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			long numero1;
+			long numero2;
+			
+            Console.Write("Escribe un número: ");
+            numero1 = Convert.ToInt64(Console.ReadLine());
+            
+			Console.Write("Escribe otro número: ");
+            numero2 = Convert.ToInt64(Console.ReadLine());
+            
+			Console.WriteLine("Suma: {0}", numero1 + num2);
+            Console.WriteLine("Resta: {0}", numero1 - numero2);
+            Console.WriteLine("Producto: {0}", numero1 * numero2);
+        }
+    }
+}
+
+(3.1.3.1) Crea un programa que use tres variables x,y,z. Sus valores iniciales serán 15, -10, 2.147.483.647. Se deberá incrementar el valor de estas variables. ¿Qué valores esperas que se obtengan? Contrástalo con el resultado obtenido por el programa. 
+
+using System;
+
+namespace ejercicio_3_1_3_1
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1 = 15;
+            int numero2 = -10;
+            int numero3 = 2147483647;
+
+            numero1++;
+            numero2++;
+            numero3++;
+
+            Console.WriteLine("número 1: {0}", numero1);
+            Console.WriteLine("número 2: {0}", numero2);
+            Console.WriteLine("número 3: {0}", numero3);
+        }
+    }
+}
+
+(3.1.3.2) ¿Cuál sería el resultado de las siguientes operaciones? a=5; b=++a; c=a++; b=b*5; a=a*2; Calcúlalo a mano y luego crea un programa que lo resuelva, para ver si habías hallado la solución correcta.
+
+using System;
+
+namespace ejercicio_3_1_3_2
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int a = 5;
+			int b = ++a;
+			int c = a++;
+
+			b = b * 5;
+			a = a * 2;
+			
+			Console.WriteLine("a = {0}", a);
+			Console.WriteLine("b = {0}", b);
+			Console.WriteLine("c = {0}", c);
+		}
+	}
+}
+
+(3.1.4.1) Crea un programa que use tres variables x,y,z. Sus valores iniciales serán 15, -10, 214. Deberás incrementar el valor de estas variables en 12, usando el formato abreviado. ¿Qué valores esperas que se obtengan? Contrástalo con el resultado obtenido por el programa. 
+
+using System;
+
+namespace ejercicio_3_1_4_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 15;
+            int y = -10;
+            int z = 214;
+			
+            x += 12; 
+			y += 12; 
+			z += 12;
+			
+            Console.WriteLine("x = {0}", x);
+            Console.WriteLine("y = {0}", y);
+            Console.WriteLine("z = {0}", z);
+        }
+    }
+}
+
+(3.1.4.2) ¿Cuál sería el resultado de las siguientes operaciones? a=5; b=a+2; b-=3; c=-3; c*=2; ++c; a*=b; Crea un programa que te lo muestre.
+
+using System;
+
+namespace ejercicio_3_1_4_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 5; 
+            int b = a + 2;
+
+            b -= 3;
+
+            var c = -3; 
+
+            c *= 2; 
+            ++c; 
+
+            a *= b;
+
+            Console.WriteLine("a = {0}", a);
+            Console.WriteLine("b = {0}", b);
+            Console.WriteLine("c = {0}", c);
+        }
+    }
+}
+
+(3.2.1.1) Crea un programa que muestre el resultado de dividir 3 entre 4 usando números enteros y luego usando números de coma flotante. 
+
+using System;
+
+namespace ejercicio_3_2_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a = 3d / 4d;
+            int b = 3 / 4;
+			
+            Console.WriteLine("double = {0}", a);
+            Console.WriteLine("int = {0}", b);
+        }
+    }
+}
+
+(3.2.1.2) ¿Cuál sería el resultado de las siguientes operaciones, usando números reales? a=5; a/=2; a+=1; a*=3; --a;
+
+using System;
+
+namespace ejercicio_3_2_1_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a = 5; 
+			
+            a /= 2; 
+            a += 1; 
+            a *= 3; 
+            --a;
+            
+			Console.WriteLine(a);
+        }
+    }
+}
+
+(3.2.2.1) Crea un programa que muestre el resultado de dividir 13 entre 6 usando números enteros, luego usando números de coma flotante de simple precisión y luego con números de doble precisión.
+
+using System;
+
+namespace ejercicio_3_2_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 13 / 6;
+            float b = 13f / 6f;
+            double c = 13d / 6d;
+
+            Console.WriteLine("int = {0}", a);
+            Console.WriteLine("float = {0}", b);
+            Console.WriteLine("double = {0}", c);
+        }
+    }
+}
+
+
+(3.2.2.2) Calcula el área de un círculo, dado su radio, que será un número entero (área = pi * radio al cuadrado)
+
+using System;
+
+namespace ejercicio_3_2_2_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int radio;
+            double area;
+
+			Console.Write("Escribe el radio: ");
+            radio = Convert.ToInt64(Console.ReadLine());
+			
+			area = Math.PI * Math.Pow(radio, 2);
+
+            Console.WriteLine("El área es {0}.", area);
+        }
+    }
+}
+
+(3.2.3.1) Calcula el volumen de una esfera, dado su radio, que será un número de doble precisión (volumen = pi * radio al cubo * 4/3)
+
+using System;
+
+namespace ejercicio_3_2_3_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double radio;
+            double area;
+
+			Console.Write("Escribe el radio: ");
+            radio = Convert.ToDouble(Console.ReadLine());
+			
+			area = Math.PI * Math.Pow(radio, 3) * 4 / 3;
+
+            Console.WriteLine("El volumen de la esfera es {0}.", area);
+        }
+    }
+}
+
+(3.2.3.2) Crea un programa que pida al usuario a una distancia (en metros) y el tiempo necesario para recorrerla (como tres números: horas, minutos, segundos), y muestre la velocidad, en metros por segundo, en kilómetros por hora y en millas por hora (pista: 1 milla = 1.609 metros).
+
+using System;
+
+namespace ejercicio_3_2_3_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                        double metros;
+            double kilometros;
+            double millas;
+            double horas;
+            double minutos;
+            double segundos;
+            double tiempo;
+
+            Console.Write("Escribe una distancia en metros: ");
+            metros = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Escribe el tiempo necesario para recorrerla.");
+            Console.Write("Horas: ");
+            horas = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Minutos: ");
+            minutos = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Segundos: ");
+            segundos = Convert.ToDouble(Console.ReadLine());
+
+            tiempo = (horas * 3600) + (minutos * 60) + segundos; // El tiempo total en segundos.
+            kilometros = metros / 1000;
+            millas = metros / 1609;
+
+            Console.WriteLine("{0} metros en {1} segundos = {2} m/s", metros, tiempo, metros / tiempo);
+
+            tiempo /= 3600; // Pasamos el tiempo a horas.
+
+            Console.WriteLine("{0} kilómetros en {1} horas = {2} Km/h", kilometros, tiempo, kilometros / tiempo);
+            Console.WriteLine("{0} millas en {1} horas = {2} mi/h", millas, tiempo, millas / tiempo);
+        }
+    }
+}
+
+(3.2.3.3) Halla las soluciones de una ecuación de segundo grado del tipo y = Ax2 + Bx + C. Pista: la raíz cuadrada de un número x se calcula con Math.Sqrt(x)
+
+using System;
+
+namespace ejercicio_3_2_3_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			            double A;
+            double B;
+            double C;
+            double D;
+
+            Console.Write("Escribe A: ");
+            A = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Escribe B: ");
+            B = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Escribe C: ");
+            C = Convert.ToDouble(Console.ReadLine());
+
+            D = Math.Sqrt(Math.Pow(B, 2) - 4 * A * C);
+
+            if (Double.IsNaN(D))
+            {
+                Console.WriteLine("No tiene solución. Raíz cuadrada negativa.");
+            }
+            else
+            {
+                double y1 = (-B + D) / 2 * A;
+                double y2 = (-B - D) / 2 * A;
+
+                Console.WriteLine("{0}x² + {1}x + {2} = 0", A, B, C);
+                Console.WriteLine("y1 = {0}", y1);
+                Console.WriteLine("y2 = {0}", y2);
+            }
+        }
+    }
+}
+
+(3.2.3.4) Si se ingresan E euros en el banco a un cierto interés I durante N años, el dinero obtenido viene dado por la fórmula del interés compuesto: Resultado = e(1+ i)n Aplicarlo para calcular en cuanto se convierten 1.000 euros al cabo de 10 años al 3% de interés anual.
+
+using System;
+
+namespace ejercicio_3_2_3_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                        double e;
+            double n;
+            double i = 0.03d;
+
+            Console.Write("Escribe los euros: ");
+            e = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Escribe los años: ");
+            n = Convert.ToDouble(Console.ReadLine());
+            
+            double resultado = e * Math.Pow(i + 1, n);
+
+            Console.WriteLine("Resultado: {0}", resultado);
+
+            // Añadido para que veáis la evolución anual
+            Console.WriteLine("\n\nEvolución anual:");
+
+            for (int j = 1; j <= n; j++)
+            {
+                resultado = e * Math.Pow(i + 1, j);
+
+                Console.WriteLine("Resultado año {0}: {1}", j, resultado);
+            }
+        }
+    }
+}
+
+(3.2.3.5) Crea un programa que muestre los primeros 20 valores de la función y = x2 - 1
+
+using System;
+
+namespace ejercicio_3_2_3_5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int x = 1; x <= 20; x++)
+            {
+                Console.WriteLine("{0}² - 1 = {1}", x, Math.Pow(x, 2) - 1);
+            }
+        }
+    }
+}
+(3.2.3.6) Crea un programa que "dibuje" la gráfica de y = (x-5)2 para valores de x entre 1 y 10. Deberá hacerlo dibujando varios espacios en pantalla y luego un asterisco. La cantidad de espacios dependerá del valor obtenido para "y". 
+
+using System;
+
+namespace ejercicio_3_2_3_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a;
+
+            for (int i = 0; i <= 10; i++)
+            {
+                a = Math.Pow(i - 5, 2);
+
+                for (int h = 0; h <= a; h++)
+                {
+                    if (h == a)
+                        Console.WriteLine("*");
+                    else
+                        Console.Write(" ");
+                }
+            }
+        }
+    }
+}
+
+(3.2.3.7) Escribe un programa que calcule una aproximación de PI mediante la expresión: pi/4 = 1/1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + 1/13 ... El usuario deberá indicar la cantidad de términos a utilizar, y el programa mostrará todos los resultados hasta esa cantidad de términos. Debes hacer todas las operacion con "double".
+
+using System;
+
+namespace ejercicio_3_2_3_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double terminos;
+            double resultado = 0;
+            double divisor = 1;
+
+            Console.WriteLine(Math.PI);
+
+            Console.Write("Nº de términos: ");
+            terminos = Convert.ToDouble(Console.ReadLine());
+            
+            for (int i = 1; i <= terminos; i++)
+            {
+                if (i % 2 == 0)
+                    resultado -= (1 / divisor);
+                else
+                    resultado += (1 / divisor);
+
+                divisor += 2;
+            }
+            
+            Console.WriteLine(resultado * 4);
+        }
+    }
+}
+
+(3.2.4.1) Crea un programa que calcule la raíz cuadrada del número que introduzca el usuario. La raíz se deberá calcular como "double", pero el resultado se mostrará como "float" 
+
+using System;
+
+namespace ejercicio_3_2_4_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double numero;
+            float raiz;
+
+            Console.Write("Número: ");
+            numero = Convert.ToDouble(Console.ReadLine());
+
+            raiz = (float)Math.Sqrt(numero);
+
+            Console.WriteLine("La raíz de {0} es {1}.", numero, raiz);
+        }
+    }
+}
+
+(3.2.4.2) Crea una nueva versión del un programa que calcula una aproximación de PI mediante la expresión: pi/4 = 1/1 - 1/3 + 1/5 - 1/7 + 1/9 - 1/11 + 1/13 (...) con tantos términos como indique el usuario. Debes hacer todas las operacion con "double", pero mostrar el resultado como "float".
+
+using System;
+
+namespace ejercicio_3_2_4_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double terminos;
+            float resultado = 0;
+            double divisor = 1;
+
+            Console.WriteLine(Math.PI);
+
+            Console.Write("Nº de términos: ");
+            terminos = Convert.ToDouble(Console.ReadLine());
+
+            for (int i = 1; i <= terminos; i++)
+            {
+                if (i % 2 == 0)
+                    resultado -= (float)(1 / divisor);
+                else
+                    resultado += (float)(1 / divisor);
+
+                divisor += 2;
+            }
+
+            Console.WriteLine(resultado * 4);
+        }
+    }
+}
+
+(3.2.5.1) El usuario de nuestro programa podrá teclear dos números de hasta 12 cifras significativas. El programa deberá mostrar el resultado de dividir el primer número entre el segundo, utilizando tres cifras decimales.
+
+using System;
+
+namespace ejercicio_3_2_5_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double numero1;
+            double numero2;
+            double numero3;
+
+            Console.WriteLine("Introduce dos números de hasta 12 cifras decimales.");
+
+            Console.Write("Número 1: ");
+            numero1 = Convert.ToDouble(Console.ReadLine());
+            
+            Console.Write("Número 2: ");
+            numero2 = Convert.ToDouble(Console.ReadLine());
+
+            numero3 = numero1 / numero2;
+
+            Console.WriteLine("Resultado de la división con tres cifras decimales");
+            Console.WriteLine("Con \"0.000\": {0}", numero3.ToString("0.000"));
+            Console.WriteLine("Con \"N3\": {0}", numero3.ToString("N3"));
+        }
+    }
+}
+
+(3.2.5.2) Crea un programa que use tres variables x,y,z. Las tres serán números reales, y nos bastará con dos cifras decimales. Se deberá pedir al usuario los valores para las tres variables y mostrar en pantalla el valor de x2 + y - z (con exactamente dos cifras decimales).
+
+using System;
+
+namespace ejercicio_3_2_5_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x;
+            double y;
+            double z;
+            double resultado;
+
+            Console.Write("Valor de x: ");
+            x = Convert.ToDouble(Console.ReadLine());
+            
+            Console.Write("Valor de y: ");
+            y = Convert.ToDouble(Console.ReadLine());
+            
+            Console.Write("Valor de z: ");
+            z = Convert.ToDouble(Console.ReadLine());
+
+            resultado = Math.Pow(x, 2) + y - z;
+
+            Console.WriteLine("Resultado: {0}", resultado.ToString("0.00"));
+        }
+    }
+}
+
+(3.2.5.3) Calcula el perímetro, área y diagonal de un rectángulo, a partir de su ancho y alto (perímetro = suma de los cuatro lados; área = base x altura; diagonal, usando el teorema de Pitágoras). Muestra todos ellos con una cifra decimal.
+
+using System;
+
+namespace ejercicio_3_2_5_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double ancho;
+            double alto;
+            double perimetro;
+            double area;
+            double diagonal;
+
+            Console.Write("Ancho del rectángulo: ");
+            ancho = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Alto del rectángulo: ");
+            alto = Convert.ToDouble(Console.ReadLine());
+
+            perimetro = (ancho * 2) + (alto * 2);
+            area = ancho * alto;
+            diagonal = Math.Sqrt(Math.Pow(ancho, 2) + Math.Pow(alto, 2));
+
+            Console.WriteLine("Perímetro: {0}", perimetro.ToString("0.0"));
+            Console.WriteLine("Área: {0}", area.ToString("0.0"));
+            Console.WriteLine("Diagonal: {0}", diagonal.ToString("0.0"));
+
+        }
+    }
+}
+
+(3.2.5.4) Calcula la superficie y el volumen de una esfera, a partir de su radio (superficie = 4 * pi * radio al cuadrado; volumen = 4/3 * pi * radio al cubo). Usa datos "doble" y muestra los resultados con 5 cifras decimales.
+
+using System;
+
+namespace ejercicio_3_2_5_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double radio;
+            double superficie;
+            double volumen;
+
+            Console.Write("Radio del círculo: ");
+            radio = Convert.ToDouble(Console.ReadLine());
+
+            superficie = 4 * Math.PI * Math.Pow(radio, 2);
+            volumen = 4 / 3 * Math.PI * Math.Pow(radio, 3);
+
+            Console.WriteLine("Superficie: {0}", superficie.ToString("0.00000"));
+            Console.WriteLine("Volumen: {0}", volumen.ToString("0.00000"));
+
+        }
+    }
+}
+
+(3.2.6.1) Crea un programa que pida números (en base 10) al usuario y muestre su equivalente en sistema binario y en hexadecimal. Debe repetirse hasta que el usuario introduzca el número 0.
+
+using System;
+
+namespace ejercicio_3_2_6_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero;
+
+            Console.WriteLine("Para salir introduce un cero.");
+
+            Console.Write("Número: ");
+            numero = Convert.ToInt32(Console.ReadLine());
+
+            while (numero != 0)            
+            { 
+                Console.WriteLine("Binario: {0}", Convert.ToString(numero, 2));
+                Console.WriteLine("Hexadecimal: {0}", Convert.ToString(numero, 16).ToUpper());
+
+                Console.WriteLine();
+
+                Console.Write("Número: ");
+                numero = Convert.ToInt32(Console.ReadLine());
+            }
+        }
+    }
+}
+
+(3.2.6.2) Crea un programa que pida al usuario la cantidad de rojo (por ejemplo, 255), verde (por ejemplo, 160) y azul (por ejemplo, 0) que tiene un color, y que muestre ese color RGB en notación hexadecimal (por ejemplo, FFA000).
+
+using System;
+
+namespace ejercicio_3_2_6_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int rojo;
+            int verde;
+            int azul;
+
+            Console.Write("Escribe la cantidad de rojo (0-255): ");
+            rojo = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Escribe la cantidad de verde (0-255): ");
+            verde = Convert.ToInt32(Console.ReadLine());
+            
+            Console.Write("Escribe la cantidad de azul (0-255): ");
+            azul = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Resultado: {0}{1}{2}", 
+                Convert.ToString(rojo, 16).ToUpper().PadLeft(2, '0'),   // PadLeft me permite rellenar con ceros 
+                Convert.ToString(verde, 16).ToUpper().PadLeft(2, '0'),  // a la izquierda tantas posiciones
+                Convert.ToString(azul, 16).ToUpper().PadLeft(2, '0'));  // como se le indique.
+        }
+    }
+}
+
+(3.2.6.3) Crea un programa para mostrar los números del 0 a 255 en hexadecimal, en 16 filas de 16 columnas cada una (la primera fila contendrá los números del 0 al 15 –decimal-, la segunda del 16 al 31 –decimal- y así sucesivamente).
+
+using System;
+
+namespace ejercicio_3_2_6_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero = 0;
+
+            for (int i = 0; i < 16; i++)
+            {
+                for (int j = 0; j < 16; j++)
+                {
+                    Console.Write("{0} ", Convert.ToString(numero, 16).ToUpper().PadLeft(2, '0'));
+
+                    numero++;
+                }
+
+                Console.WriteLine();
+            }
+        }
+    }
+}
+
+(3.2.6.4) Crea un programa que pida números binarios al usuario y muestre su equivalente en sistema hexadecimal y en decimal. Debe repetirse hasta que el usuario introduzca la palabra "fin".
+
+using System;
+
+namespace ejercicio_3_3_6_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string cadena;
+            int binario;
+
+            Console.WriteLine("Escribe \"fin\" para salir.");
+            Console.Write("Número binario: ");
+            cadena = Console.ReadLine();
+
+            while (cadena.ToUpper() != "FIN")
+            {
+                binario = Convert.ToInt32(cadena, 2);
+
+                Console.WriteLine("Hexadecimal: {0}", Convert.ToString(binario, 16).ToUpper());
+                Console.WriteLine("Decimal: {0}", Convert.ToString(binario, 10));
+
+                Console.Write("Número binario: ");
+                cadena = Console.ReadLine();
+            } 
+
+        }
+    }
+}
+
+(3.3.1.1) Crea un programa que pida una letra al usuario y diga si se trata de una vocal.
+
+using System;
+
+namespace ejercicio_3_3_1_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Escribe una letra: ");
+            char letra = Convert.ToChar(Console.ReadLine());
+
+            switch (letra)
+            {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    Console.WriteLine("Vocal.");
+                    break;
+                default:
+                    Console.WriteLine("No es una vocal.");
+                    break;
+            }
+        }
+    }
+}
+
+(3.3.1.2) Crea un programa que muestre una de cada dos letras entre la que teclee el usuario y la "z". Por ejemplo, si el usuario introduce una "a", se escribirá "aceg...".
+
+using System;
+
+namespace ejercicio_3_3_1_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char letra;
+
+            Console.Write("Escribe una letra: ");
+            letra = Convert.ToChar(Console.ReadLine());
+
+            for (char c = letra; c <= 'z'; c++, c++)
+            {
+                Console.Write(c);
+            }
+        }
+    }
+}
+
+(3.3.1.3) Crea un programa que pida al usuario el ancho (por ejemplo, 4) y el alto (por ejemplo, 3) y una letra (por ejemplo, X) y escriba un rectángulo formado por esa cantidad de letras: 
+XXXX 
+XXXX 
+XXXX
+
+using System;
+
+namespace ejercicios_3_3_1_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int ancho;
+            int alto;
+            char letra;
+
+            Console.Write("Escribe el ancho: ");
+            ancho = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Escribe el alto: ");
+            alto = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Escribe una letra: ");
+            letra = Convert.ToChar(Console.ReadLine());
+
+            for (int i = 0; i < alto; i++)
+            {
+                for (int j = 0; j < ancho; j++)
+                {
+                    Console.Write(letra);
+                }
+
+                Console.WriteLine();
+            } 
+        }
+    }
+}
+
+(3.3.2.1) Crea un programa que pida al usuario que teclee cuatro letras y las muestre en pantalla juntas, pero en orden inverso, y entre comillas dobles. Por ejemplo si las letras que se teclean son a, l, o, h, escribiría "hola".
+
+using System;
+
+namespace ejercicio_3_3_2_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char c1;
+            char c2;
+            char c3;
+            char c4;
+
+            Console.Write("Escribe una letra: ");
+            c1 = Convert.ToChar(Console.ReadLine());
+            Console.Write("Escribe una letra: ");
+            c2 = Convert.ToChar(Console.ReadLine());
+            Console.Write("Escribe una letra: ");
+            c3 = Convert.ToChar(Console.ReadLine());
+            Console.Write("Escribe una letra: ");
+            c4 = Convert.ToChar(Console.ReadLine());
+
+            Console.Write("\"");
+            Console.Write(c4);
+            Console.Write(c3);
+            Console.Write(c2);
+            Console.Write(c1);
+            Console.Write("\"");
+        }
+    }
+}
+
+(3.4.1) Crear un programa que pida al usuario su nombre, y le diga "Hola" si se llama "Juan", o bien le diga "No te conozco" si teclea otro nombre.
+
+using System;
+
+namespace ejercicio_3_4_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+
+            Console.Write("Escribe tu nombre: ");
+            nombre = Console.ReadLine();
+
+            if (nombre.ToUpper() == "JUAN")
+                Console.WriteLine("Hola {0}", nombre);
+            else
+                Console.WriteLine("No te conozco");
+        }
+    }
+} 
+
+(3.4.2) Crear un programa que pida al usuario un nombre y una contraseña. La contraseña se debe introducir dos veces. Si las dos contraseñas no son iguales, se avisará al usuario y se le volverán a pedir las dos contraseñas.
+
+using System;
+
+namespace ejercicio_3_4_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre;
+            string contrasenya1;
+            string contrasenya2;
+
+            Console.Write("Nombre: ");
+            nombre = Console.ReadLine();
+
+            Console.Write("Contraseña: ");
+            contrasenya1 = Console.ReadLine();
+
+            Console.Write("Repita contraseña: ");
+            contrasenya2 = Console.ReadLine();
+
+            while (contrasenya1 != contrasenya2)
+            {
+                Console.WriteLine("Las contraseñas no coinciden.");
+
+                Console.Write("Contraseña: ");
+                contrasenya1 = Console.ReadLine();
+
+                Console.Write("Repita contraseña: ");
+                contrasenya2 = Console.ReadLine();
+
+            }
+
+        }
+    }
+}
+
+(3.5.1) Crea un programa que use el operador condicional para dar a una variable llamada "iguales" (booleana) el valor "true" si los dos números que ha tecleado el usuario son iguales, o "false" si son distintos. 
+
+using System;
+
+namespace ejercicio_3_5_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1;
+            int numero2;
+            bool iguales;
+
+            Console.Write("Introduce un número: ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Introduce otro número: ");
+            numero2 = Convert.ToInt32(Console.ReadLine());
+
+
+            iguales = (numero1 == numero2 ? true : false);
+
+            Console.WriteLine("Los números son {0}", iguales);
+        }
+    }
+}
+
+
+(3.5.2) Crea una versión alternativa del ejercicio 3.5.1, que use "if" en vez del operador condicional. 
+
+using System;
+
+namespace ejercicio_3_5_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1;
+            int numero2;
+            bool iguales;
+
+            Console.Write("Introduce un número: ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Introduce otro número: ");
+            numero2 = Convert.ToInt32(Console.ReadLine());
+
+            if (numero1 == numero2)
+                iguales = true;
+            else
+                iguales = false;
+
+            /* Código optimizado
+             
+            iguales = false;
+            if (numero1 == numero2)
+               iguales = true;
+            
+            */
+
+            Console.WriteLine("Los números son {0}", iguales);
+        }
+    }
+}
+
+(3.5.3) Crea un programa que use el operador condicional para dar a una variable llamada "ambosPares" (booleana) el valor "true" si dos números introducidos por el usuario son pares, o "false" si alguno es impar. 
+
+using System;
+
+namespace ejercicio_3_5_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1;
+            int numero2;
+            bool ambosPares;
+
+            Console.Write("Introduce un número: ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Introduce otro número: ");
+            numero2 = Convert.ToInt32(Console.ReadLine());
+
+            ambosPares = (((numero1 % 2 == 0) && (numero2 % 2 == 0)) ? true : false);
+
+            Console.WriteLine("Ambos son pares: {0}", ambosPares);
+        }
+    }
+}
+
+(3.5.4) Crea una versión alternativa del ejercicio 3.5.3, que use "if" en vez del operador condicional.
+
+using System;
+
+namespace ejercicio_3_5_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1;
+            int numero2;
+            bool ambosPares;
+
+            Console.Write("Introduce un número: ");
+            numero1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Introduce otro número: ");
+            numero2 = Convert.ToInt32(Console.ReadLine());
+
+            if ((numero1 % 2 == 0) && (numero2 % 2 == 0)) 
+                ambosPares = true;
+            else
+                ambosPares = false;
+
+            /* Código optimizado
+             
+            ambosPares = false;
+            if ((numero1 % 2 == 0) && (numero2 % 2 == 0))
+               ambosPares = true;
+            
+            */
+
+            Console.WriteLine("Ambos son pares: {0}", ambosPares);
+        }
+    }
+}

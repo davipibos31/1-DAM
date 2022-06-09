@@ -1,0 +1,13 @@
+C:\Users\david\source\repos\Calculadoraadicionalx\bin\Debug\netcoreapp2.1\Calculadoraadicionalx.deps.json
+C:\Users\david\source\repos\Calculadoraadicionalx\bin\Debug\netcoreapp2.1\Calculadoraadicionalx.runtimeconfig.json
+C:\Users\david\source\repos\Calculadoraadicionalx\bin\Debug\netcoreapp2.1\Calculadoraadicionalx.runtimeconfig.dev.json
+C:\Users\david\source\repos\Calculadoraadicionalx\bin\Debug\netcoreapp2.1\Calculadoraadicionalx.dll
+C:\Users\david\source\repos\Calculadoraadicionalx\bin\Debug\netcoreapp2.1\Calculadoraadicionalx.pdb
+C:\Users\david\source\repos\Calculadoraadicionalx\obj\Debug\netcoreapp2.1\Calculadoraadicionalx.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\Calculadoraadicionalx\obj\Debug\netcoreapp2.1\Calculadoraadicionalx.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\Calculadoraadicionalx\obj\Debug\netcoreapp2.1\Calculadoraadicionalx.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\Calculadoraadicionalx\obj\Debug\netcoreapp2.1\Calculadoraadicionalx.AssemblyInfo.cs
+C:\Users\david\source\repos\Calculadoraadicionalx\obj\Debug\netcoreapp2.1\Calculadoraadicionalx.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Calculadoraadicionalx\obj\Debug\netcoreapp2.1\Calculadoraadicionalx.dll
+C:\Users\david\source\repos\Calculadoraadicionalx\obj\Debug\netcoreapp2.1\Calculadoraadicionalx.pdb
+C:\Users\david\source\repos\Calculadoraadicionalx\obj\Debug\netcoreapp2.1\Calculadoraadicionalx.genruntimeconfig.cache

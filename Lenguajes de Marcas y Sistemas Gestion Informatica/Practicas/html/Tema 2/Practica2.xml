@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practica2>
+  <table1>
+    <Factura1>
+      <fila_fac>
+        <num_factura>FACTURA nº 999</num_factura>
+      </fila_fac>
+      <fila_doc_fac>
+        <documentacion_factura>
+          <Columna_dat_ped1>
+            <Nombre>Equipos Digitales S.L. Av. Valladolid</Nombre>
+            <Localizacion>Madrid 28015</Localizacion>
+            <Cif>C.I.F.: Q-9876543 teléfono:</Cif>
+            <contacto>91.777.66.88 fax: 91.777.66.99</contacto>
+          </Columna_dat_ped1>
+          <Columna_dat_ped2>
+            <Fecha>Fecha: 12-01-2005</Fecha>
+            <Pedido>Pedido nº 731</Pedido>
+            <Forma_pago>Forma de pago: EFECTIVO</Forma_pago>
+          </Columna_dat_ped2>
+        </documentacion_factura>
+      </fila_doc_fac>
+      <fila_dat_cli>
+        <titulo_cliente>Datos CLIENTE</titulo_cliente>
+      </fila_dat_cli>
+      <fila_dat_cli1>
+        <datos_cliente>
+          <num_cliente>nº cliente: 879</num_cliente>
+          <nombre>Nombre: Darío Bueno Gutiérrez</nombre>
+          <direccion>Dirección de envío: Av. Oporto nº7 4ºd</direccion>
+          <poblacion>Población: Madrid cod. postal: 28043</poblacion>
+          <provincia>Provincia: Madrid</provincia>
+        </datos_cliente>
+      </fila_dat_cli1>
+      <fila_dat_fac>
+        <titulo_factura>Datos FACTURA</titulo_factura>
+      </fila_dat_fac>
+      <datos_factura>
+        <columna_ref>
+          <ref>REF.</ref>
+          <referencia>
+            <codigo1>MII93000F/8</codigo1>
+            <codigo2>MB8QDIP4</codigo2>
+            <codigo3>MEDD512M32</codigo3>
+            <codigo4>HD250GSA7</codigo4>
+          </referencia>
+        </columna_ref>
+        <columna_descripcion>
+          <descripcion>DESCRIPCIÓN></descripcion>
+          <desc>
+            <componente1>MICRO PENTIUM IV 3000MHZ FB800 </componente1>
+            <componente2>PLACA BASE QDI P4</componente2>
+            <componente3>DIMM DDR 512MB 3200</componente3>
+            <componente4>DISCO DURO 250GB S-ATA 7200</componente4>
+          </desc>
+        </columna_descripcion>
+        <columna_cantidad>
+          <cant>CANT.</cant>
+          <cantidad1>1</cantidad1>
+          <cantidad2>1</cantidad2>
+          <cantidad3>2</cantidad3>
+          <cantidad4>4</cantidad4>
+        </columna_cantidad>
+        <columna_precio>
+          <precio>PRECIO.</precio>
+          <prec1>230 eur.</prec1>
+          <prec2>180 eur.</prec2>
+          <prec3>40 eur.</prec3>
+          <prec4>120 eur.</prec4>
+        </columna_precio>
+        <columna_iva>
+          <iva>I.V.A.</iva>
+          <cuato1>16,0</cuato1>
+          <cuota2>16,0</cuota2>
+          <cuota3>16,0</cuota3>
+          <cuota4>16,0</cuota4>
+        </columna_iva>
+        <columna_importe>
+          <importe>IMPORTE</importe>
+          <importe1>266,80 eur.</importe1>
+          <importe2>208,80 eur.</importe2>
+          <importe3>92,80 eur.</importe3>
+          <importe4>556,80 eur.</importe4>
+        </columna_importe>
+      <base_imponible>Base imponible</base_imponible>
+        <porcetaje_iva>% I.V.A. </porcetaje_iva>
+        <cuota_iva>Cuota I.V.A.</cuota_iva>
+      </datos_factura>
+    </Factura1>
+  </table1>
+  <table2>
+    <FACTURA2>
+      <fila_base>
+        <base>970,00 eur.</base>
+        <iva>16,0 </iva>
+        <importe>155,20 eur.</importe>
+      </fila_base>
+      <fila_total>
+        <Total>TOTAL FACTURA: 1125,20 eur</Total>
+      </fila_total>
+    </FACTURA2>
+  </table2>
+</Practica2>

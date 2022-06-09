@@ -1,0 +1,26 @@
+C:\Users\david\source\repos\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.deps.json
+C:\Users\david\source\repos\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.runtimeconfig.json
+C:\Users\david\source\repos\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.runtimeconfig.dev.json
+C:\Users\david\source\repos\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.dll
+C:\Users\david\source\repos\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.pdb
+C:\Users\david\source\repos\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.AssemblyInfo.cs
+C:\Users\david\source\repos\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.dll
+C:\Users\david\source\repos\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.pdb
+C:\Users\david\source\repos\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.genruntimeconfig.cache
+C:\Users\david\source\repos\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.csproj.AssemblyReference.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.deps.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.runtimeconfig.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.runtimeconfig.dev.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\bin\Debug\netcoreapp2.2\ejercicio 2.2.9.2.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.csproj.AssemblyReference.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.AssemblyInfoInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.AssemblyInfo.cs
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.csproj.CoreCompileInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Ejercicios\Tema 2\ejercicio 2.2.9.2\obj\Debug\netcoreapp2.2\ejercicio 2.2.9.2.genruntimeconfig.cache

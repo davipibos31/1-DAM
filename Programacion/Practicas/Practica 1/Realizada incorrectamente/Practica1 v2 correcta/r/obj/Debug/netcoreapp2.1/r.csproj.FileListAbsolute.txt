@@ -1,0 +1,39 @@
+C:\Users\david\source\repos\r\bin\Debug\netcoreapp2.1\r.deps.json
+C:\Users\david\source\repos\r\bin\Debug\netcoreapp2.1\r.runtimeconfig.json
+C:\Users\david\source\repos\r\bin\Debug\netcoreapp2.1\r.runtimeconfig.dev.json
+C:\Users\david\source\repos\r\bin\Debug\netcoreapp2.1\r.dll
+C:\Users\david\source\repos\r\bin\Debug\netcoreapp2.1\r.pdb
+C:\Users\david\source\repos\r\obj\Debug\netcoreapp2.1\r.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\r\obj\Debug\netcoreapp2.1\r.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\r\obj\Debug\netcoreapp2.1\r.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\r\obj\Debug\netcoreapp2.1\r.AssemblyInfo.cs
+C:\Users\david\source\repos\r\obj\Debug\netcoreapp2.1\r.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\r\obj\Debug\netcoreapp2.1\r.dll
+C:\Users\david\source\repos\r\obj\Debug\netcoreapp2.1\r.pdb
+C:\Users\david\source\repos\r\obj\Debug\netcoreapp2.1\r.genruntimeconfig.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\bin\Debug\netcoreapp2.1\r.deps.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\bin\Debug\netcoreapp2.1\r.runtimeconfig.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\bin\Debug\netcoreapp2.1\r.runtimeconfig.dev.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\bin\Debug\netcoreapp2.1\r.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\bin\Debug\netcoreapp2.1\r.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\obj\Debug\netcoreapp2.1\r.csproj.AssemblyReference.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\obj\Debug\netcoreapp2.1\r.GeneratedMSBuildEditorConfig.editorconfig
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\obj\Debug\netcoreapp2.1\r.AssemblyInfoInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\obj\Debug\netcoreapp2.1\r.AssemblyInfo.cs
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\obj\Debug\netcoreapp2.1\r.csproj.CoreCompileInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\obj\Debug\netcoreapp2.1\r.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\obj\Debug\netcoreapp2.1\r.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\r\obj\Debug\netcoreapp2.1\r.genruntimeconfig.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\bin\Debug\netcoreapp2.1\r.deps.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\bin\Debug\netcoreapp2.1\r.runtimeconfig.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\bin\Debug\netcoreapp2.1\r.runtimeconfig.dev.json
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\bin\Debug\netcoreapp2.1\r.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\bin\Debug\netcoreapp2.1\r.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\obj\Debug\netcoreapp2.1\r.csproj.AssemblyReference.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\obj\Debug\netcoreapp2.1\r.GeneratedMSBuildEditorConfig.editorconfig
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\obj\Debug\netcoreapp2.1\r.AssemblyInfoInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\obj\Debug\netcoreapp2.1\r.AssemblyInfo.cs
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\obj\Debug\netcoreapp2.1\r.csproj.CoreCompileInputs.cache
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\obj\Debug\netcoreapp2.1\r.dll
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\obj\Debug\netcoreapp2.1\r.pdb
+E:\Grado Superior\1º DAM\Asignaturas\Programación\Practicas\Practica 1\Practica1 v2 correcta\r\obj\Debug\netcoreapp2.1\r.genruntimeconfig.cache
