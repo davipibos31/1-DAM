@@ -1,0 +1,17 @@
+C:\Users\david\source\repos\pruebaPDF\bin\Debug\netcoreapp3.1\pruebaPDF.exe
+C:\Users\david\source\repos\pruebaPDF\bin\Debug\netcoreapp3.1\pruebaPDF.deps.json
+C:\Users\david\source\repos\pruebaPDF\bin\Debug\netcoreapp3.1\pruebaPDF.runtimeconfig.json
+C:\Users\david\source\repos\pruebaPDF\bin\Debug\netcoreapp3.1\pruebaPDF.runtimeconfig.dev.json
+C:\Users\david\source\repos\pruebaPDF\bin\Debug\netcoreapp3.1\pruebaPDF.dll
+C:\Users\david\source\repos\pruebaPDF\bin\Debug\netcoreapp3.1\pruebaPDF.pdb
+C:\Users\david\source\repos\pruebaPDF\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\david\source\repos\pruebaPDF\bin\Debug\netcoreapp3.1\itextsharp.dll
+C:\Users\david\source\repos\pruebaPDF\obj\Debug\netcoreapp3.1\pruebaPDF.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\pruebaPDF\obj\Debug\netcoreapp3.1\pruebaPDF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\pruebaPDF\obj\Debug\netcoreapp3.1\pruebaPDF.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\pruebaPDF\obj\Debug\netcoreapp3.1\pruebaPDF.AssemblyInfo.cs
+C:\Users\david\source\repos\pruebaPDF\obj\Debug\netcoreapp3.1\pruebaPDF.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\pruebaPDF\obj\Debug\netcoreapp3.1\pruebaPDF.csproj.CopyComplete
+C:\Users\david\source\repos\pruebaPDF\obj\Debug\netcoreapp3.1\pruebaPDF.dll
+C:\Users\david\source\repos\pruebaPDF\obj\Debug\netcoreapp3.1\pruebaPDF.pdb
+C:\Users\david\source\repos\pruebaPDF\obj\Debug\netcoreapp3.1\pruebaPDF.genruntimeconfig.cache
