@@ -1,0 +1,4 @@
+Tarea Bootstrap-sass
+Se trata de modificar algún componente (Card, navbar, etc) colores, apariencia, etc.. del framework.
+
+La entrega será con dos capturas (inicio, final) , las líneas y el fichero del sass modificado
